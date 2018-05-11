@@ -16,7 +16,8 @@
     "test": "jest"
   },
   "jest": {
-    "preset": "jest-expo"
+    "preset": "react-native",
+    "verbose": true
   },
   "dependencies": {
     "aws-amplify": "^0.3.3",
