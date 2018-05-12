@@ -17,4 +17,4 @@ You will need to replace `./src/aws-exports.js` with proper AWS resources
 ## Status 
 [![Build Status](https://travis-ci.org/CirclesUBI/circles-mobile.svg?branch=master)](https://travis-ci.org/CirclesUBI/circles-mobile)
 
-[![Chat Server](https://chat.joincircles.net/api/v1/shield.svg?type=online&name=Circles Chat)](https://chat.joincircles.net)
+[![Chat Server](https://chat.joincircles.net/api/v1/shield.svg?type=online&name=Circles%20Chat)](https://chat.joincircles.net)
