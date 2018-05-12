@@ -14,3 +14,10 @@ install:
 
 script:
   - npm test
+
+beforeDeploy:
+  - npm i -g exp
+  - exp login -u edzillion -p $EXP_PASSWORD
+  
+deploy:
+  - exp publish

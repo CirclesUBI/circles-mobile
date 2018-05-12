@@ -4,6 +4,8 @@ import { StyleSheet, Text, View } from 'react-native'
 import Amplify from 'aws-amplify'
 import awsExports from './src/aws-exports'
 
+window.LOG_LEVEL = 'DEBUG'
+
 Amplify.configure(awsExports)
 
 export default class App extends React.Component {
