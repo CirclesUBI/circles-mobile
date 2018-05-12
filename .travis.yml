@@ -1,24 +1,20 @@
 branches:
   only:
     - master
-
 sudo: false
-
 language: node_js
-
 node_js:
   - 8.11.1
-
 install:
   - npm install
-
 script:
   - npm test
-
-beforeDeploy:
+before_deploy:
   - npm i -g exp
   - exp login -u edzillion -p $EXP_PASSWORD
-
+cache:
+  directories:
+    - node_modules
 deploy:
   provider: script
   script: exp publish
