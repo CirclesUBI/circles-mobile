@@ -2,11 +2,22 @@ import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 
 import Amplify from 'aws-amplify'
-import awsExports from './src/aws-exports'
 
 // window.LOG_LEVEL = 'DEBUG'
+let AWSExports = null
 
-Amplify.configure(awsExports)
+const envCi = require('env-ci')
+const { isCi } = envCi()
+
+if (isCi) {
+  console.log('Building:CI')
+  AWSExports = require('./src/aws-exports')
+} else {
+  console.log('Building:local')
+  AWSExports = require('./src/aws-exports.js.donotcommit')
+}
+
+Amplify.configure(AWSExports)
 
 export default class App extends React.Component {
   render () {
