@@ -38,17 +38,24 @@ if (isCi) {
       result.aws_project_id + "',\n  'aws_project_name': 'circles-mobile',\n  'aws_project_region': 'eu-central-1',\n  'aws_resource_name_prefix': '" +
       result.aws_resource_name_prefix + "'\n}\n\nexport default awsmobile\n",
     function (err) {
-      if (err) console.error(err)
+      if (err) return console.error(err)
       console.log('/src/aws-exports.js overwritten!')
+      let awsExportsFilePath = 'scripts/prepare.js'
       simpleGit.raw([
-        'update-index',
-        '--skip-worktree',
-        'src/aws-exports.js'
+        'ls-files',
+        awsExportsFilePath
       ], (err, result) => {
-        // simpleGit.rmKeepLocal('\\src\\aws-exports.js', (err, data) => {
-        if (err) console.error(err)
-        console.log(result)
-        console.log('removed aws-exports.js from index')
+        if (err) return console.error(err)
+        if (result) result.trim()
+        if (result === awsExportsFilePath) {
+          console.log('tracked!')
+          simpleGit.rmKeepLocal(awsExportsFilePath, (err, data) => {
+            if (err) return console.error(err)
+            console.log('removed aws-exports.js from index')
+          })
+        } else {
+          return console.log('aws-exports.js not tracked, exiting')
+        }
       })
     })
   })
