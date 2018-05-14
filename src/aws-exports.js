@@ -6,20 +6,20 @@
 
 // AWS Mobile Hub Project Constants
 const awsmobile = {
-    'aws_app_analytics': 'enable',
-    'aws_cognito_identity_pool_id': process.env.AWS_COGNITO_IDENTITY_POOL_ID,
-    'aws_cognito_region': 'eu-central-1',
-    'aws_content_delivery': 'enable',
-    'aws_content_delivery_bucket': process.env.AWS_CONTENT_DELIVERY_BUCKET,
-    'aws_content_delivery_bucket_region': 'eu-central-1',
-    'aws_content_delivery_cloudfront': 'enable',
-    'aws_content_delivery_cloudfront_domain': process.env.AWS_CONTENT_DELIVERY_CLOUDFRONT_DOMAIN,
-    'aws_mobile_analytics_app_id': process.env.AWS_MOBILE_ANALYTICS_APP_ID,
-    'aws_mobile_analytics_app_region': 'us-east-1',
-    'aws_project_id': process.env.AWS_PROJECT_ID,
-    'aws_project_name': 'circles-mobile',
-    'aws_project_region': 'eu-central-1',
-    'aws_resource_name_prefix': process.env.AWS_RESOURCE_NAME_PREFIX
+  'aws_app_analytics': 'enable',
+  'aws_cognito_identity_pool_id': process.env.AWS_COGNITO_IDENTITY_POOL_ID,
+  'aws_cognito_region': 'eu-central-1',
+  'aws_content_delivery': 'enable',
+  'aws_content_delivery_bucket': process.env.AWS_CONTENT_DELIVERY_BUCKET,
+  'aws_content_delivery_bucket_region': 'eu-central-1',
+  'aws_content_delivery_cloudfront': 'enable',
+  'aws_content_delivery_cloudfront_domain': process.env.AWS_CONTENT_DELIVERY_CLOUDFRONT_DOMAIN,
+  'aws_mobile_analytics_app_id': process.env.AWS_MOBILE_ANALYTICS_APP_ID,
+  'aws_mobile_analytics_app_region': 'us-east-1',
+  'aws_project_id': process.env.AWS_PROJECT_ID,
+  'aws_project_name': 'circles-mobile',
+  'aws_project_region': 'eu-central-1',
+  'aws_resource_name_prefix': process.env.AWS_RESOURCE_NAME_PREFIX
 }
 
-export default awsmobile;
+export default awsmobile
