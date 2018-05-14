@@ -2,20 +2,8 @@ import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 
 import Amplify from 'aws-amplify'
-
+import AWSExports from './src/aws-exports'
 // window.LOG_LEVEL = 'DEBUG'
-let AWSExports = null
-
-const envCi = require('env-ci')
-const { isCi } = envCi()
-
-if (isCi) {
-  console.log('Building:CI')
-  AWSExports = require('./src/aws-exports')
-} else {
-  console.log('Building:local')
-  AWSExports = require('./src/aws-exports.js.donotcommit')
-}
 
 Amplify.configure(AWSExports)
 

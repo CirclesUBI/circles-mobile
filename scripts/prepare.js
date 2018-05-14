@@ -4,6 +4,8 @@ var fs = require('fs')
 const envCi = require('env-ci')
 const { isCi } = envCi()
 
+console.log('npm intstall:prepare script starting...')
+
 if (isCi) {
   console.log('Installing:CI')
   console.log('Use default aws-exports.js')
@@ -27,13 +29,6 @@ if (isCi) {
       console.log('aborting prepare script...')
       return
     }
-    console.log('AWS Credentials:')
-    console.log('  aws_cognito_identity_pool_id: ' + result.aws_cognito_identity_pool_id)
-    console.log('  aws_content_delivery_bucket: ' + result.aws_content_delivery_bucket)
-    console.log('  aws_cognito_identity_pool_id: ' + result.aws_content_delivery_cloudfront_domain)
-    console.log('  aws_content_delivery_bucket: ' + result.aws_mobile_analytics_app_id)
-    console.log('  aws_cognito_identity_pool_id: ' + result.aws_project_id)
-    console.log('  aws_content_delivery_bucket: ' + result.aws_resource_name_prefix)
 
     fs.writeFile('./src/aws_exports_computed.js', "// AWS Mobile Hub Project Constants\nconst awsmobile = {\n  'aws_app_analytics': 'enable',\n  'aws_cognito_identity_pool_id': '" +
       result.aws_cognito_identity_pool_id + "',\n  'aws_cognito_region': 'eu-central-1',\n  'aws_content_delivery': 'enable',\n  'aws_content_delivery_bucket': '" +
@@ -46,7 +41,7 @@ if (isCi) {
       if (err) {
         return console.error(err)
       }
-      console.log('The file was saved!')
+      console.log('./src/aws-exports.js overwritten!')
     })
   })
 }
