@@ -40,15 +40,14 @@ if (isCi) {
     function (err) {
       if (err) return console.error(err)
       console.log('/src/aws-exports.js overwritten!')
-      let awsExportsFilePath = 'scripts/prepare.js'
+      let awsExportsFilePath = 'src/aws-exports.js'
       simpleGit.raw([
         'ls-files',
         awsExportsFilePath
       ], (err, result) => {
         if (err) return console.error(err)
-        if (result) result.trim()
+        if (result) result = result.trim()
         if (result === awsExportsFilePath) {
-          console.log('tracked!')
           simpleGit.rmKeepLocal(awsExportsFilePath, (err, data) => {
             if (err) return console.error(err)
             console.log('removed aws-exports.js from index')
