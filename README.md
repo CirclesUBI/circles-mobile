@@ -13,5 +13,3 @@ Built with [create-react-native-app](https://github.com/react-community/create-r
 `npm install` - you will be prompted to enter the AWS credentials
 
 `npm start`
-
-You will need to replace `./src/aws-exports.js` with proper AWS resources
