@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "devDependencies": {
+    "awsmobile-cli": "^1.1.4",
     "env-ci": "^2.1.0",
     "fs": "0.0.1-security",
     "jest-expo": "~27.0.0",
@@ -13,6 +14,7 @@
   },
   "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
   "scripts": {
+    "pull": "awsmobile pull",
     "start": "react-native-scripts start",
     "eject": "react-native-scripts eject",
     "android": "react-native-scripts android",
