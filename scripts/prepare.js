@@ -63,5 +63,13 @@ if (isCi) {
         }
       })
     })
+
+    fs.writeFile('./awsmobilejs/.awsmobile/info/project-info.json', '{\n  "ProjectName": "circles-mobile",\n  "ProjectPath": "E:\\/dev\\/circles\\/circles-mobile",\n  "InitializationTime": "2018-05-15-09-48-02",\n  "LastConfigurationTime": "2018-05-15-09-47-09",\n  "LastNPMInstallTime": "",\n  "FrontendLastBuildTime": "",\n  "LastPublishTime": "",\n  "BackendLastSyncTime": "2018-05-15-13-50-31",\n  "BackendLastBuildTime": "",\n  "BackendLastPushTime": "",\n  "BackendProjectID": "' +
+    result.aws_project_id + '",\n  "BackendProjectName": "circles-mobile",\n  "BackendProjectConsoleUrl": "https://console.aws.amazon.com/mobilehub/home#/' +
+    result.aws_project_id + '/build",\n  "BackendProjectCreationTime": "2018-05-11T10:18:07.158Z",\n  "BackendProjectLastUpdatedTime": "2018-05-11T10:18:19.529Z",\n  "Framework": "react-native",\n  "BackendLastSyncToDevTime": "2018-05-15-09-47-31"\n}\n',
+    function (err) {
+      if (err) return console.error(err)
+      console.log('/awsmobilejs/.awsmobile/info/project-info.json written!')
+    })
   })
 }
