@@ -9,7 +9,7 @@ install:
   - npm install
 before_script:
   - npm i -g exp
-  - exp login -u edzillion -p $EXP_PASSWORD
+  - exp login -u circlesubi -p $EXP_PASSWORD
 script:
   # - npm test (build stalls here)
   - exp publish
