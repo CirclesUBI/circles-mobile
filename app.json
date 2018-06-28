@@ -1,7 +1,5 @@
 {
   "expo": {
-    "sdkVersion": "27.0.0",
-    "slug": "circles-mobile",
-    "name": "circles-mobile"
+    "sdkVersion": "27.0.0"
   }
 }

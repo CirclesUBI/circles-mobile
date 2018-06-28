@@ -1,17 +1,14 @@
 import React from 'react'
 import { StyleSheet, Text, View } from 'react-native'
 
-import Amplify, { Analytics } from 'aws-amplify'
-import AWSExports from './src/aws-exports'
-// window.LOG_LEVEL = 'DEBUG'
+import Amplify from 'aws-amplify'
+import awsExports from './src/aws-exports'
 
-debugger
-console.log('debugger started')
-Amplify.configure(AWSExports)
+import { withAuthenticator } from 'aws-amplify-react-native'
+Amplify.configure(awsExports)
 
-export default class App extends React.Component {
+class App extends React.Component {
   render () {
-    Analytics.record('appRender')
     return (
       <View style={styles.container}>
         <Text>Open up App.js to start working on your app!</Text>
@@ -30,3 +27,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center'
   }
 })
+
+export default withAuthenticator(App)
