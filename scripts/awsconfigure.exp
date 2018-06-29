@@ -3,10 +3,10 @@
 spawn awsmobile configure
 
 expect "accessKeyId:"
-send "$AWS_ACCESS_KEY_ID"
+send "$env(AWS_ACCESS_KEY_ID)\n"
 
 expect "secretAccessKey:"
-send "$AWS_SECRET_ACCESS_KEY"
+send "$env(AWS_SECRET_ACCESS_KEY)\n"
 
 expect "region:"
 send "\033\[B"
