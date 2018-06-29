@@ -1,6 +1,6 @@
 #!/usr/bin/expect
 
-spawn awsmobile init $AWS_PROJECT_ID
+spawn awsmobile init $env(AWS_PROJECT_ID)
 
 expect "Where is your project's source directory:"
 send "src\n"
