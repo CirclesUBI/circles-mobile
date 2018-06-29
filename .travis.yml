@@ -9,6 +9,7 @@ install:
   - sudo apt install expect
   - npm install -g awsmobile-cli
   - npm install
+  - mkdir src
 before_script:
   - npm i -g exp
   - exp login -u circlesubi -p $EXP_PASSWORD
