@@ -7,7 +7,7 @@
     "start": "react-native-scripts start",
     "eject": "react-native-scripts eject",
     "android": "react-native-scripts android",
-    "pull": "awsmobile pull",
+    "pull": "expect ./scripts/awspull.exp",
     "init": "expect ./scripts/awsinit.exp",
     "configure": "expect ./scripts/awsconfigure.exp > /dev/null",
     "ios": "react-native-scripts ios",
