@@ -1,0 +1,24 @@
+#!/usr/bin/expect
+
+spawn awsmobile configure
+
+expect "accessKeyId:"
+send "$AWS_ACCESS_KEY_ID"
+
+expect "secretAccessKey:"
+send "$AWS_SECRET_ACCESS_KEY"
+
+expect "region:"
+send "\033\[B"
+
+expect "region:"
+send "\033\[B"
+
+expect "region:"
+send "\033\[B"
+
+expect "region:"
+send "\r"
+
+expect eof
+exit

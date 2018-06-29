@@ -6,10 +6,13 @@ language: node_js
 node_js:
   - 8.11.1
 install:
-  - npm install
-before_script:
-  - npm i -g exp
-  - exp login -u circlesubi -p $EXP_PASSWORD
+  - apt install expect
+  - npm install -g awsmobile-cli
+#   - npm install
+# before_script:
+#   - npm i -g exp
+#   - exp login -u circlesubi -p $EXP_PASSWORD
 script:
-  # - npm test (build stalls here)
-  - exp publish
+  - expect /scripts/awsconfigure.exp
+  # - npm run configure
+  # - exp publish
