@@ -8,11 +8,12 @@ node_js:
 install:
   - sudo apt install expect
   - npm install -g awsmobile-cli
-#   - npm install
-# before_script:
-#   - npm i -g exp
-#   - exp login -u circlesubi -p $EXP_PASSWORD
+  - npm install
+before_script:
+  - npm i -g exp
+  - exp login -u circlesubi -p $EXP_PASSWORD
 script:
-  - expect ./scripts/awsconfigure.exp > /dev/null
-  # - npm run configure
-  # - exp publish
+  - npm run configure
+  - npm run init
+  # - npm run pull //not needed unless we are changing infrastructure?
+  - exp publish

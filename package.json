@@ -9,7 +9,7 @@
     "android": "react-native-scripts android",
     "pull": "awsmobile pull",
     "init": "awsmobile init 770910f7-fd56-4dde-8c4a-a2eb555047c7",
-    "configure": "awsmobile configure",
+    "configure": "expect ./scripts/awsconfigure.exp > /dev/null",
     "ios": "react-native-scripts ios",
     "test": "jest"
   },
