@@ -1,0 +1,18 @@
+#!/usr/bin/expect
+
+spawn awsmobile init $AWS_PROJECT_ID
+
+expect "Where is your project's source directory:"
+send "src\n"
+
+expect "Where is your project's distribution directory that stores build artifacts:"
+send "build\n"
+
+expect "What is your project's build command:"
+send "\r"
+
+expect "What is your project's start command for local test run:"
+send "\r"
+
+expect eof
+exit
