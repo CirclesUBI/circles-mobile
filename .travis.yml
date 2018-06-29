@@ -13,6 +13,6 @@ install:
 #   - npm i -g exp
 #   - exp login -u circlesubi -p $EXP_PASSWORD
 script:
-  - expect /scripts/awsconfigure.exp
+  - expect ./scripts/awsconfigure.exp
   # - npm run configure
   # - exp publish
