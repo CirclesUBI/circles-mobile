@@ -6,7 +6,7 @@ language: node_js
 node_js:
   - 8.11.1
 install:
-  - apt install expect
+  - sudo apt install expect
   - npm install -g awsmobile-cli
 #   - npm install
 # before_script:
