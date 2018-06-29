@@ -14,8 +14,5 @@ before_script:
   - npm i -g exp
   - exp login -u circlesubi -p $EXP_PASSWORD
 script:
-  - npm run configure
-  - npm run init
-  - npm run pull
-  - ls
+  - npm run aws-init-ci
   - exp publish

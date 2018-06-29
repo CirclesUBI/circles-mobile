@@ -7,9 +7,10 @@
     "start": "react-native-scripts start",
     "eject": "react-native-scripts eject",
     "android": "react-native-scripts android",
-    "pull": "expect ./scripts/awspull.exp",
-    "init": "expect ./scripts/awsinit.exp",
-    "configure": "expect ./scripts/awsconfigure.exp > /dev/null",
+    "aws-init-ci": "expect ./scripts/awsconfigure.exp > /dev/null && expect ./scripts/awsinit.exp && expect ./scripts/awspull.exp",
+    "pull": "awsmobile pull",
+    "init": "awsmobile init 770910f7-fd56-4dde-8c4a-a2eb555047c7",
+    "configure": "awsmobile configure",
     "ios": "react-native-scripts ios",
     "test": "jest"
   },
