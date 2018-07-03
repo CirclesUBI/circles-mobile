@@ -1,29 +1,21 @@
 import React from 'react'
 import { StyleSheet, Text, View, TouchableHighlight } from 'react-native'
-import { Navigation } from 'react-native-navigation'
-
 import Amplify from 'aws-amplify'
 import awsExports from './aws-exports'
 
 import { withAuthenticator } from 'aws-amplify-react-native'
-import { createStackNavigator, createBottomTabNavigator } from 'react-navigation';
+import { createStackNavigator, createBottomTabNavigator } from 'react-navigation'
+
+import SplashScreen from './lib/components/SplashScreen'
+import ConnectScreen from './lib/components/ConnectScreen' // Add Container
+import WalletScreen from './lib/components/WalletScreen'
+import TransactionScreen from './lib/components/TransactionScreen'
+// import ConnectContainer from './lib/containers/ConnectContainer'
+import HomeScreen from './lib/components/HomeScreen'
+
+import addOrgWallet from './lib/components/AddOrgWallet/AddWallet'
 
 Amplify.configure(awsExports)
-
-class AppHome extends React.Component {
-  render () {
-    return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
-        <TouchableHighlight onPress={() => this.props.navigation.replace('Tabs')}>
-          <Text>Touch Me</Text>
-        </TouchableHighlight>
-      </View>
-    )
-  }
-}
 
 class App extends React.Component {
   render () {
@@ -33,29 +25,6 @@ class App extends React.Component {
   }
 }
 
-class TabHome extends React.Component {
-  render () {
-    return <TabNavigator />
-  }
-}
-class Home extends React.Component {
-  render () {
-    return (
-      <View>
-        <Text>HOME</Text>
-      </View>
-    )
-  }
-}
-class Transact extends React.Component {
-  render () {
-    return (
-      <View>
-        <Text>TRANSACT</Text>
-      </View>
-    )
-  }
-}
 class Search extends React.Component {
   render () {
     return (
@@ -66,6 +35,14 @@ class Search extends React.Component {
   }
 }
 
+const TabNavigator = createBottomTabNavigator({
+  Home: HomeScreen,
+  Transact: TransactionScreen,
+  Search: Search
+}, {
+  headerMode: 'none'
+})
+
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -75,23 +52,38 @@ const styles = StyleSheet.create({
   }
 })
 
-const StartNavigator = createStackNavigator({
+const IntroNavigator = createStackNavigator({
   Intro: {
-    screen: AppHome
+    screen: SplashScreen
   },
-  Tabs: {
-    screen: TabHome
+  Connect: {
+    screen: ConnectScreen
   }}, {
     headerMode: 'none'
   })
 
-const TabNavigator = createBottomTabNavigator({
-  Home: Home,
-  Transact: Transact,
-  Search: Search
-}, {
-  headerMode: 'none'
-})
+const MainNavigator = createStackNavigator({
+  Intro: {
+    screen: IntroNavigator
+  },
+  Tabs: {
+    screen: TabNavigator
+  }}, {
+    headerMode: 'none'
+  })
+const StartNavigator = createStackNavigator({
+  Main: {
+    screen: MainNavigator
+  },
+  WalletView: {
+    screen: WalletScreen
+  },
+  'addOrgWallet.AddWallet': {
+    screen: addOrgWallet
+  }}, {
+    mode: 'modal',
+    headerMode: 'none'
+  })
 
 // export default withAuthenticator(App)
 export default App
