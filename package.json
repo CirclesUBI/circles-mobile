@@ -33,6 +33,8 @@
     "react": "16.3.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-28.0.1.tar.gz",
     "react-native-navigation": "^2.0.2382",
+    "react-native-popup-menu": "^0.13.2",
+    "react-native-step-indicator": "0.0.9",
     "react-navigation": "^2.5.5",
     "react-redux": "^5.0.7"
   }

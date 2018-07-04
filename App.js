@@ -1,5 +1,5 @@
 import React from 'react'
-import { StyleSheet, Text, View, TouchableHighlight } from 'react-native'
+import { Text, View } from 'react-native'
 // import Expo from 'expo'
 import Amplify from 'aws-amplify'
 import awsExports from './aws-exports'
@@ -15,7 +15,11 @@ import TransactionScreen from './lib/components/TransactionScreen'
 import HomeScreen from './lib/components/HomeScreen'
 import ValidateScreen from './lib/components/ValidateScreen'
 
-import addOrgWallet from './lib/components/AddOrgWallet/AddWallet'
+import addWallet from './lib/components/AddOrgWallet/AddWallet'
+import addOffer from './lib/components/AddOrgWallet/AddOffer'
+import addAdmin from './lib/components/AddOrgWallet/AddAdmin'
+
+import { MenuProvider } from 'react-native-popup-menu'
 
 Amplify.configure(awsExports)
 
@@ -28,7 +32,9 @@ class App extends React.Component {
   // }
   render () {
     return (
-      <StartNavigator />
+      <MenuProvider>
+        <StartNavigator />
+      </MenuProvider>
     )
   }
 }
@@ -43,13 +49,12 @@ class Search extends React.Component {
   }
 }
 
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    backgroundColor: '#fff',
-    alignItems: 'center',
-    justifyContent: 'center'
+const ValidateNavigator = createStackNavigator({
+  ValidatePhone: {
+    screen: ValidateScreen
   }
+}, {
+  headerMode: 'none'
 })
 
 const HomeNavigator = createStackNavigator({
@@ -60,7 +65,17 @@ const HomeNavigator = createStackNavigator({
     screen: WalletScreen
   },
   Validate: {
-    screen: ValidateScreen
+    screen: ValidateNavigator
+  }}, {
+    headerMode: 'none'
+  })
+
+const IntroNavigator = createStackNavigator({
+  Splash: {
+    screen: SplashScreen
+  },
+  Connect: {
+    screen: ConnectScreen
   }}, {
     headerMode: 'none'
   })
@@ -70,15 +85,21 @@ const TabNavigator = createBottomTabNavigator({
   Transact: TransactionScreen,
   Search: Search
 }, {
-  headerMode: 'none'
+  headerMode: 'none',
+  cardStyle: {
+    opacity: 0.1
+  }
 })
 
-const IntroNavigator = createStackNavigator({
-  Intro: {
-    screen: SplashScreen
+const OrgWalletNavigator = createStackNavigator({
+  'addOrgWallet.AddWallet': {
+    screen: addWallet
   },
-  Connect: {
-    screen: ConnectScreen
+  'addOrgWallet.AddOffer': {
+    screen: addOffer
+  },
+  'addOrgWallet.AddAdmin': {
+    screen: addAdmin
   }}, {
     headerMode: 'none'
   })
@@ -89,18 +110,16 @@ const MainNavigator = createStackNavigator({
   },
   Tabs: {
     screen: TabNavigator
+  },
+  'addOrgWallet': {
+    screen: OrgWalletNavigator
   }}, {
     headerMode: 'none'
   })
+
 const StartNavigator = createStackNavigator({
   Main: {
     screen: MainNavigator
-  },
-  // WalletView: {
-  //   screen: WalletScreen
-  // },
-  'addOrgWallet.AddWallet': {
-    screen: addOrgWallet
   }}, {
     mode: 'modal',
     headerMode: 'none'
