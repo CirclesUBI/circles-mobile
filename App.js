@@ -1,5 +1,6 @@
 import React from 'react'
 import { StyleSheet, Text, View, TouchableHighlight } from 'react-native'
+// import Expo from 'expo'
 import Amplify from 'aws-amplify'
 import awsExports from './aws-exports'
 
@@ -18,6 +19,12 @@ import addOrgWallet from './lib/components/AddOrgWallet/AddWallet'
 Amplify.configure(awsExports)
 
 class App extends React.Component {
+  // async componentWillMount () {
+  //   await Expo.Font.loadAsync({
+  //     'Roboto': require('native-base/Fonts/Roboto.ttf'),
+  //     'Roboto_medium': require('native-base/Fonts/Roboto_medium.ttf')
+  //   })
+  // }
   render () {
     return (
       <StartNavigator />
@@ -35,14 +42,6 @@ class Search extends React.Component {
   }
 }
 
-const TabNavigator = createBottomTabNavigator({
-  Home: HomeScreen,
-  Transact: TransactionScreen,
-  Search: Search
-}, {
-  headerMode: 'none'
-})
-
 const styles = StyleSheet.create({
   container: {
     flex: 1,
@@ -50,6 +49,24 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center'
   }
+})
+
+const HomeNavigator = createStackNavigator({
+  Home: {
+    screen: HomeScreen
+  },
+  WalletView: {
+    screen: WalletScreen
+  }}, {
+    headerMode: 'none'
+  })
+
+const TabNavigator = createBottomTabNavigator({
+  Home: HomeNavigator,
+  Transact: TransactionScreen,
+  Search: Search
+}, {
+  headerMode: 'none'
 })
 
 const IntroNavigator = createStackNavigator({
@@ -75,9 +92,9 @@ const StartNavigator = createStackNavigator({
   Main: {
     screen: MainNavigator
   },
-  WalletView: {
-    screen: WalletScreen
-  },
+  // WalletView: {
+  //   screen: WalletScreen
+  // },
   'addOrgWallet.AddWallet': {
     screen: addOrgWallet
   }}, {
