@@ -13,6 +13,7 @@ import WalletScreen from './lib/components/WalletScreen'
 import TransactionScreen from './lib/components/TransactionScreen'
 // import ConnectContainer from './lib/containers/ConnectContainer'
 import HomeScreen from './lib/components/HomeScreen'
+import ValidateScreen from './lib/components/ValidateScreen'
 
 import addOrgWallet from './lib/components/AddOrgWallet/AddWallet'
 
@@ -57,6 +58,9 @@ const HomeNavigator = createStackNavigator({
   },
   WalletView: {
     screen: WalletScreen
+  },
+  Validate: {
+    screen: ValidateScreen
   }}, {
     headerMode: 'none'
   })
