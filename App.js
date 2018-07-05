@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, View } from 'react-native'
+import { Text, View, TouchableOpacity } from 'react-native'
 // import Expo from 'expo'
 import Amplify from 'aws-amplify'
 import awsExports from './aws-exports'
@@ -19,8 +19,9 @@ import addWallet from './lib/components/AddOrgWallet/AddWallet'
 import addOffer from './lib/components/AddOrgWallet/AddOffer'
 import addAdmin from './lib/components/AddOrgWallet/AddAdmin'
 
+import Tabs from './lib/components/Tabs'
 import { MenuProvider } from 'react-native-popup-menu'
-
+// import { TabBar, SearchBar } from 'antd-mobile-rn';
 Amplify.configure(awsExports)
 
 class App extends React.Component {
@@ -80,15 +81,14 @@ const IntroNavigator = createStackNavigator({
     headerMode: 'none'
   })
 
+
 const TabNavigator = createBottomTabNavigator({
   Home: HomeNavigator,
   Transact: TransactionScreen,
   Search: Search
 }, {
   headerMode: 'none',
-  cardStyle: {
-    opacity: 0.1
-  }
+  tabBarComponent: Tabs
 })
 
 const OrgWalletNavigator = createStackNavigator({
