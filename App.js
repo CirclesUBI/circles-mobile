@@ -10,21 +10,27 @@ import { createStackNavigator, createBottomTabNavigator } from 'react-navigation
 import SplashScreen from './lib/components/SplashScreen'
 import ConnectScreen from './lib/components/ConnectScreen' // Add Container
 import WalletScreen from './lib/components/WalletScreen'
-import TransactionScreen from './lib/components/TransactionScreen'
+// import TransactionScreen from './lib/components/TransactionScreen'
 // import ConnectContainer from './lib/containers/ConnectContainer'
+
 import HomeScreen from './lib/components/HomeScreen'
-import ValidateScreen from './lib/components/ValidateScreen'
+import ValidatePhone from './lib/components/Validate/ValidatePhone'
+import ValidateSuccess from './lib/components/Validate/ValidateSuccess'
 
 import addWallet from './lib/components/AddOrgWallet/AddWallet'
 import addOffer from './lib/components/AddOrgWallet/AddOffer'
 import addAdmin from './lib/components/AddOrgWallet/AddAdmin'
 
 import PayAmount from './lib/components/Pay/PayAmount'
-
 import RequestAmount from './lib/components/Request/RequestAmount'
+
+import OrgWalletScreen from './lib/components/OrgWallet/OrgWalletScreen'
+import OrgWalletSettings from './lib/components/OrgWallet/OrgWalletSettingsScreen'
 
 import Tabs from './lib/components/Tabs'
 import { MenuProvider } from 'react-native-popup-menu'
+
+const TxPlaceholder = () => (<View />)
 // import { TabBar, SearchBar } from 'antd-mobile-rn';
 Amplify.configure(awsExports)
 
@@ -56,7 +62,10 @@ class Search extends React.Component {
 
 const ValidateNavigator = createStackNavigator({
   ValidatePhone: {
-    screen: ValidateScreen
+    screen: ValidatePhone
+  },
+  ValidateSuccess: {
+    screen: ValidateSuccess
   }
 }, {
   headerMode: 'none'
@@ -68,6 +77,9 @@ const HomeNavigator = createStackNavigator({
   },
   WalletView: {
     screen: WalletScreen
+  },
+  OrgWalletView: {
+    screen: OrgWalletScreen
   },
   Validate: {
     screen: ValidateNavigator
@@ -87,7 +99,7 @@ const IntroNavigator = createStackNavigator({
 
 const TabNavigator = createBottomTabNavigator({
   Home: HomeNavigator,
-  Transact: TransactionScreen,
+  Transact: TxPlaceholder,
   Search: Search
 }, {
   headerMode: 'none',
@@ -132,6 +144,9 @@ const MainNavigator = createStackNavigator({
   },
   'addOrgWallet': {
     screen: OrgWalletNavigator
+  },
+  'OrgWalletSettings': {
+    screen: OrgWalletSettings
   },
   'Pay': {
     screen: PayNavigator
