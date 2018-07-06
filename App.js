@@ -19,6 +19,10 @@ import addWallet from './lib/components/AddOrgWallet/AddWallet'
 import addOffer from './lib/components/AddOrgWallet/AddOffer'
 import addAdmin from './lib/components/AddOrgWallet/AddAdmin'
 
+import PayAmount from './lib/components/Pay/PayAmount'
+
+import RequestAmount from './lib/components/Request/RequestAmount'
+
 import Tabs from './lib/components/Tabs'
 import { MenuProvider } from 'react-native-popup-menu'
 // import { TabBar, SearchBar } from 'antd-mobile-rn';
@@ -81,7 +85,6 @@ const IntroNavigator = createStackNavigator({
     headerMode: 'none'
   })
 
-
 const TabNavigator = createBottomTabNavigator({
   Home: HomeNavigator,
   Transact: TransactionScreen,
@@ -104,6 +107,22 @@ const OrgWalletNavigator = createStackNavigator({
     headerMode: 'none'
   })
 
+const RequestNavigator = createStackNavigator({
+  'RequestAmount': {
+    screen: RequestAmount
+  }
+}, {
+  headerMode: 'none'
+})
+
+const PayNavigator = createStackNavigator({
+  'PayAmount': {
+    screen: PayAmount
+  }
+}, {
+  headerMode: 'none'
+})
+
 const MainNavigator = createStackNavigator({
   Intro: {
     screen: IntroNavigator
@@ -113,6 +132,12 @@ const MainNavigator = createStackNavigator({
   },
   'addOrgWallet': {
     screen: OrgWalletNavigator
+  },
+  'Pay': {
+    screen: PayNavigator
+  },
+  'Request': {
+    screen: RequestNavigator
   }}, {
     headerMode: 'none'
   })
