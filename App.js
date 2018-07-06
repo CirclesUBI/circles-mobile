@@ -4,6 +4,9 @@ import { Text, View, TouchableOpacity } from 'react-native'
 import Amplify from 'aws-amplify'
 import awsExports from './aws-exports'
 
+import { createStore, combineReducers } from 'redux'
+import { Provider } from 'react-redux'
+
 import { withAuthenticator } from 'aws-amplify-react-native'
 import { createStackNavigator, createBottomTabNavigator } from 'react-navigation'
 
@@ -32,7 +35,8 @@ import Tabs from './lib/components/Tabs'
 import { MenuProvider } from 'react-native-popup-menu'
 
 const TxPlaceholder = () => (<View />)
-// import { TabBar, SearchBar } from 'antd-mobile-rn';
+
+let store = createStore(combineReducers({users: (state = {}, action) => state}))
 Amplify.configure(awsExports)
 
 class App extends React.Component {
@@ -44,9 +48,11 @@ class App extends React.Component {
   // }
   render () {
     return (
-      <MenuProvider>
-        <StartNavigator />
-      </MenuProvider>
+      <Provider store={store}>
+        <MenuProvider>
+          <StartNavigator />
+        </MenuProvider>
+      </Provider>
     )
   }
 }

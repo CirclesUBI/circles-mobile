@@ -36,6 +36,7 @@
     "react-native-popup-menu": "^0.13.2",
     "react-native-step-indicator": "0.0.9",
     "react-navigation": "^2.5.5",
-    "react-redux": "^5.0.7"
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0"
   }
 }
