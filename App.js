@@ -24,6 +24,7 @@ import addAdmin from './lib/components/AddOrgWallet/AddAdmin'
 import PayAmount from './lib/components/Pay/PayAmount'
 import RequestAmount from './lib/components/Request/RequestAmount'
 
+import OrgAddInventory from './lib/components/OrgWallet/OrgAddInventory'
 import OrgWalletScreen from './lib/components/OrgWallet/OrgWalletScreen'
 import OrgWalletSettings from './lib/components/OrgWallet/OrgWalletSettingsScreen'
 
@@ -147,6 +148,9 @@ const MainNavigator = createStackNavigator({
   },
   'OrgWalletSettings': {
     screen: OrgWalletSettings
+  },
+  OrgInventory: {
+    screen: OrgAddInventory
   },
   'Pay': {
     screen: PayNavigator
