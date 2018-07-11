@@ -1,23 +1,47 @@
 import React from 'react'
-import { StyleSheet, Text, View } from 'react-native'
-
+import { StyleSheet, Text, View, TouchableHighlight } from 'react-native'
 import Amplify from 'aws-amplify'
-import awsExports from './src/aws-exports'
+import awsExports from './aws-exports'
 
 import { withAuthenticator } from 'aws-amplify-react-native'
+import { createStackNavigator, createBottomTabNavigator } from 'react-navigation'
+
+import SplashScreen from './lib/components/SplashScreen'
+import ConnectScreen from './lib/components/ConnectScreen' // Add Container
+import WalletScreen from './lib/components/WalletScreen'
+import TransactionScreen from './lib/components/TransactionScreen'
+// import ConnectContainer from './lib/containers/ConnectContainer'
+import HomeScreen from './lib/components/HomeScreen'
+
+import addOrgWallet from './lib/components/AddOrgWallet/AddWallet'
+
 Amplify.configure(awsExports)
 
 class App extends React.Component {
   render () {
     return (
-      <View style={styles.container}>
-        <Text>Open up App.js to start working on your app!</Text>
-        <Text>Changes you make will automatically reload.</Text>
-        <Text>Shake your phone to open the developer menu.</Text>
+      <StartNavigator />
+    )
+  }
+}
+
+class Search extends React.Component {
+  render () {
+    return (
+      <View>
+        <Text>SEARCH</Text>
       </View>
     )
   }
 }
+
+const TabNavigator = createBottomTabNavigator({
+  Home: HomeScreen,
+  Transact: TransactionScreen,
+  Search: Search
+}, {
+  headerMode: 'none'
+})
 
 const styles = StyleSheet.create({
   container: {
@@ -28,4 +52,38 @@ const styles = StyleSheet.create({
   }
 })
 
-export default withAuthenticator(App)
+const IntroNavigator = createStackNavigator({
+  Intro: {
+    screen: SplashScreen
+  },
+  Connect: {
+    screen: ConnectScreen
+  }}, {
+    headerMode: 'none'
+  })
+
+const MainNavigator = createStackNavigator({
+  Intro: {
+    screen: IntroNavigator
+  },
+  Tabs: {
+    screen: TabNavigator
+  }}, {
+    headerMode: 'none'
+  })
+const StartNavigator = createStackNavigator({
+  Main: {
+    screen: MainNavigator
+  },
+  WalletView: {
+    screen: WalletScreen
+  },
+  'addOrgWallet.AddWallet': {
+    screen: addOrgWallet
+  }}, {
+    mode: 'modal',
+    headerMode: 'none'
+  })
+
+// export default withAuthenticator(App)
+export default App
