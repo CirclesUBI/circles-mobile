@@ -19,18 +19,24 @@
   },
   "devDependencies": {
     "awsmobile-cli": "^1.1.4",
+    "babel-plugin-import": "^1.8.0",
     "jest-expo": "~27.0.0",
     "react-native-scripts": "1.14.0",
     "react-test-renderer": "16.3.1"
   },
   "dependencies": {
+    "@expo/vector-icons": "^6.3.1",
+    "antd-mobile-rn": "^2.2.0",
     "aws-amplify": "^0.4.8",
     "aws-amplify-react-native": "^0.2.19",
     "expo": "^27.0.1",
     "react": "16.3.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-28.0.1.tar.gz",
     "react-native-navigation": "^2.0.2382",
+    "react-native-popup-menu": "^0.13.2",
+    "react-native-step-indicator": "0.0.9",
     "react-navigation": "^2.5.5",
-    "react-redux": "^5.0.7"
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0"
   }
 }
