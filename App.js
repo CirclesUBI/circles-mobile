@@ -1,6 +1,6 @@
 import React from 'react'
 import { Text, View, TouchableOpacity } from 'react-native'
-// import Expo from 'expo'
+import { Font } from 'expo'
 import Amplify from 'aws-amplify'
 import awsExports from './aws-exports'
 
@@ -40,12 +40,11 @@ let store = createStore(combineReducers({users: (state = {}, action) => state}))
 Amplify.configure(awsExports)
 
 class App extends React.Component {
-  // async componentWillMount () {
-  //   await Expo.Font.loadAsync({
-  //     'Roboto': require('native-base/Fonts/Roboto.ttf'),
-  //     'Roboto_medium': require('native-base/Fonts/Roboto_medium.ttf')
-  //   })
-  // }
+  async componentWillMount () {
+    await Font.loadAsync({
+      'ostrich-sans-heavy': require('./assets/fonts/OstrichSans-Heavy.otf')
+    })
+  }
   render () {
     return (
       <Provider store={store}>
