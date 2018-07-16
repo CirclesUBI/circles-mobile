@@ -42,7 +42,9 @@ Amplify.configure(awsExports)
 class App extends React.Component {
   async componentWillMount () {
     await Font.loadAsync({
-      'ostrich-sans-heavy': require('./assets/fonts/OstrichSans-Heavy.otf')
+      'ostrich-sans-heavy': require('./assets/fonts/OstrichSans-Heavy.otf'),
+      'now-alt-regular': require('./assets/fonts/NowAlt-Regular.otf'),
+      'now-alt-medium': require('./assets/fonts/NowAlt-Medium.otf')
     })
   }
   render () {
