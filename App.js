@@ -44,7 +44,8 @@ class App extends React.Component {
     await Font.loadAsync({
       'ostrich-sans-heavy': require('./assets/fonts/OstrichSans-Heavy.otf'),
       'now-alt-regular': require('./assets/fonts/NowAlt-Regular.otf'),
-      'now-alt-medium': require('./assets/fonts/NowAlt-Medium.otf')
+      'now-alt-medium': require('./assets/fonts/NowAlt-Medium.otf'),
+      'now-alt-bold': require('./assets/fonts/NowAlt-Bold.otf')
     })
   }
   render () {
