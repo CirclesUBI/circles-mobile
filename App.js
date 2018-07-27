@@ -1,5 +1,5 @@
 import React from 'react'
-import { Text, View, TouchableOpacity } from 'react-native'
+import { Text, View } from 'react-native'
 import { Font } from 'expo'
 import Amplify from 'aws-amplify'
 import awsExports from './aws-exports'
