@@ -1,8 +1,8 @@
 import React from 'react'
 import { Text, View } from 'react-native'
-import { Font } from 'expo'
+import { Font, AppLoading } from 'expo'
 import Amplify from 'aws-amplify'
-import awsExports from './aws-exports'
+import awsExports from 'circles-mobile/aws-exports'
 
 import { createStore, combineReducers } from 'redux'
 import { Provider } from 'react-redux'
@@ -10,28 +10,32 @@ import { Provider } from 'react-redux'
 import { withAuthenticator } from 'aws-amplify-react-native'
 import { createStackNavigator, createBottomTabNavigator } from 'react-navigation'
 
-import SplashScreen from './lib/components/SplashScreen'
-import ConnectScreen from './lib/components/ConnectScreen' // Add Container
-import WalletScreen from './lib/components/WalletScreen'
-// import TransactionScreen from './lib/components/TransactionScreen'
-// import ConnectContainer from './lib/containers/ConnectContainer'
+import SplashScreen from 'circles-mobile/lib/components/SplashScreen'
+import ConnectScreen from 'circles-mobile/lib/components/ConnectScreen' // Add Container
+import WalletScreen from 'circles-mobile/lib/components/WalletScreen'
+// import TransactionScreen from 'circles-mobile/lib/components/TransactionScreen'
+// import ConnectContainer from 'circles-mobile/lib/containers/ConnectContainer'
 
-import HomeScreen from './lib/components/HomeScreen'
-import ValidatePhone from './lib/components/Validate/ValidatePhone'
-import ValidateSuccess from './lib/components/Validate/ValidateSuccess'
+import HomeScreen from 'circles-mobile/lib/components/HomeScreen'
+import ValidatePhone from 'circles-mobile/lib/components/Validate/ValidatePhone'
+import ValidateSuccess from 'circles-mobile/lib/components/Validate/ValidateSuccess'
 
-import addWallet from './lib/components/AddOrgWallet/AddWallet'
-import addOffer from './lib/components/AddOrgWallet/AddOffer'
-import addAdmin from './lib/components/AddOrgWallet/AddAdmin'
+import addWallet from 'circles-mobile/lib/components/AddOrgWallet/AddWallet'
+import addOffer from 'circles-mobile/lib/components/AddOrgWallet/AddOffer'
+import addAdmin from 'circles-mobile/lib/components/AddOrgWallet/AddAdmin'
 
-import PayAmount from './lib/components/Pay/PayAmount'
-import RequestAmount from './lib/components/Request/RequestAmount'
+import PayAmount from 'circles-mobile/lib/components/Pay/PayAmount'
+import RequestAmount from 'circles-mobile/lib/components/Request/RequestAmount'
+import RequestQR from 'circles-mobile/lib/components/Request/RequestQR'
+import RequestConfirm from 'circles-mobile/lib/components/Request/RequestConfirm'
 
-import OrgAddInventory from './lib/components/OrgWallet/OrgAddInventory'
-import OrgWalletScreen from './lib/components/OrgWallet/OrgWalletScreen'
-import OrgWalletSettings from './lib/components/OrgWallet/OrgWalletSettingsScreen'
+import OrgAddInventory from 'circles-mobile/lib/components/OrgWallet/OrgAddInventory'
+import OrgWalletScreen from 'circles-mobile/lib/components/OrgWallet/OrgWalletScreen'
+import OrgWalletSettings from 'circles-mobile/lib/components/OrgWallet/OrgWalletSettingsScreen'
 
-import Tabs from './lib/components/Tabs'
+import Contacts from 'circles-mobile/lib/components/Contacts'
+
+import Tabs from 'circles-mobile/lib/components/Tabs'
 import { MenuProvider } from 'react-native-popup-menu'
 
 const TxPlaceholder = () => (<View />)
@@ -40,22 +44,29 @@ let store = createStore(combineReducers({users: (state = {}, action) => state}))
 Amplify.configure(awsExports)
 
 class App extends React.Component {
+  constructor () {
+    super()
+    this.state = {
+      loading: true
+    }
+  }
   async componentWillMount () {
     await Font.loadAsync({
-      'ostrich-sans-heavy': require('./assets/fonts/OstrichSans-Heavy.otf'),
-      'now-alt-regular': require('./assets/fonts/NowAlt-Regular.otf'),
-      'now-alt-medium': require('./assets/fonts/NowAlt-Medium.otf'),
-      'now-alt-bold': require('./assets/fonts/NowAlt-Bold.otf')
+      'ostrich-sans-heavy': require('circles-mobile/assets/fonts/OstrichSans-Heavy.otf'),
+      'now-alt-regular': require('circles-mobile/assets/fonts/NowAlt-Regular.otf'),
+      'now-alt-medium': require('circles-mobile/assets/fonts/NowAlt-Medium.otf'),
+      'now-alt-bold': require('circles-mobile/assets/fonts/NowAlt-Bold.otf')
     })
+    this.setState({loading: false})
   }
   render () {
-    return (
-      <Provider store={store}>
-        <MenuProvider>
-          <StartNavigator />
-        </MenuProvider>
-      </Provider>
-    )
+      // <Provider store={store}>
+    return this.state.loading
+          ? <AppLoading />
+          : (<MenuProvider>
+            <StartNavigator />
+          </MenuProvider>)
+      // </Provider>
   }
 }
 
@@ -131,10 +142,18 @@ const OrgWalletNavigator = createStackNavigator({
 const RequestNavigator = createStackNavigator({
   'RequestAmount': {
     screen: RequestAmount
-  }
-}, {
-  headerMode: 'none'
-})
+  },
+  'RequestQR': {
+    screen: RequestQR
+  },
+  'RequestContacts': {
+    screen: Contacts
+  },
+  'RequestConfirm': {
+    screen: RequestConfirm
+  }}, {
+    headerMode: 'none'
+  })
 
 const PayNavigator = createStackNavigator({
   'PayAmount': {
@@ -165,6 +184,9 @@ const MainNavigator = createStackNavigator({
   },
   'Request': {
     screen: RequestNavigator
+  },
+  'Contacts': {
+    screen: Contacts
   }}, {
     headerMode: 'none'
   })
