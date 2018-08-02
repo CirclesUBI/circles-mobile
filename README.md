@@ -13,6 +13,11 @@ Built with [create-react-native-app](https://github.com/react-community/create-r
 ### Installation
 
 - `npm install`
+
+- Only Run This If You Need To Connect to AWS
 - `npm run configure` -> you will need to enter your aws credentials
 - `npm run init`
 - `npm run pull`
+
+- Run This to Start The Application
+- `npm run ios`
