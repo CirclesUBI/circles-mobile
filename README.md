@@ -10,6 +10,12 @@ Circles is a blockchain-based Universal Basic Income implementation. Find out mo
 
 Built with [create-react-native-app](https://github.com/react-community/create-react-native-app) and [AWS Amplify](https://aws.github.io/aws-amplify/) and [TravisCI](https://travis-ci.org/) for building and deploying to [expo](https://expo.io/)
 
+### Environment
+
+We use the `.nvmrc` file to manage the version of node. You can use
+[avn](https://github.com/wbyoung/avn) to automatically switch to the appropriate
+node version.
+
 ### Installation
 
 - `npm install`
