@@ -3,11 +3,13 @@ import { Text, View } from 'react-native'
 import { Font, AppLoading } from 'expo'
 import Amplify from 'aws-amplify'
 import awsExports from 'circles-mobile/aws-exports'
+import { withAuthenticator } from 'aws-amplify-react-native'
 
+Amplify.configure(awsExports)
 import { createStore, combineReducers } from 'redux'
 import { Provider } from 'react-redux'
 
-import { withAuthenticator } from 'aws-amplify-react-native'
+
 import { createStackNavigator, createBottomTabNavigator } from 'react-navigation'
 
 import SplashScreen from 'circles-mobile/lib/components/SplashScreen'
@@ -41,7 +43,6 @@ import { MenuProvider } from 'react-native-popup-menu'
 const TxPlaceholder = () => (<View />)
 
 let store = createStore(combineReducers({users: (state = {}, action) => state}))
-Amplify.configure(awsExports)
 
 class App extends React.Component {
   constructor () {
