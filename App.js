@@ -1,14 +1,11 @@
 import React from 'react'
 import { Text, View } from 'react-native'
 import { Font, AppLoading } from 'expo'
-import Amplify from 'aws-amplify'
-import awsExports from 'circles-mobile/aws-exports'
-import { withAuthenticator } from 'aws-amplify-react-native'
-
-Amplify.configure(awsExports)
-import { createStore, combineReducers } from 'redux'
+// import Amplify from 'aws-amplify'
+// import awsExports from 'circles-mobile/aws-exports'
+// import { withAuthenticator } from 'aws-amplify-react-native'
+// Amplify.configure(awsExports)
 import { Provider } from 'react-redux'
-
 
 import { createStackNavigator, createBottomTabNavigator } from 'react-navigation'
 
@@ -40,10 +37,7 @@ import Contacts from 'circles-mobile/lib/components/Contacts'
 
 import Tabs from 'circles-mobile/lib/components/Tabs'
 import { MenuProvider } from 'react-native-popup-menu'
-
-const TxPlaceholder = () => (<View />)
-
-let store = createStore(combineReducers({users: (state = {}, action) => state}))
+import store from 'circles-mobile/lib/store'
 
 class App extends React.Component {
   constructor () {
@@ -65,10 +59,11 @@ class App extends React.Component {
       // <Provider store={store}>
     return this.state.loading
           ? <AppLoading />
-          : (<MenuProvider>
-            <StartNavigator />
-          </MenuProvider>)
-      // </Provider>
+          : (<Provider store={store}>
+            <MenuProvider>
+              <StartNavigator />
+            </MenuProvider>
+          </Provider>)
   }
 }
 
@@ -94,7 +89,7 @@ const ValidateNavigator = createStackNavigator({
 })
 
 const HomeNavigator = createStackNavigator({
-  Home: {
+  HomeScreen: {
     screen: HomeScreen
   },
   WalletView: {
@@ -131,8 +126,7 @@ const IntroNavigator = createStackNavigator({
 
 const TabNavigator = createBottomTabNavigator({
   Home: HomeNavigator,
-  OrgHome: OrgHomeNavigator,
-  Transact: TxPlaceholder,
+  OrgHomeView: OrgHomeNavigator,
   Search: Search
 }, {
   headerMode: 'none',
