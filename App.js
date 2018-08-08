@@ -35,6 +35,7 @@ import OrgAddInventory from 'circles-mobile/lib/components/OrgWallet/OrgAddInven
 import OrgWalletScreen from 'circles-mobile/lib/components/OrgWallet/OrgWalletScreen'
 import OrgWalletSettings from 'circles-mobile/lib/components/OrgWallet/OrgWalletSettingsScreen'
 
+import OrgHomeScreen from 'circles-mobile/lib/components/OrgHomeScreen'
 import Contacts from 'circles-mobile/lib/components/Contacts'
 
 import Tabs from 'circles-mobile/lib/components/Tabs'
@@ -108,6 +109,16 @@ const HomeNavigator = createStackNavigator({
     headerMode: 'none'
   })
 
+const OrgHomeNavigator = createStackNavigator({
+  OrgHome: {
+    screen: OrgHomeScreen
+  },
+  OrgWalletView: {
+    screen: OrgWalletScreen
+  }}, {
+    headerMode: 'none'
+  })
+
 const IntroNavigator = createStackNavigator({
   Splash: {
     screen: SplashScreen
@@ -120,6 +131,7 @@ const IntroNavigator = createStackNavigator({
 
 const TabNavigator = createBottomTabNavigator({
   Home: HomeNavigator,
+  OrgHome: OrgHomeNavigator,
   Transact: TxPlaceholder,
   Search: Search
 }, {
