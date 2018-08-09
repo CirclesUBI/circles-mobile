@@ -35,6 +35,8 @@ import OrgWalletSettings from 'circles-mobile/lib/components/OrgWallet/OrgWallet
 import OrgHomeScreen from 'circles-mobile/lib/components/OrgHomeScreen'
 import Contacts from 'circles-mobile/lib/components/Contacts'
 
+import SearchScreen from 'circles-mobile/lib/containers/SearchContainer'
+
 import Tabs from 'circles-mobile/lib/components/Tabs'
 import { MenuProvider } from 'react-native-popup-menu'
 import store from 'circles-mobile/lib/store'
@@ -67,15 +69,6 @@ class App extends React.Component {
   }
 }
 
-class Search extends React.Component {
-  render () {
-    return (
-      <View>
-        <Text>SEARCH</Text>
-      </View>
-    )
-  }
-}
 
 const ValidateNavigator = createStackNavigator({
   ValidatePhone: {
@@ -127,7 +120,7 @@ const IntroNavigator = createStackNavigator({
 const TabNavigator = createBottomTabNavigator({
   Home: HomeNavigator,
   OrgHomeView: OrgHomeNavigator,
-  Search: Search
+  Search: SearchScreen
 }, {
   headerMode: 'none',
   tabBarComponent: Tabs
