@@ -196,6 +196,9 @@ const MainNavigator = createStackNavigator({
 const StartNavigator = createStackNavigator({
   Main: {
     screen: MainNavigator
+  },
+  'Scanner': {
+    screen: Scanner
   }}, {
     mode: 'modal',
     headerMode: 'none'
