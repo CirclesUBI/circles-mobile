@@ -14,7 +14,7 @@ import WalletScreen from 'circles-mobile/lib/components/WalletScreen'
 // import TransactionScreen from 'circles-mobile/lib/components/TransactionScreen'
 // import ConnectContainer from 'circles-mobile/lib/containers/ConnectContainer'
 
-import HomeScreen from 'circles-mobile/lib/components/HomeScreen'
+import HomeDrawerNavigator from 'circles-mobile/lib/navigators/HomeNavigator'
 import ValidatePhone from 'circles-mobile/lib/components/Validate/ValidatePhone'
 import ValidateSuccess from 'circles-mobile/lib/components/Validate/ValidateSuccess'
 
@@ -84,7 +84,7 @@ const ValidateNavigator = createStackNavigator({
 
 const HomeNavigator = createStackNavigator({
   HomeScreen: {
-    screen: HomeScreen
+    screen: HomeDrawerNavigator
   },
   WalletView: {
     screen: WalletScreen
