@@ -23,6 +23,8 @@ import addOffer from 'circles-mobile/lib/components/AddOrgWallet/AddOffer'
 import addAdmin from 'circles-mobile/lib/components/AddOrgWallet/AddAdmin'
 
 import PayAmount from 'circles-mobile/lib/components/Pay/PayAmount'
+import PayConfirm from 'circles-mobile/lib/components/Pay/PayConfirm'
+
 import RequestAmount from 'circles-mobile/lib/components/Request/RequestAmount'
 import RequestQR from 'circles-mobile/lib/components/Request/RequestQR'
 import RequestConfirm from 'circles-mobile/lib/components/Request/RequestConfirm'
@@ -157,10 +159,15 @@ const RequestNavigator = createStackNavigator({
 const PayNavigator = createStackNavigator({
   'PayAmount': {
     screen: PayAmount
-  }
-}, {
-  headerMode: 'none'
-})
+  },
+  'PayContacts': {
+    screen: Contacts
+  },
+  'PayConfirm': {
+    screen: PayConfirm
+  }}, {
+    headerMode: 'none'
+  })
 
 const MainNavigator = createStackNavigator({
   Intro: {
