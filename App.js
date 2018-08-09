@@ -1,5 +1,4 @@
 import React from 'react'
-import { Text, View } from 'react-native'
 import { Font, AppLoading } from 'expo'
 // import Amplify from 'aws-amplify'
 // import awsExports from 'circles-mobile/aws-exports'
@@ -68,7 +67,6 @@ class App extends React.Component {
           </Provider>)
   }
 }
-
 
 const ValidateNavigator = createStackNavigator({
   ValidatePhone: {
