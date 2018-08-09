@@ -35,6 +35,7 @@ import OrgHomeScreen from 'circles-mobile/lib/components/OrgHomeScreen'
 import Contacts from 'circles-mobile/lib/components/Contacts'
 
 import SearchScreen from 'circles-mobile/lib/containers/SearchContainer'
+import Scanner from 'circles-mobile/lib/components/Scanner/Scanner'
 
 import Tabs from 'circles-mobile/lib/components/Tabs'
 import { MenuProvider } from 'react-native-popup-menu'
@@ -185,6 +186,9 @@ const MainNavigator = createStackNavigator({
   },
   'Contacts': {
     screen: Contacts
+  },
+  'Scanner': {
+    screen: Scanner
   }}, {
     headerMode: 'none'
   })
