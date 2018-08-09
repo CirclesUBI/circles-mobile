@@ -33,7 +33,7 @@ import OrgAddInventory from 'circles-mobile/lib/components/OrgWallet/OrgAddInven
 import OrgWalletScreen from 'circles-mobile/lib/components/OrgWallet/OrgWalletScreen'
 import OrgWalletSettings from 'circles-mobile/lib/components/OrgWallet/OrgWalletSettingsScreen'
 
-import OrgHomeScreen from 'circles-mobile/lib/components/OrgHomeScreen'
+import OrgHomeDrawerNavigator from 'circles-mobile/lib/navigators/OrgHomeNavigator'
 import Contacts from 'circles-mobile/lib/components/Contacts'
 
 import SearchScreen from 'circles-mobile/lib/containers/SearchContainer'
@@ -100,7 +100,7 @@ const HomeNavigator = createStackNavigator({
 
 const OrgHomeNavigator = createStackNavigator({
   OrgHome: {
-    screen: OrgHomeScreen
+    screen: OrgHomeDrawerNavigator
   },
   OrgWalletView: {
     screen: OrgWalletScreen
