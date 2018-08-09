@@ -2,11 +2,8 @@
   "name": "circles-mobile",
   "version": "0.1.0",
   "private": true,
-  "main": "./node_modules/react-native-scripts/build/bin/crna-entry.js",
+  "main": "node_modules/expo/AppEntry.js",
   "scripts": {
-    "start": "react-native-scripts start",
-    "eject": "react-native-scripts eject",
-    "android": "react-native-scripts android",
     "aws-init-ci": "expect ./scripts/awsconfigure.exp > /dev/null && expect ./scripts/awsinit.exp && expect ./scripts/awspull.exp",
     "pull": "awsmobile pull",
     "init": "awsmobile init 770910f7-fd56-4dde-8c4a-a2eb555047c7",
@@ -22,7 +19,6 @@
     "awsmobile-cli": "^1.1.4",
     "babel-plugin-import": "^1.8.0",
     "jest-expo": "~27.0.0",
-    "react-native-scripts": "1.14.0",
     "react-test-renderer": "16.3.1"
   },
   "dependencies": {
@@ -32,8 +28,11 @@
     "aws-amplify-react-native": "^1.0.6",
     "expo": "^27.0.1",
     "lodash": "^4.17.10",
+    "ethjs-query": "^0.3.8",
+    "qs": "^6.5.2",
+    "random-string": "^0.2.0",
     "react": "16.3.1",
-    "react-native": "https://github.com/expo/react-native/archive/sdk-28.0.1.tar.gz",
+    "react-native": "https://github.com/expo/react-native/archive/sdk-27.0.0.tar.gz",
     "react-native-camera": "^1.1.4",
     "react-native-check-box": "^2.1.0",
     "react-native-contacts": "^2.2.2",
@@ -41,10 +40,14 @@
     "react-native-popup-menu": "^0.13.2",
     "react-native-snap-carousel": "^3.7.2",
     "react-native-step-indicator": "0.0.9",
+    "react-native-uport-connect": "^0.1.2",
     "react-native-vector-icons": "^5.0.0",
     "react-navigation": "^2.11.2",
     "react-redux": "^5.0.7",
     "redux": "^4.0.0",
-    "redux-saga": "^0.16.0"
+    "redux-saga": "^0.16.0",
+    "uport-connect": "^0.7.5",
+    "url-parse": "^1.4.3",
+    "web3": "^1.0.0-beta.35"
   }
 }
