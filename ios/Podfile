@@ -6,7 +6,7 @@ EXPO_CPP_HEADER_DIR = 'ExpoKit'
 target 'circles-mobile' do
   pod 'ExpoKit',
     :git => "http://github.com/expo/expo.git",
-    :tag => "ios/2.5.10",
+    :tag => "ios/2.6.5",
     :subspecs => [
       "Core",
       "CPP",
@@ -24,11 +24,12 @@ target 'circles-mobile' do
       "RCTGeolocation",
       "RCTImage",
       "RCTNetwork",
+      "RCTLinkingIOS",
       "RCTText",
       "RCTVibration",
       "RCTWebSocket",
       "DevSupport",
-      "CxxBridge"
+      "CxxBridge",
     ]
   pod 'yoga',
     :path => "../node_modules/react-native/ReactCommon/yoga"
@@ -53,7 +54,7 @@ target 'circles-mobile' do
       target.native_target.build_configurations.each do |config|
         config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] ||= ['$(inherited)']
         config.build_settings['GCC_PREPROCESSOR_DEFINITIONS'] << 'EX_DETACHED=1'
-        
+
         # needed for GoogleMaps 2.x
         config.build_settings['FRAMEWORK_SEARCH_PATHS'] ||= []
         config.build_settings['FRAMEWORK_SEARCH_PATHS'] << '${PODS_ROOT}/GoogleMaps/Base/Frameworks'

@@ -19,16 +19,21 @@
 	<key>CFBundleShortVersionString</key>
 	<string>0.1.0</string>
 	<key>CFBundleURLTypes</key>
-  <array>
-    <dict>
-      <key>CFBundleTypeRole</key>
-      <string>Editor</string>
-      <key>CFBundleURLSchemes</key>
-      <array>
-        <string>2odDf3tfWkap1kPqAHYm7ow2B1m2SisVK5M</string>
+	<array>
+		<dict>
+			<key>CFBundleTypeRole</key>
+			<string>Editor</string>
+			<key>CFBundleURLSchemes</key>
+			<array>
+				<string>2odDf3tfWkap1kPqAHYm7ow2B1m2SisVK5M</string>
+			</array>
+		</dict>
+		<dict>
+			<key>CFBundleURLSchemes</key>
+			<array>
 				<string>expa0930c04628c4dc08a5667d48f4ae73a</string>
-      </array>
-    </dict>
+			</array>
+		</dict>
 		<dict>
 			<key>CFBundleURLName</key>
 			<string>OAuthRedirect</string>
@@ -37,7 +42,7 @@
 				<string>com.circles.mobile</string>
 			</array>
 		</dict>
-  </array>
+	</array>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 	<key>Fabric</key>
