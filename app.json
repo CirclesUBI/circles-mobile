@@ -4,10 +4,21 @@
     "ios": {
       "bundleIdentifier": "com.circles.mobile",
       "publishBundlePath": "ios/circles-mobile/Supporting/shell-app.bundle",
-      "publishManifestPath": "ios/circles-mobile/Supporting/shell-app-manifest.json"
+      "publishManifestPath": "ios/circles-mobile/Supporting/shell-app-manifest.json",
+      "config": {
+        "googleSignIn": {
+          "reservedClientId": "com.googleusercontent.apps.965483631176-jbub70ofps7nambgd8dtdlvqu15sg4d3"
+        }
+      }
     },
     "android": {
-      "package": "com.circles.mobile"
+      "package": "com.circles.mobile",
+      "config": {
+        "googleSignIn": {
+          "apiKey": "AIzaSyC-SLcpcDLX-tC5-ZTp7Da6tQ4bILDUeVk",
+          "certificateHash": "46:60:00:4E:D3:76:51:C9:3B:E5:8D:9A:DA:D3:B9:1B:53:DB:86:F3"
+        }
+      }
     },
     "name": "circles-mobile",
     "slug": "circles-mobile",

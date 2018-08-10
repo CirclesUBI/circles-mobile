@@ -1,0 +1,22 @@
+[
+    {
+        "merged": "/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/res/merged/dev19/debug/xml/preferences.xml",
+        "source": "/Users/shokishoki/.android/build-cache/e26d75c68d68f3c4709bbc133c0fbff72cd3414f/output/res/xml/preferences.xml"
+    },
+    {
+        "merged": "/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/res/merged/dev19/debug/xml/stub_material.xml",
+        "source": "/Users/shokishoki/.android/build-cache/498ff88b9282d096142759c757e90986fe8e17a2/output/res/xml/stub_material.xml"
+    },
+    {
+        "merged": "/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/res/merged/dev19/debug/xml/provider_paths.xml",
+        "source": "/Users/shokishoki/.android/build-cache/498ff88b9282d096142759c757e90986fe8e17a2/output/res/xml/provider_paths.xml"
+    },
+    {
+        "merged": "/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/res/merged/dev19/debug/xml/stub_classic.xml",
+        "source": "/Users/shokishoki/.android/build-cache/498ff88b9282d096142759c757e90986fe8e17a2/output/res/xml/stub_classic.xml"
+    },
+    {
+        "merged": "/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/res/merged/dev19/debug/xml/global_tracker.xml",
+        "source": "/Users/shokishoki/development/circles-mobile/android/app/build/generated/res/google-services/dev19/debug/xml/global_tracker.xml"
+    }
+]

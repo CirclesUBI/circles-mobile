@@ -1,0 +1,1112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/b2575e7df8cb3ebef43864414dfd9bebc3e63e37/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="9ff04cc3470178a44512624036751a803418c2ca">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_fa4465e9921492cf7b75ec39b9ea0acc7a167840/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/8190b048211f3594a7349d17985140255ae9d1df/output/jars/libs/infer-annotations-4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="82231c00c16c59ee23a508bec9fc6bc3e60c96b2">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/infer-annotations-4.0_2441c1acb68a61713d84bfdd76704c00e09f9db3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.gradle/caches/modules-2/files-2.1/de.greenrobot/eventbus/2.4.0/ddd166d01b3158d1c00576d29f7ed15c030df719/eventbus-2.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="ddd166d01b3158d1c00576d29f7ed15c030df719">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/eventbus-2.4.0_41e6483c2c0aaaa3fb16e7b3eae42088bbe8728b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/3376751a994db47a2f59f8409825d780fc9c0b57/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="cac4539de2fbfcb1c4c44c55166f0332b92d34b7">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_3fab587ae94fb7fa806fb28a77e26705830dcf88/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/0ed8a4cf7cce01f55467b8886fa7e08afe537ecb/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d095503f29a8dedc55b9326ed97a5902a1527ab9">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_40769283124c5d9c3cc9ea151c1cad4e42c1af05/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.gradle/caches/modules-2/files-2.1/com.segment.analytics.android/analytics/4.3.0/88ab91d4641af4bed4b39aa3fd7cf487b66b9d5e/analytics-4.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="88ab91d4641af4bed4b39aa3fd7cf487b66b9d5e">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/analytics-4.3.0_b0d111ec74c9d4e6e27d690b184c8b6423c01988/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/f6fa15ac258272595af117cf452c9a1b5374b046/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="50e35ae101a679c4c8ef3dda075b1df9d5d947d9">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_1e7deba0168ccfe317ff6662b2932121721eb7e7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.gradle/caches/modules-2/files-2.1/com.squareup.picasso/picasso/2.5.2/7446d06ec8d4f7ffcc53f1da37c95f200dcb9387/picasso-2.5.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="7446d06ec8d4f7ffcc53f1da37c95f200dcb9387">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/picasso-2.5.2_09a022f531559d0db9a5a0b4b15ec78da62809ec/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/c7fcf8a7021184955e9388756ca62903b4a3a932/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="13469de5eef4b3c0488c0e4963fef197fc745f8a">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_57b79df289741ef422759b0b3f5782ef44fe3a74/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/44a1dcb6de172f4770fda9c88aa7ff111226a16a/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="363a20f1d25336e827dd24020f2ecdc42d62638f">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_c64769ebe9acda795942c23aa3147011f9f535fa/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/e26d75c68d68f3c4709bbc133c0fbff72cd3414f/output/jars/libs/infer-annotations-4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="9809e90be788acdb479b2b44e2112f3295a03068">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/infer-annotations-4.0_5ea331b7b2ccb58a04dbf5a12ec2f7cb700819de/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/027863f5580acf5aaeb0fe8270c82bf5cc6c2b6c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c61641e333fa88da21758bab8cc28ee16604b05f">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_6f192449cbb79984d1a176d01454d961ee3cc06c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.gradle/caches/modules-2/files-2.1/com.android.support/support-annotations/26.0.1/e1bb32b12b25e2f78e6786059ca7ea878f8345e0/support-annotations-26.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e1bb32b12b25e2f78e6786059ca7ea878f8345e0">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/support-annotations-26.0.1_169ef030ceaffc59308d6c566d9deb7445dc6a3e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/3fa9e80eefc8e418d0e351573f79f2a8239f25e9/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="ad5bb101ced4d3939225c9b57e5a3d81547c1fbb">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_bc6355719d3f0f0eecd7610c1917138066c580a5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.gradle/caches/modules-2/files-2.1/com.facebook.stetho/stetho/1.3.1/2c4076b466a0eb4d6ddf5721edd35cd1adc1f317/stetho-1.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="2c4076b466a0eb4d6ddf5721edd35cd1adc1f317">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/stetho-1.3.1_00ad504db88299d009b1974b89d2f2255ea7f90f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/b5db77ce8e601794052237c302c912922a8ae297/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a30aea7df545072ad3c06f56b2efc13e67222140">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_60fc01b51c299925ec1fbebe30cae7b04641e246/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.gradle/caches/modules-2/files-2.1/com.nostra13.universalimageloader/universal-image-loader/1.9.5/442dbfb517b9ab5cb5c6da7ebf8cc28ec5bd0375/universal-image-loader-1.9.5.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="442dbfb517b9ab5cb5c6da7ebf8cc28ec5bd0375">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/universal-image-loader-1.9.5_5c663b42be9b3c984688be022bcc34c5de3038ff/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/dbb69c9569fe5fdb9d7e413f2fde4d696ffa6bcf/output/jars/libs/infer-annotations-4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="f9558f8bf566536221101e576b5c398787cfcbc3">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/infer-annotations-4.0_fca1039ec367dd3c6dd9f45f36153843ad5d45ea/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/3b9b28be34b9d3c2a8a276c94fc3c76d8daec0fb/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="9af3b9b8114e685291aa00e6572b0a9131244956">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_b486b3850374abd9a4f2683549699d178c20725c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/e26d75c68d68f3c4709bbc133c0fbff72cd3414f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="00bffcece869fcc14f8c3fe523a11c6c53356b44">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_f7688879ce71900d32d0867527008234bbef70a8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.gradle/caches/modules-2/files-2.1/commons-codec/commons-codec/1.10/4b95f4897fa13f2cd904aee711aeafc0c5295cd8/commons-codec-1.10.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="4b95f4897fa13f2cd904aee711aeafc0c5295cd8">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/commons-codec-1.10_2f4982645f899c60148eb58a2cc92a686b346ef8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/319fdd00385a276e8fa9900cf3029d2450e188c3/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="5b65ec1ebc84af3baecfd28954c9e7ff01b937a8">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_866ee793adb409e6556a37d14d64fda12372a55f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/c31a0b2fb89072752627f0be9ed27e6966c6e111/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e7424f816f538c2acfba6169b25e297ea22afbd8">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_819243869f6d5174811d8ca81ec5ed895fb57f4d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/9c458cac3bd52019bbe8a0365e9f9ef44cc01a8e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d9c4402c3057225d80cbbbec52154e7a25b0ebdf">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_ef067c407ef1f9c8941c5d9fc4dadb3284fff441/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.gradle/caches/modules-2/files-2.1/commons-io/commons-io/1.3.2/b6dde38349ba9bb5e6ea6320531eae969985dae5/commons-io-1.3.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="b6dde38349ba9bb5e6ea6320531eae969985dae5">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/commons-io-1.3.2_3999a31fc078ab543f21cfd7d515f919ffebd2a7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/5e984a08ab1ce7b9dfd9e1f1ded856a0755b0f9e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="42a37372fca7123a593202ba76a7f98fbd691f05">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_7c9b7976f68f52730fb36944edf094dc27846bee/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/development/circles-mobile/android/maven/expolib_v1/com/squareup/okhttp3/okhttp/3.6.0/okhttp-3.6.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="565de69ddf97fffe074cba6cb0512520cdce4394">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/okhttp-3.6.0_5555b922f7e1335c74fd79191d4148fce7b575b2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.gradle/caches/modules-2/files-2.1/com.facebook.device.yearclass/yearclass/1.0.1/adfc67ed7e13d1648f20c2a5d6cb757ce43d9c22/yearclass-1.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="adfc67ed7e13d1648f20c2a5d6cb757ce43d9c22">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/yearclass-1.0.1_d32e9ccbd0c4a3eb33e4638a2a8aa9d69dd8b621/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.gradle/caches/modules-2/files-2.1/com.madgag.spongycastle/prov/1.53.0.0/72c4892e05c7563fbab0c4ada0187cd879113389/prov-1.53.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="72c4892e05c7563fbab0c4ada0187cd879113389">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/prov-1.53.0.0_e949f6312e37e78641f5f1d7d1289bbdf9327731/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/bb5a77094afd2c5ac3d73e233f91b9bb84223eda/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c9ef45dcbd082cd63aac09a5e2cd443adb5df837">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_fa9c5f68ed1a84cccbade0e7f835cda9e7f6d30a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/68582dddd4cad17dbc77cb2931c620ec6de3b42f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="6a2f9209ff0d33539df6866d019181ecd1ecd047">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_26465667cdecded8c01149bc1652c649a846a2bf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/7f377c5a8d86a33de54c12f457c09d0855e6040f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="9f6d236bac26d02b410e4ee186ba517ace5ee661">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_6d8a064b6268ff4e805418dbf4a23edab68116c2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/60feeb7f7725cdab06e5b1f3cd1278dd961c75b0/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="cef85cfc7df40e29fbea58844dd4c1e7d0b15542">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_7b9d7802d7929a2669630ebe542c222963e03a0e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/bafca77f2d3a3cc1b3106ed0c564c6c7b7347601/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="f2d240dd085626f03f759c41d628a0c8b63e491f">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_f9de063c664cc92488293839f4dd1b85c0fb7e24/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/4ff4cf77116bcf30e1ac80a8254548fa596f2ed6/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e41a052c714bf67f743c22ed74153422ad773f88">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_aa4b5a7761267d426045e589a12d989d62079620/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/6bbe4ef94dbba64814a0574ae641860c3957e4cd/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="2f1cc63c85dfeb86263311713a0810d23112495e">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_a241624fd61e8e10ac2a8aa7c77fe98166026554/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/867fa258b11b8f47114f47f2b520c200e5b7f2bc/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="122ec9237acd8a57d974b9d529987f1ee6ca5aea">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_2fc7ddf3c65ab091f392d7af8afdaaaa8ae98f05/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/7567621c97033b7d41b5ff8e794a9d94e2d0d76e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="b8b26b28aae0ba8e2db55ad9fe0ebc770530c5ef">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_3d3b403004d9f880a7ccd9024f36618e2efd667f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/eb171722f47d15c1b93ed3bf1d92ccf53bea6db5/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="ba9b39366b723ccff6359d1117332968e98a4aca">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_ba74f15633983ee484128fda5fbce39bb57001fc/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.gradle/caches/modules-2/files-2.1/commons-cli/commons-cli/1.2/2bf96b7aa8b611c177d329452af1dc933e14501c/commons-cli-1.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="2bf96b7aa8b611c177d329452af1dc933e14501c">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/commons-cli-1.2_ba35a195104bc4f2d8ad3309550818c9986f0318/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/30a34bd31dfed7325027e6b0e66f4aeb8b558c46/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="131115ec18ae3951c1584c543de8baa9ac20012a">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_331ee2f3c925ef8e65b63879ae5baee2b12d5280/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/ed1d9b68325f6244b20cb17c3456a69d54d397c2/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="dff4d8f88fe2c0e57306e6981fd9b90caeead7e3">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_1dad10d3e302b39cce2acc9e36ab3c03539c2b31/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/incremental-classes/dev19/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="bdcff75e72a02a2ba58d08e748a1a71566306267">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10000/instant-run-bootstrap_63ebb655be16360874c4fcbc213aade46dd13363/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.gradle/caches/modules-2/files-2.1/com.google.zxing/core/3.3.0/73c49077166faa4c3c0059c5f583d1d7bd1475fe/core-3.3.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="73c49077166faa4c3c0059c5f583d1d7bd1475fe">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/core-3.3.0_cfab8175f045766c9dba83f2a5770d8350705d06/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/b19d370a27af7df0c5d6547eaab6abeb24b164f4/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="ec224ad624f39212bacaf5903d989fe066166e7a">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_7ec009684ea587def1ae7c0fa60cb376f3f55392/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/bcb1a9346ffa854442e1a9b35d9d1e02fbe6c62e/output/jars/libs/infer-annotations-4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="43579bbbc605c8815aa55ad85d856fb5588250d2">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/infer-annotations-4.0_33f7fc87d723d71dd5acea8a0e7a17714754ebf7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-urlconnection/3.4.1/63994437f62bc861bc20c605d12962f7246116d1/okhttp-urlconnection-3.4.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="63994437f62bc861bc20c605d12962f7246116d1">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/okhttp-urlconnection-3.4.1_6fcede97d1486560023b1d0438113a0ff972e5e7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/496030b4bf0d41237642188623ad5999542e5f47/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="adfb92acadeeff1086115fff6b318e95df8b2b29">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_afbf7a066cd7528a703e4d1efc3bf845f73e53d5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/4e762a083302ae5a7bbaf338de174a25620e915c/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="dc83ab7a5ce1e0296cf18a52a6edbcfef815e6cf">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_c077319c691018b2f498f928fcc6958b1fa0acf7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.gradle/caches/modules-2/files-2.1/com.jakewharton/butterknife/7.0.1/d5d13ea991eab0252e3710e5df3d6a9d4b21d461/butterknife-7.0.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d5d13ea991eab0252e3710e5df3d6a9d4b21d461">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/butterknife-7.0.1_9254f4f6f5d6a6696496ce0fc8e84394cd0f32de/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/99005b0e4f63635662602b7a1196ea069c1a02ba/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="16afe57c1d7f8165d107c7806ce7b0c71de87159">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_b598aebe9171fd34e3f52d1dd2049682a25c57c8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/6e6c4b06aab6b176b40272dc55919eb4c6d8f41d/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="0d394688dd7030b83dea8eed3fa483410c24afe0">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_014ceea8533bde6348272ab791b8e29b8713a4f1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/e8e2ff55bed01f2a779c45f6742ab5ed27ff6d1a/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_3b97a523aa1ec00ea51ad4b2af7a9e2cd47de770/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/f267ce41a676a1629df606b4c17432c960a54139/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="681eeeaec5300e5257ad9bf889c3859ba3833d5a">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_363e7af79625d52010b4f30bccdac76678602e82/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/498ff88b9282d096142759c757e90986fe8e17a2/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="64cd9f68288a814c311fe2723b68bd91aa241c7b">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_7fbce6a0e87b836bc675ad5e71b424f7104f36a5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/dbb69c9569fe5fdb9d7e413f2fde4d696ffa6bcf/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="68d8ffe33fc5c2feb623b2e216dfc180e7540cd5">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_b3bdc2e83275ca5542a794a1aa10cee059939810/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.gradle/caches/modules-2/files-2.1/com.raizlabs.android/DBFlow-Core/2.2.1/e07bfc8e2041edf27469bd94e08bc19f52f4dee7/DBFlow-Core-2.2.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e07bfc8e2041edf27469bd94e08bc19f52f4dee7">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/DBFlow-Core-2.2.1_07cb80bbfc76382a2496895db7e949d60cedf1f1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/c9a1aae931fa21f17bdf854ae47981739076d126/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="03530f261b6f66dbcae414f12c732bd943f5ba53">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_868ff999938ba86a213dd12208679665fd513591/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/6bbe4ef94dbba64814a0574ae641860c3957e4cd/output/jars/libs/infer-annotations-4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="ea01f90e60978bc6871543cd76136a97a19450b5">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/infer-annotations-4.0_36d670df28c19ad150e7e2132bcad48b02f3009d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/96159419cf4f11cea8cd0f4317793d73b2a7bff4/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="906fdd57c143ec9adc27a76a697fed1c0cfd6348">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_cbd8468b15b3137ee52e73bdb177d24a19ee21e8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/c10b7d7a292bc72e3a652a66b32c12926266c623/output/jars/libs/infer-annotations-4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="83d6e98f2b48f3cf1ec0e7c2b3bf2b3d4618f680">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/infer-annotations-4.0_496330b87c12a5de49f699ee6abd9a42cef181e8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/0e0abeaa1f4404f35407ccccbff66fe5f5f5bca1/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="ffde64dbb0fc07c8b9735c6c42a06a36be15ed13">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_ac6811b642c6f0b48c2546d74a64545cacd7cfa0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/bcb1a9346ffa854442e1a9b35d9d1e02fbe6c62e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a315c4dce1b163f2ddf71bab62f3b56eb05c6a15">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_95ed70045941f1c9fc5c3142d3b837775c7b136c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/5bb6f619d5b776054359744a96947e298b7e0c11/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="78ea232052df889856dcb7b7b542707c89bb3bfb">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_d5ca30766090f995b08c67e3735ad59d6125ce91/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/3cb6749d23624d4e2df42de45494b1a9fa2d0598/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="4a88eaa7f9a31907def9a7968367475bdf5170be">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_a7b63373733eb081897a1615bc97f93891a514cd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/66c87248ac162d7e83fd33921d8e7e8b7985a0c5/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="2668e49e4e31c7d451b76a36009b902bf44e0d70">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_09bbd7326aa3768faa82e995f58ad140f0599341/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/bf114c7b104e5ffc88e7b35c3f8dec08f72c99de/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="67b6fa134bb2e2163e293f7ae9b898b985979515">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_5df191738e499d5022ae89d3d8e4e9549e2bb7ba/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/db36fd1113328a4093bb68424544010b83b7ddcd/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a4590fa7eadce322ca893129fdc999074e1aa5bf">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_03692166a0780986eaa3173460419cd91ccfb80f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/92412085c0e62e47b1f5b260b2b89c17b4530206/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a34a28ae586a32e1a33eeb63378732b473cad2be">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_d4fd43a239819b40d612c59a57986dafdcae2e2c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/40de58e5ce64888a8c53f4e52e88c4f95d9dba1b/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="9dae58326f6f6a515022468cce56dd04ec3b9fdb">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_b7d8f8da037463fb6de5cd93a0f7b92397f246d7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/10817050a51c85acf43954d41dfe4e33920e9fcc/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="b346a5d3fc5d6d1d36c6262c8cc865b76df9f40c">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_345e20674b3278b0c05aed3996279854488daa07/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/cae5cb048bc1de599f1a3e2b24d338a42c2f0774/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="22c673e65215e0764add61e3102946de895439e4">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_3bbaf8d82df1bab6ab2b16fde7ba8885f1100d0f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.gradle/caches/modules-2/files-2.1/com.amplitude/android-sdk/2.9.2/5ff2f760c3bcad9d4e60f1f84aa695321184ebc0/android-sdk-2.9.2.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="5ff2f760c3bcad9d4e60f1f84aa695321184ebc0">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/android-sdk-2.9.2_20657de5f24a7b4d2b505758ae90bd3f60f2add7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/eba29f285e594770aefc6583f332fde4ac57b8aa/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="fa112f9589a72edd6c8458764cd65e80a39e6d8c">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_ada0e6e73248a382b39ab5eaf9e5dcf9b700c14c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/d6b2e92f5dd3e1b5708cf46879d8af45696c2aa4/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="6b6f292b8b951dcf2ecf2b20853e3eabc7d65c48">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_71803689f5872402b18a28e4560795f4262a3d7a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp/3.4.1/c7c4f9e35c2fd5900da24f9872e3971801f08ce0/okhttp-3.4.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c7c4f9e35c2fd5900da24f9872e3971801f08ce0">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/okhttp-3.4.1_11317bb00f9ee2a0f0cec09036b9843aca2e27e4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.gradle/caches/modules-2/files-2.1/com.squareup.okhttp3/okhttp-ws/3.4.1/8ace66ef7002d98f633377c9e67daeeb196d8c3b/okhttp-ws-3.4.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="8ace66ef7002d98f633377c9e67daeeb196d8c3b">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/okhttp-ws-3.4.1_546f3290334076312d3dbf783bc1d59ee7578319/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/8190b048211f3594a7349d17985140255ae9d1df/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="418dca1ee8bac0cc2f78f8f34b594c4d89eec057">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_d5977ff1db8d967e875df0c8e6d343722d8f08d7/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/afcbae6f38a2d474d844027fe2060956cf1d0f64/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="5ffe8867f51cfc726e9fb21db1e5b6962ebf25a0">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_cd85c6135ca28407f33879bb08bdc2e864b4bff6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.gradle/caches/modules-2/files-2.1/com.fasterxml.jackson.core/jackson-core/2.2.3/1a0113da2cab5f4c216b4e5e7c1dbfaa67087e14/jackson-core-2.2.3.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="1a0113da2cab5f4c216b4e5e7c1dbfaa67087e14">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/jackson-core-2.2.3_e90b02b9d223d48e72a0809c7d3ec3e897c7a48f/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/2ac75dc1e5f13a7daf8569ac5e39405a9c1991b4/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="611605b6b640c1558f9bdea41de8ff837ab68ca8">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_6f432524aa22b8b6ef1792bb554219916547476c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.gradle/caches/modules-2/files-2.1/com.facebook.stetho/stetho-okhttp3/1.3.1/c596b3b33b5a92107bb70544bb5ee35f597bc6d8/stetho-okhttp3-1.3.1.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c596b3b33b5a92107bb70544bb5ee35f597bc6d8">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/stetho-okhttp3-1.3.1_e2230193ee5ad253212524f434252ebd22ad35d8/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/b37bde73f5cbd1b57bb1a71ee03249d0682661f8/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c83a644dfc8545d77ed076721762fc4eb4092d81">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_c2f1a72334902e5e98573c4c1f899668563c3e8a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.gradle/caches/modules-2/files-2.1/com.squareup.okio/okio/1.9.0/f824591a0016efbaeddb8300bee54832a1398cfa/okio-1.9.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="f824591a0016efbaeddb8300bee54832a1398cfa">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/okio-1.9.0_f958375d451077307f0e1039b89b2bdb6f1df890/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/bbd6a9d51bde292604bcf043efa1d1aba7cdb320/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="050f688115ea65a0292d8483a6ffe6bcdab1e2ef">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_4b379dcf1a3c988a2e932b232c0bc4732e8dc521/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/4d42a7138fb469ebc1e242e87644fe3d1570c6ce/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a7bf36963372211d8b9e000939020b1c3242234e">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_2b3dd267777fd5496978f13aa311dcc00ee0e1ea/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/ed222199dd65d9c6213a9f45000c9afbfe6a07f3/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a7a04d6b7c01e569a285fa627cf64f5b05295906">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_64d0ffa9b8dc53ab3e790f6cd56f505a9fdb005e/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/58c0c7390633c9e7482208ec156ee008a666bb4e/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="bf2e1838e4428616c1aa26edf43de72b5b99bf84">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_bd127f3f59cf6f08f585fd53f263c37554210be4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/1044b1aba20ed78fcf37838ef76be096ec2e5f49/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="910c013c511f752c4bbe24c5f492f669f4a3ccc0">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_d9f1d4274b15d9b42410162e882d5faeb921b9a2/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.gradle/caches/modules-2/files-2.1/com.madgag.spongycastle/core/1.53.0.0/619f704791db186304325bd129b2e7ec34f77438/core-1.53.0.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="619f704791db186304325bd129b2e7ec34f77438">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/core-1.53.0.0_f69416507b9d0a9c452488199666765658e246c1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/development/circles-mobile/android/maven/expolib_v1/com/squareup/okhttp3/okhttp-urlconnection/3.6.0/okhttp-urlconnection-3.6.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="ae77d4921dcf287b3776baabfbca09b55616ab13">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/okhttp-urlconnection-3.6.0_c1b529c175fc5ebbc06848872670c1c385462e21/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/1b190d6749ecbdc425fdfecfed6e29b4af23b564/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e9b2cfdfd59b03643f1e240668275378b96615a8">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_20d305657248d07a61303b3ab0b714632651c516/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/b1cd4912f0f0f88480311fc43b27eda721844a09/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="2482bfd874e8b3927f4141105674ad392ff83698">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_1db8d8bbad9131267148b621725dc584d4d48278/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/291f85aa7ad725bb52461e874cd20a17cc83424b/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="9111e38999fee0b16a1ccd057b779f5b08f330e2">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_4808a60448059b428440605d4ac1797a86c2c738/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/682d0d1956923007cb80024aa84a3e0c39e81212/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a5db9a2dd46d84285ef737f65030b74b6e8ee2a4">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_27cc76035251b0c6c2d830aff79960272f4c48f1/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/b5b74a78a5d4b5b6bb52c0f92c9ec1d6fdede897/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="ee5304fd374e0b4ebf6b42d4037fbfb2c5336511">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_edc3285b8343d38fafffaa9258b86873da4a4e95/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/07c0d1e5c020bad241924031c974049470293d8f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="ae335c9696bc1513f7e3bb96a731b722712d7a63">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_be7c2d4c21c77d187717a9e996848e434c13f4b4/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/93a37ece5331a1cad2e8ec9df7347d9d257d5eaf/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="ab6e491b5d7bda2f47991a30f6bfe9a8b134ff8b">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_e567b7913af018cd05175db700355b33f3b85e48/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/development/circles-mobile/android/maven/expolib_v1/com/squareup/okio/okio/1.13.0/okio-1.13.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="89890cffce351fec7caf3fdfd4351c7f4b4769b4">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/okio-1.13.0_a70e67cc6ad1c2de4d0695e8a8c47eab590284d0/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/0d5a3ce5a06db59c811446955cb40cc86a37c94d/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="5a61f17cd72e20aa4323cbf5f909b7c609619275">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_dc6b242520aede7730b911e5d7e7e86ed97f8065/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/37a2d748d22a29853514a80b5bc0cf492c849d36/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="82ea5a937ab84229fbd2f3fc8cf2a72cbdf0ee0f">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_9e0feb4dadcad9e8ee23d4c399ec92fa14499dfd/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/c181b2cc5926030a628b2e1bb4d4bcc22e5e1243/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="190a642ba16d1421296a4d794606279b80039c59">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_f2e74868205969f505fe2f53dae79e39ad9ae4cf/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/8cf1bd4d9b7d6e76fdc1e030a151db94a93215f9/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="af69623378285932372eb7b3b8ff0ef66fa42b93">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_1320ffe1373972111640ea61f49c9aa8aef87aef/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/f20be89722c77b00c8be9d975ed5f4c048fe716b/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="10c32fcf3d0acc4b208fc39f8d2e16b69ef8bd3b">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_a728a56a06f6887a3d670c93cdefe78458cb566c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/261b3cd60570341e388cc8b48e484de6fd63eba4/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c97dc8446f6a46da5620f40b3737e162d53c40c2">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_dd4eefcb588071a241feade10fbacacaa0fba19c/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.gradle/caches/modules-2/files-2.1/com.parse.bolts/bolts-applinks/1.4.0/8ad21bf21784dacce5f2043afb97218cc377e835/bolts-applinks-1.4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="8ad21bf21784dacce5f2043afb97218cc377e835">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/bolts-applinks-1.4.0_6c9a91f243f889e19a54c79e8064fcab197faabb/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/2f9e72dbd84ec43c226d45e8da0db5e553b753f1/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="04bbbddf868aa02dd33f9e90d8f5d908c360f638">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_c1347fa89a52219b2724f102d101dd41b3bc6155/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/d9b679c37381aea7e09afea7befbc6d6aad2e73f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="a1ed98e01bd58976d80c062fd0ea2968a1ff68a1">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_4c99eae7d0bcf932aa8f2dc15f75c77e9291aaf3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/9194e80cc6075e935ed2a750655abc4302c1f322/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="53e8932b1ac8c7dfc35cfeda1f9efbc9822ceaf3">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_5571cc7b0814068d2f61d93339e401c390ae0f69/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/8c98a0795c584f653c8b4a0b46f9faef7697e13f/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="71af915b7f4f7ec0b5f768b365145bb6a5cb9a66">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_1da15f40e488e2bfd5e6a4ee45ccac8691da1088/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/0f2ebcb98dcc01a1ab766fe9e0cb9f1f577be75b/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="85299bf1924dde0200109a58033c5ef84ecb6991">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_884486d8fa6fc53a5a048a4d368b0e8040fe64d5/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/5acd70f184b936a2a88fd84ae86c3be1d64edfd5/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="083e7bc5a9d9404b49b8f34e5091532361fa28e6">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_2e11537fa1c1baf711d91d2d15b1a2faa904791a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/5c2ba7963421479d7e88f9a5e0b0cf7fb23aa2c8/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="dae2154348a4c38a18e8d1042cf445faea4647d0">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_c6a3a889c86f8bc63d74a2d0bc1c9e9ec996d999/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/c10b7d7a292bc72e3a652a66b32c12926266c623/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="e6172a6e0872c156ae82fe8b51d82b2daed424aa">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_765d5046967653035d73a5426e1bb5179239f81b/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/bf114c7b104e5ffc88e7b35c3f8dec08f72c99de/output/jars/libs/infer-annotations-4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="7721fdd1d59c4b8ae136c087b7590ec69061d97f">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/infer-annotations-4.0_736d6292c2ccf7a214cc5c59825d90d1deb6f4a3/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/751a209fe0359d1a016f784187fd63f417034695/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="cf836a435a496eb22ff2aa69aa1e619462549f81">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_81b2301812e034318c9590f452438c941898eff6/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/65755046fcf73b25652b83f3619fab240ceaeadc/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="287f4dec8dc2d40a238b12562b437438499cd2fb">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_ec8f43a2c9bd70c933c23214dd1714f494a51150/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/737bf0cec057b47b3af50cbd19e70ae9b7839b46/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="79b01f1eace6ce22c6ffd67000bd6b5c5d2477a9">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_3e24e087f6624b267c1cf1d4dfb2577e03343b14/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/48c1511c4d03b15ea1e711b44effd2f79c3e2895/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="53dc9d74b0ac22d201549cd806780597d9679e9a">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_3fd5933286e9a7cc7d5f38407662e3a321677167/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/3376751a994db47a2f59f8409825d780fc9c0b57/output/jars/libs/infer-annotations-4.0.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="6eb79bde4cf6bbb7573bcf7dfbaf8a313f57612e">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/infer-annotations-4.0_c25b4ebbd41e4d5974e7ae5e271f251198b0c27a/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/480eec3e26ba6ae2fe1d3ab9b03036f193a02902/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="7e92aadd0697922316d1395c1887a23aebec640a">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_2444fcc359a2a9e1bda018b1cc01d00abf63cd86/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/.android/build-cache/a199c3be37758f837acdbe4bfe9ecf4932ffc24b/output/jars/classes.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="ca851be26ff89f5b32cc222cee98139fb3fac830">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10/classes_2c63456a2e6e87619c698ffa16afb251485bbe30/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/incremental-runtime-classes/dev19/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.1"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/10000/instant-run_0ce7d189a1c5f78d94f00c53e094c0b93f288a32/classes.dex" />
+    </item>
+
+</items>

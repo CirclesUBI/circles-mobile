@@ -1,0 +1,26 @@
+[
+    {
+        "outputFile": "/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/incremental/mergeDev19DebugResources/merged.dir/values-en-rSG/values-en-rSG.xml",
+        "map": [
+            {
+                "to": {
+                    "startLine": 2,
+                    "startColumn": 4,
+                    "startOffset": 55,
+                    "endColumn": 103,
+                    "endOffset": 154
+                },
+                "from": {
+                    "file": "/Users/shokishoki/.android/build-cache/1044b1aba20ed78fcf37838ef76be096ec2e5f49/output/res/values-en-rSG/values.xml",
+                    "position": {
+                        "startLine": 4,
+                        "startColumn": 0,
+                        "startOffset": 244,
+                        "endColumn": 99,
+                        "endOffset": 343
+                    }
+                }
+            }
+        ]
+    }
+]

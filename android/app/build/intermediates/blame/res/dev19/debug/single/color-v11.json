@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/res/merged/dev19/debug/color-v11/abc_background_cache_hint_selector_material_light.xml",
+        "source": "/Users/shokishoki/.android/build-cache/f267ce41a676a1629df606b4c17432c960a54139/output/res/color-v11/abc_background_cache_hint_selector_material_light.xml"
+    },
+    {
+        "merged": "/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/res/merged/dev19/debug/color-v11/abc_background_cache_hint_selector_material_dark.xml",
+        "source": "/Users/shokishoki/.android/build-cache/f267ce41a676a1629df606b4c17432c960a54139/output/res/color-v11/abc_background_cache_hint_selector_material_dark.xml"
+    }
+]

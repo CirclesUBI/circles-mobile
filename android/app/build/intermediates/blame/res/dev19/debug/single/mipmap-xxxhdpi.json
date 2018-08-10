@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/res/merged/dev19/debug/mipmap-xxxhdpi/ic_launcher.png",
+        "source": "/Users/shokishoki/development/circles-mobile/android/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    },
+    {
+        "merged": "/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/res/merged/dev19/debug/mipmap-xxxhdpi/dev_icon.png",
+        "source": "/Users/shokishoki/development/circles-mobile/android/app/src/main/res/mipmap-xxxhdpi/dev_icon.png"
+    }
+]

@@ -1,0 +1,4 @@
+#Fri Aug 10 08:58:07 CEST 2018
+base.0=/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/5/slice_0
+renamed.0=classes.dex
+file.0=/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/transforms/dex/dev19/debug/folders/1000/5/slice_0/classes.dex

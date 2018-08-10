@@ -1,0 +1,12 @@
+<component name="libraryTable">
+  <library name="Gradle: com.android.support:exifinterface-26.0.1">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/b37bde73f5cbd1b57bb1a71ee03249d0682661f8/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/b37bde73f5cbd1b57bb1a71ee03249d0682661f8/output/jars/classes.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/com.android.support/exifinterface/26.0.1/964c2f8ac757bd94233444acc6d81cf689f3c0eb/exifinterface-26.0.1-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

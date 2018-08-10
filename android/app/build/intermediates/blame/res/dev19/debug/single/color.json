@@ -1,0 +1,102 @@
+[
+    {
+        "merged": "/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/res/merged/dev19/debug/color/abc_primary_text_material_light.xml",
+        "source": "/Users/shokishoki/.android/build-cache/f267ce41a676a1629df606b4c17432c960a54139/output/res/color/abc_primary_text_material_light.xml"
+    },
+    {
+        "merged": "/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/res/merged/dev19/debug/color/abc_btn_colored_text_material.xml",
+        "source": "/Users/shokishoki/.android/build-cache/f267ce41a676a1629df606b4c17432c960a54139/output/res/color/abc_btn_colored_text_material.xml"
+    },
+    {
+        "merged": "/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/res/merged/dev19/debug/color/abc_btn_colored_borderless_text_material.xml",
+        "source": "/Users/shokishoki/.android/build-cache/f267ce41a676a1629df606b4c17432c960a54139/output/res/color/abc_btn_colored_borderless_text_material.xml"
+    },
+    {
+        "merged": "/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/res/merged/dev19/debug/color/abc_secondary_text_material_dark.xml",
+        "source": "/Users/shokishoki/.android/build-cache/f267ce41a676a1629df606b4c17432c960a54139/output/res/color/abc_secondary_text_material_dark.xml"
+    },
+    {
+        "merged": "/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/res/merged/dev19/debug/color/wallet_secondary_text_holo_dark.xml",
+        "source": "/Users/shokishoki/.android/build-cache/1044b1aba20ed78fcf37838ef76be096ec2e5f49/output/res/color/wallet_secondary_text_holo_dark.xml"
+    },
+    {
+        "merged": "/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/res/merged/dev19/debug/color/abc_primary_text_material_dark.xml",
+        "source": "/Users/shokishoki/.android/build-cache/f267ce41a676a1629df606b4c17432c960a54139/output/res/color/abc_primary_text_material_dark.xml"
+    },
+    {
+        "merged": "/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/res/merged/dev19/debug/color/abc_tint_default.xml",
+        "source": "/Users/shokishoki/.android/build-cache/f267ce41a676a1629df606b4c17432c960a54139/output/res/color/abc_tint_default.xml"
+    },
+    {
+        "merged": "/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/res/merged/dev19/debug/color/abc_primary_text_disable_only_material_light.xml",
+        "source": "/Users/shokishoki/.android/build-cache/f267ce41a676a1629df606b4c17432c960a54139/output/res/color/abc_primary_text_disable_only_material_light.xml"
+    },
+    {
+        "merged": "/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/res/merged/dev19/debug/color/abc_hint_foreground_material_light.xml",
+        "source": "/Users/shokishoki/.android/build-cache/f267ce41a676a1629df606b4c17432c960a54139/output/res/color/abc_hint_foreground_material_light.xml"
+    },
+    {
+        "merged": "/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/res/merged/dev19/debug/color/abc_tint_spinner.xml",
+        "source": "/Users/shokishoki/.android/build-cache/f267ce41a676a1629df606b4c17432c960a54139/output/res/color/abc_tint_spinner.xml"
+    },
+    {
+        "merged": "/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/res/merged/dev19/debug/color/com_facebook_send_button_text_color.xml",
+        "source": "/Users/shokishoki/.android/build-cache/4e762a083302ae5a7bbaf338de174a25620e915c/output/res/color/com_facebook_send_button_text_color.xml"
+    },
+    {
+        "merged": "/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/res/merged/dev19/debug/color/abc_primary_text_disable_only_material_dark.xml",
+        "source": "/Users/shokishoki/.android/build-cache/f267ce41a676a1629df606b4c17432c960a54139/output/res/color/abc_primary_text_disable_only_material_dark.xml"
+    },
+    {
+        "merged": "/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/res/merged/dev19/debug/color/common_google_signin_btn_text_light.xml",
+        "source": "/Users/shokishoki/.android/build-cache/480eec3e26ba6ae2fe1d3ab9b03036f193a02902/output/res/color/common_google_signin_btn_text_light.xml"
+    },
+    {
+        "merged": "/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/res/merged/dev19/debug/color/abc_tint_seek_thumb.xml",
+        "source": "/Users/shokishoki/.android/build-cache/f267ce41a676a1629df606b4c17432c960a54139/output/res/color/abc_tint_seek_thumb.xml"
+    },
+    {
+        "merged": "/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/res/merged/dev19/debug/color/abc_search_url_text.xml",
+        "source": "/Users/shokishoki/.android/build-cache/f267ce41a676a1629df606b4c17432c960a54139/output/res/color/abc_search_url_text.xml"
+    },
+    {
+        "merged": "/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/res/merged/dev19/debug/color/abc_tint_btn_checkable.xml",
+        "source": "/Users/shokishoki/.android/build-cache/f267ce41a676a1629df606b4c17432c960a54139/output/res/color/abc_tint_btn_checkable.xml"
+    },
+    {
+        "merged": "/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/res/merged/dev19/debug/color/abc_secondary_text_material_light.xml",
+        "source": "/Users/shokishoki/.android/build-cache/f267ce41a676a1629df606b4c17432c960a54139/output/res/color/abc_secondary_text_material_light.xml"
+    },
+    {
+        "merged": "/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/res/merged/dev19/debug/color/switch_thumb_material_light.xml",
+        "source": "/Users/shokishoki/.android/build-cache/f267ce41a676a1629df606b4c17432c960a54139/output/res/color/switch_thumb_material_light.xml"
+    },
+    {
+        "merged": "/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/res/merged/dev19/debug/color/abc_hint_foreground_material_dark.xml",
+        "source": "/Users/shokishoki/.android/build-cache/f267ce41a676a1629df606b4c17432c960a54139/output/res/color/abc_hint_foreground_material_dark.xml"
+    },
+    {
+        "merged": "/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/res/merged/dev19/debug/color/com_facebook_button_text_color.xml",
+        "source": "/Users/shokishoki/.android/build-cache/65755046fcf73b25652b83f3619fab240ceaeadc/output/res/color/com_facebook_button_text_color.xml"
+    },
+    {
+        "merged": "/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/res/merged/dev19/debug/color/abc_tint_switch_track.xml",
+        "source": "/Users/shokishoki/.android/build-cache/f267ce41a676a1629df606b4c17432c960a54139/output/res/color/abc_tint_switch_track.xml"
+    },
+    {
+        "merged": "/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/res/merged/dev19/debug/color/common_google_signin_btn_text_dark.xml",
+        "source": "/Users/shokishoki/.android/build-cache/480eec3e26ba6ae2fe1d3ab9b03036f193a02902/output/res/color/common_google_signin_btn_text_dark.xml"
+    },
+    {
+        "merged": "/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/res/merged/dev19/debug/color/switch_thumb_material_dark.xml",
+        "source": "/Users/shokishoki/.android/build-cache/f267ce41a676a1629df606b4c17432c960a54139/output/res/color/switch_thumb_material_dark.xml"
+    },
+    {
+        "merged": "/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/res/merged/dev19/debug/color/wallet_primary_text_holo_light.xml",
+        "source": "/Users/shokishoki/.android/build-cache/1044b1aba20ed78fcf37838ef76be096ec2e5f49/output/res/color/wallet_primary_text_holo_light.xml"
+    },
+    {
+        "merged": "/Users/shokishoki/development/circles-mobile/android/app/build/intermediates/res/merged/dev19/debug/color/abc_tint_edittext.xml",
+        "source": "/Users/shokishoki/.android/build-cache/f267ce41a676a1629df606b4c17432c960a54139/output/res/color/abc_tint_edittext.xml"
+    }
+]
