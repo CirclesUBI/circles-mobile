@@ -29,12 +29,6 @@
 			</array>
 		</dict>
 		<dict>
-			<key>CFBundleURLSchemes</key>
-			<array>
-				<string>expa0930c04628c4dc08a5667d48f4ae73a</string>
-			</array>
-		</dict>
-		<dict>
 			<key>CFBundleURLName</key>
 			<string>OAuthRedirect</string>
 			<key>CFBundleURLSchemes</key>
@@ -66,7 +60,6 @@
 		<key>NSAllowsArbitraryLoads</key>
 		<true/>
 	</dict>
-
 	<key>NSCalendarsUsageDescription</key>
 	<string>Allow circles-mobile to access your calendar</string>
 	<key>NSCameraUsageDescription</key>
@@ -78,7 +71,7 @@
 	<key>NSMicrophoneUsageDescription</key>
 	<string>Allow circles-mobile to access your microphone</string>
 	<key>NSMotionUsageDescription</key>
-	<string>Allow circles-mobile to access your device's accelerometer</string>
+	<string>Allow circles-mobile to access your device&apos;s accelerometer</string>
 	<key>NSPhotoLibraryAddUsageDescription</key>
 	<string>Give circles-mobile permission to save photos</string>
 	<key>NSPhotoLibraryUsageDescription</key>
