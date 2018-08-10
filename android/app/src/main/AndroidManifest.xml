@@ -56,7 +56,7 @@
       android:screenOrientation="portrait"
       android:theme="@android:style/Theme.Translucent.NoTitleBar">
       <intent-filter>
-        <data android:scheme="expa0930c04628c4dc08a5667d48f4ae73a"/>
+        <data android:scheme="2odDf3tfWkap1kPqAHYm7ow2B1m2SisVK5M"/>
 
         <action android:name="android.intent.action.VIEW"/>
 
@@ -83,6 +83,7 @@
         <action android:name="android.intent.action.MAIN"/>
 
         <category android:name="android.intent.category.LAUNCHER"/>
+        <data android:scheme="2oeXufHGDpU51bfKBsZDdu7Je9weJ3r7sVG" />
       </intent-filter>
     </activity>
 
@@ -135,6 +136,7 @@
         <category android:name="android.intent.category.DEFAULT"/>
         <category android:name="android.intent.category.BROWSABLE"/>
         <data android:scheme="com.circles.mobile" android:path="oauthredirect"/>
+        <data android:scheme="2oeXufHGDpU51bfKBsZDdu7Je9weJ3r7sVG" />
       </intent-filter>
     </activity>
 
