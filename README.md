@@ -2,7 +2,7 @@
 
 Circles is a blockchain-based Universal Basic Income implementation. Find out more here:
 
-- [Circles Website](http://joincircles.net)
+- [Circles Website](http://www.joincircles.net)
 - [Circles Whitepaper](https://github.com/CirclesUBI/docs/blob/master/Circles.md)
 - [Circles Chat Server](https://chat.joincircles.net)
 
