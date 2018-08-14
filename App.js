@@ -112,6 +112,9 @@ const OrgHomeNavigator = createStackNavigator(
     OrgHome: {
       screen: OrgHomeScreen,
     },
+    OrgAddInventoryView: {
+      screen: OrgAddInventory,
+    },
     OrgWalletView: {
       screen: OrgWalletScreen,
     },
