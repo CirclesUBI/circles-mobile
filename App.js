@@ -1,69 +1,73 @@
 import React from 'react'
-import { Text, View, TouchableOpacity } from 'react-native'
-// import Expo from 'expo'
-import Amplify from 'aws-amplify'
-import awsExports from './aws-exports'
-
-import { createStore, combineReducers } from 'redux'
+import { Font, AppLoading } from 'expo'
+// import Amplify from 'aws-amplify'
+// import awsExports from 'circles-mobile/aws-exports'
+// import { withAuthenticator } from 'aws-amplify-react-native'
+// Amplify.configure(awsExports)
 import { Provider } from 'react-redux'
 
-import { withAuthenticator } from 'aws-amplify-react-native'
 import { createStackNavigator, createBottomTabNavigator } from 'react-navigation'
 
-import SplashScreen from './lib/components/SplashScreen'
-import ConnectScreen from './lib/components/ConnectScreen' // Add Container
-import WalletScreen from './lib/components/WalletScreen'
-// import TransactionScreen from './lib/components/TransactionScreen'
-// import ConnectContainer from './lib/containers/ConnectContainer'
+import SplashScreen from 'circles-mobile/lib/components/SplashScreen'
+import ConnectScreen from 'circles-mobile/lib/components/ConnectScreen' // Add Container
+import WalletScreen from 'circles-mobile/lib/components/WalletScreen'
+// import TransactionScreen from 'circles-mobile/lib/components/TransactionScreen'
+// import ConnectContainer from 'circles-mobile/lib/containers/ConnectContainer'
 
-import HomeScreen from './lib/components/HomeScreen'
-import ValidatePhone from './lib/components/Validate/ValidatePhone'
-import ValidateSuccess from './lib/components/Validate/ValidateSuccess'
+import HomeScreen from 'circles-mobile/lib/components/HomeScreen'
+import ValidatePhone from 'circles-mobile/lib/components/Validate/ValidatePhone'
+import ValidateSuccess from 'circles-mobile/lib/components/Validate/ValidateSuccess'
 
-import addWallet from './lib/components/AddOrgWallet/AddWallet'
-import addOffer from './lib/components/AddOrgWallet/AddOffer'
-import addAdmin from './lib/components/AddOrgWallet/AddAdmin'
+import addWallet from 'circles-mobile/lib/components/AddOrgWallet/AddWallet'
+import addOffer from 'circles-mobile/lib/components/AddOrgWallet/AddOffer'
+import addAdmin from 'circles-mobile/lib/components/AddOrgWallet/AddAdmin'
 
-import PayAmount from './lib/components/Pay/PayAmount'
-import RequestAmount from './lib/components/Request/RequestAmount'
+import PayAmount from 'circles-mobile/lib/components/Pay/PayAmount'
+import PayConfirm from 'circles-mobile/lib/components/Pay/PayConfirm'
 
-import OrgAddInventory from './lib/components/OrgWallet/OrgAddInventory'
-import OrgWalletScreen from './lib/components/OrgWallet/OrgWalletScreen'
-import OrgWalletSettings from './lib/components/OrgWallet/OrgWalletSettingsScreen'
+import RequestAmount from 'circles-mobile/lib/components/Request/RequestAmount'
+import RequestQR from 'circles-mobile/lib/components/Request/RequestQR'
+import RequestConfirm from 'circles-mobile/lib/components/Request/RequestConfirm'
 
-import Tabs from './lib/components/Tabs'
+import OrgAddInventory from 'circles-mobile/lib/components/OrgWallet/OrgAddInventory'
+import OrgWalletScreen from 'circles-mobile/lib/components/OrgWallet/OrgWalletScreen'
+import OrgWalletSettings from 'circles-mobile/lib/components/OrgWallet/OrgWalletSettingsScreen'
+
+import OrgHomeScreen from 'circles-mobile/lib/components/OrgHomeScreen'
+import Contacts from 'circles-mobile/lib/components/Contacts'
+
+import SearchScreen from 'circles-mobile/lib/containers/SearchContainer'
+import Scanner from 'circles-mobile/lib/components/Scanner/Scanner'
+
+import Tabs from 'circles-mobile/lib/components/Tabs'
 import { MenuProvider } from 'react-native-popup-menu'
-
-const TxPlaceholder = () => (<View />)
-
-let store = createStore(combineReducers({users: (state = {}, action) => state}))
-Amplify.configure(awsExports)
+import store from 'circles-mobile/lib/store'
 
 class App extends React.Component {
-  // async componentWillMount () {
-  //   await Expo.Font.loadAsync({
-  //     'Roboto': require('native-base/Fonts/Roboto.ttf'),
-  //     'Roboto_medium': require('native-base/Fonts/Roboto_medium.ttf')
-  //   })
-  // }
-  render () {
-    return (
-      <Provider store={store}>
-        <MenuProvider>
-          <StartNavigator />
-        </MenuProvider>
-      </Provider>
-    )
+  constructor () {
+    super()
+    this.state = {
+      loading: true
+    }
   }
-}
-
-class Search extends React.Component {
+  async componentWillMount () {
+    await Font.loadAsync({
+      'ostrich-sans-heavy': require('circles-mobile/assets/fonts/OstrichSans-Heavy.otf'),
+      'now-alt-regular': require('circles-mobile/assets/fonts/NowAlt-Regular.otf'),
+      'now-alt-medium': require('circles-mobile/assets/fonts/NowAlt-Medium.otf'),
+      'now-alt-bold': require('circles-mobile/assets/fonts/NowAlt-Bold.otf')
+    })
+    this.setState({loading: false})
+  }
   render () {
-    return (
-      <View>
-        <Text>SEARCH</Text>
-      </View>
-    )
+      // <Provider store={store}>
+    return this.state.loading
+          ? <AppLoading />
+          : (<Provider store={store}>
+            <MenuProvider>
+              <StartNavigator />
+            </MenuProvider>
+          </Provider>)
   }
 }
 
@@ -79,7 +83,7 @@ const ValidateNavigator = createStackNavigator({
 })
 
 const HomeNavigator = createStackNavigator({
-  Home: {
+  HomeScreen: {
     screen: HomeScreen
   },
   WalletView: {
@@ -90,6 +94,16 @@ const HomeNavigator = createStackNavigator({
   },
   Validate: {
     screen: ValidateNavigator
+  }}, {
+    headerMode: 'none'
+  })
+
+const OrgHomeNavigator = createStackNavigator({
+  OrgHome: {
+    screen: OrgHomeScreen
+  },
+  OrgWalletView: {
+    screen: OrgWalletScreen
   }}, {
     headerMode: 'none'
   })
@@ -106,8 +120,8 @@ const IntroNavigator = createStackNavigator({
 
 const TabNavigator = createBottomTabNavigator({
   Home: HomeNavigator,
-  Transact: TxPlaceholder,
-  Search: Search
+  OrgHomeView: OrgHomeNavigator,
+  Search: SearchScreen
 }, {
   headerMode: 'none',
   tabBarComponent: Tabs
@@ -129,18 +143,31 @@ const OrgWalletNavigator = createStackNavigator({
 const RequestNavigator = createStackNavigator({
   'RequestAmount': {
     screen: RequestAmount
-  }
-}, {
-  headerMode: 'none'
-})
+  },
+  'RequestQR': {
+    screen: RequestQR
+  },
+  'RequestContacts': {
+    screen: Contacts
+  },
+  'RequestConfirm': {
+    screen: RequestConfirm
+  }}, {
+    headerMode: 'none'
+  })
 
 const PayNavigator = createStackNavigator({
   'PayAmount': {
     screen: PayAmount
-  }
-}, {
-  headerMode: 'none'
-})
+  },
+  'PayContacts': {
+    screen: Contacts
+  },
+  'PayConfirm': {
+    screen: PayConfirm
+  }}, {
+    headerMode: 'none'
+  })
 
 const MainNavigator = createStackNavigator({
   Intro: {
@@ -163,6 +190,12 @@ const MainNavigator = createStackNavigator({
   },
   'Request': {
     screen: RequestNavigator
+  },
+  'Contacts': {
+    screen: Contacts
+  },
+  'Scanner': {
+    screen: Scanner
   }}, {
     headerMode: 'none'
   })
@@ -170,6 +203,9 @@ const MainNavigator = createStackNavigator({
 const StartNavigator = createStackNavigator({
   Main: {
     screen: MainNavigator
+  },
+  'Scanner': {
+    screen: Scanner
   }}, {
     mode: 'modal',
     headerMode: 'none'
