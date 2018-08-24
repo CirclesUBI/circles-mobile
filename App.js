@@ -60,14 +60,14 @@ class App extends React.Component {
     this.setState({loading: false})
   }
   render () {
-      // <Provider store={store}>
+    // <Provider store={store}>
     return this.state.loading
-          ? <AppLoading />
-          : (<Provider store={store}>
-            <MenuProvider>
-              <StartNavigator />
-            </MenuProvider>
-          </Provider>)
+      ? <AppLoading />
+      : (<Provider store={store}>
+        <MenuProvider>
+          <StartNavigator />
+        </MenuProvider>
+      </Provider>)
   }
 }
 
@@ -95,8 +95,8 @@ const HomeNavigator = createStackNavigator({
   Validate: {
     screen: ValidateNavigator
   }}, {
-    headerMode: 'none'
-  })
+  headerMode: 'none'
+})
 
 const OrgHomeNavigator = createStackNavigator({
   OrgHome: {
