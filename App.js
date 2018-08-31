@@ -9,7 +9,7 @@ import { Provider } from 'react-redux'
 import { createStackNavigator, createBottomTabNavigator } from 'react-navigation'
 
 import SplashScreen from 'circles-mobile/lib/components/SplashScreen'
-import TermsConditionsScreen from 'circles-mobile/lib/components/Onboarding/OnboardingTerms'
+// import TermsConditionsScreen from 'circles-mobile/lib/components/Onboarding/OnboardingTerms'
 import ConnectScreen from 'circles-mobile/lib/components/ConnectScreen' // Add Container
 import WalletScreen from 'circles-mobile/lib/components/WalletScreen'
 // import TransactionScreen from 'circles-mobile/lib/components/TransactionScreen'
@@ -113,9 +113,9 @@ const IntroNavigator = createStackNavigator({
   Splash: {
     screen: SplashScreen
   },
-  Terms: {
-    screen: TermsConditionsScreen
-  },
+  // Terms: {
+  //   screen: TermsConditionsScreen
+  // },
   Connect: {
     screen: ConnectScreen
   }}, {
