@@ -106,8 +106,8 @@ const OrgHomeNavigator = createStackNavigator({
   OrgWalletView: {
     screen: OrgWalletScreen
   }}, {
-    headerMode: 'none'
-  })
+  headerMode: 'none'
+})
 
 const IntroNavigator = createStackNavigator({
   Splash: {
@@ -119,8 +119,8 @@ const IntroNavigator = createStackNavigator({
   Connect: {
     screen: ConnectScreen
   }}, {
-    headerMode: 'none'
-  })
+  headerMode: 'none'
+})
 
 const TabNavigator = createBottomTabNavigator({
   Home: HomeNavigator,
@@ -141,8 +141,8 @@ const OrgWalletNavigator = createStackNavigator({
   'addOrgWallet.AddAdmin': {
     screen: addAdmin
   }}, {
-    headerMode: 'none'
-  })
+  headerMode: 'none'
+})
 
 const RequestNavigator = createStackNavigator({
   'RequestAmount': {
@@ -157,8 +157,8 @@ const RequestNavigator = createStackNavigator({
   'RequestConfirm': {
     screen: RequestConfirm
   }}, {
-    headerMode: 'none'
-  })
+  headerMode: 'none'
+})
 
 const PayNavigator = createStackNavigator({
   'PayAmount': {
@@ -170,8 +170,8 @@ const PayNavigator = createStackNavigator({
   'PayConfirm': {
     screen: PayConfirm
   }}, {
-    headerMode: 'none'
-  })
+  headerMode: 'none'
+})
 
 const MainNavigator = createStackNavigator({
   Intro: {
@@ -201,8 +201,8 @@ const MainNavigator = createStackNavigator({
   'Scanner': {
     screen: Scanner
   }}, {
-    headerMode: 'none'
-  })
+  headerMode: 'none'
+})
 
 const StartNavigator = createStackNavigator({
   Main: {
@@ -211,9 +211,9 @@ const StartNavigator = createStackNavigator({
   'Scanner': {
     screen: Scanner
   }}, {
-    mode: 'modal',
-    headerMode: 'none'
-  })
+  mode: 'modal',
+  headerMode: 'none'
+})
 
 // export default withAuthenticator(App)
 export default App
