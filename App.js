@@ -11,6 +11,11 @@ import { createStackNavigator, createBottomTabNavigator } from 'react-navigation
 import SplashScreen from 'circles-mobile/lib/components/SplashScreen'
 import TermsConditionsScreen from 'circles-mobile/lib/components/Onboarding/OnboardingTerms'
 import AvatarScreen from 'circles-mobile/lib/components/Onboarding/OnboardingAvatar'
+import PhoneScreen from 'circles-mobile/lib/components/Onboarding/OnboardingPhone'
+import VerifyPhoneScreen from 'circles-mobile/lib/components/Onboarding/OnboardingVerifyPhone'
+import TestnetScreen from 'circles-mobile/lib/components/Onboarding/OnboardingTestnetWarning'
+import CompleteScreen from 'circles-mobile/lib/components/Onboarding/OnboardingComplete'
+
 import ConnectScreen from 'circles-mobile/lib/components/ConnectScreen' // Add Container
 import WalletScreen from 'circles-mobile/lib/components/WalletScreen'
 // import TransactionScreen from 'circles-mobile/lib/components/TransactionScreen'
@@ -120,9 +125,22 @@ const IntroNavigator = createStackNavigator({
   Avatar: {
     screen: AvatarScreen
   },
+  Phone: {
+    screen: PhoneScreen
+  },
+  VerifyPhone: {
+    screen: VerifyPhoneScreen
+  },
+  Testnet: {
+    screen: TestnetScreen
+  },
+  Complete: {
+    screen: CompleteScreen
+  },
   Connect: {
     screen: ConnectScreen
-  }}, {
+  }
+}, {
   headerMode: 'none'
 })
 
