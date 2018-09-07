@@ -9,6 +9,13 @@ import { Provider } from 'react-redux'
 import { createStackNavigator, createBottomTabNavigator } from 'react-navigation'
 
 import SplashScreen from 'circles-mobile/lib/components/SplashScreen'
+import TermsConditionsScreen from 'circles-mobile/lib/components/Onboarding/OnboardingTerms'
+import AvatarScreen from 'circles-mobile/lib/components/Onboarding/OnboardingAvatar'
+import PhoneScreen from 'circles-mobile/lib/components/Onboarding/OnboardingPhone'
+import VerifyPhoneScreen from 'circles-mobile/lib/components/Onboarding/OnboardingVerifyPhone'
+import TestnetScreen from 'circles-mobile/lib/components/Onboarding/OnboardingTestnetWarning'
+import CompleteScreen from 'circles-mobile/lib/components/Onboarding/OnboardingComplete'
+
 import ConnectScreen from 'circles-mobile/lib/components/ConnectScreen' // Add Container
 import WalletScreen from 'circles-mobile/lib/components/WalletScreen'
 // import TransactionScreen from 'circles-mobile/lib/components/TransactionScreen'
@@ -105,18 +112,37 @@ const OrgHomeNavigator = createStackNavigator({
   OrgWalletView: {
     screen: OrgWalletScreen
   }}, {
-    headerMode: 'none'
-  })
+  headerMode: 'none'
+})
 
 const IntroNavigator = createStackNavigator({
   Splash: {
     screen: SplashScreen
   },
+  Terms: {
+    screen: TermsConditionsScreen
+  },
+  Avatar: {
+    screen: AvatarScreen
+  },
+  Phone: {
+    screen: PhoneScreen
+  },
+  VerifyPhone: {
+    screen: VerifyPhoneScreen
+  },
+  Testnet: {
+    screen: TestnetScreen
+  },
+  Complete: {
+    screen: CompleteScreen
+  },
   Connect: {
     screen: ConnectScreen
-  }}, {
-    headerMode: 'none'
-  })
+  }
+}, {
+  headerMode: 'none'
+})
 
 const TabNavigator = createBottomTabNavigator({
   Home: HomeNavigator,
@@ -137,8 +163,8 @@ const OrgWalletNavigator = createStackNavigator({
   'addOrgWallet.AddAdmin': {
     screen: addAdmin
   }}, {
-    headerMode: 'none'
-  })
+  headerMode: 'none'
+})
 
 const RequestNavigator = createStackNavigator({
   'RequestAmount': {
@@ -153,8 +179,8 @@ const RequestNavigator = createStackNavigator({
   'RequestConfirm': {
     screen: RequestConfirm
   }}, {
-    headerMode: 'none'
-  })
+  headerMode: 'none'
+})
 
 const PayNavigator = createStackNavigator({
   'PayAmount': {
@@ -166,8 +192,8 @@ const PayNavigator = createStackNavigator({
   'PayConfirm': {
     screen: PayConfirm
   }}, {
-    headerMode: 'none'
-  })
+  headerMode: 'none'
+})
 
 const MainNavigator = createStackNavigator({
   Intro: {
@@ -197,8 +223,8 @@ const MainNavigator = createStackNavigator({
   'Scanner': {
     screen: Scanner
   }}, {
-    headerMode: 'none'
-  })
+  headerMode: 'none'
+})
 
 const StartNavigator = createStackNavigator({
   Main: {
@@ -207,9 +233,9 @@ const StartNavigator = createStackNavigator({
   'Scanner': {
     screen: Scanner
   }}, {
-    mode: 'modal',
-    headerMode: 'none'
-  })
+  mode: 'modal',
+  headerMode: 'none'
+})
 
 // export default withAuthenticator(App)
 export default App
