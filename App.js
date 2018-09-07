@@ -14,7 +14,7 @@ import WalletScreen from 'circles-mobile/lib/components/WalletScreen'
 // import TransactionScreen from 'circles-mobile/lib/components/TransactionScreen'
 // import ConnectContainer from 'circles-mobile/lib/containers/ConnectContainer'
 
-import HomeScreen from 'circles-mobile/lib/components/HomeScreen'
+import HomeDrawerNavigator from 'circles-mobile/lib/navigators/HomeNavigator'
 import ValidatePhone from 'circles-mobile/lib/components/Validate/ValidatePhone'
 import ValidateSuccess from 'circles-mobile/lib/components/Validate/ValidateSuccess'
 
@@ -33,7 +33,7 @@ import OrgAddInventory from 'circles-mobile/lib/components/OrgWallet/OrgAddInven
 import OrgWalletScreen from 'circles-mobile/lib/components/OrgWallet/OrgWalletScreen'
 import OrgWalletSettings from 'circles-mobile/lib/components/OrgWallet/OrgWalletSettingsScreen'
 
-import OrgHomeScreen from 'circles-mobile/lib/components/OrgHomeScreen'
+import OrgHomeDrawerNavigator from 'circles-mobile/lib/navigators/OrgHomeNavigator'
 import Contacts from 'circles-mobile/lib/components/Contacts'
 
 import SearchScreen from 'circles-mobile/lib/containers/SearchContainer'
@@ -60,14 +60,14 @@ class App extends React.Component {
     this.setState({loading: false})
   }
   render () {
-      // <Provider store={store}>
+    // <Provider store={store}>
     return this.state.loading
-          ? <AppLoading />
-          : (<Provider store={store}>
-            <MenuProvider>
-              <StartNavigator />
-            </MenuProvider>
-          </Provider>)
+      ? <AppLoading />
+      : (<Provider store={store}>
+        <MenuProvider>
+          <StartNavigator />
+        </MenuProvider>
+      </Provider>)
   }
 }
 
@@ -84,7 +84,7 @@ const ValidateNavigator = createStackNavigator({
 
 const HomeNavigator = createStackNavigator({
   HomeScreen: {
-    screen: HomeScreen
+    screen: HomeDrawerNavigator
   },
   WalletView: {
     screen: WalletScreen
@@ -95,12 +95,12 @@ const HomeNavigator = createStackNavigator({
   Validate: {
     screen: ValidateNavigator
   }}, {
-    headerMode: 'none'
-  })
+  headerMode: 'none'
+})
 
 const OrgHomeNavigator = createStackNavigator({
   OrgHome: {
-    screen: OrgHomeScreen
+    screen: OrgHomeDrawerNavigator
   },
   OrgWalletView: {
     screen: OrgWalletScreen
