@@ -1,5 +1,11 @@
 {
   "expo": {
-    "sdkVersion": "27.0.0"
+    "name": "Circles",
+    "sdkVersion": "27.0.0",
+    "icon": "./images/appicon.png",
+    "version": "0.1.0",
+    "ios": {
+      "bundleIdentifier": "com.circlesorg.circles"
+    }
   }
 }
