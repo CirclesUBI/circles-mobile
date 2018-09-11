@@ -6,6 +6,7 @@
     "version": "0.1.0",
     "ios": {
       "bundleIdentifier": "com.circlesorg.circles"
-    }
+    },
+    "slug": "circles-mobile"
   }
 }
