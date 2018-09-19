@@ -26,3 +26,7 @@ awsmobilejs/
 awsmobilejs/.awsmobile/backend-build
 awsmobilejs/\#current-backend-info
 ~awsmobilejs-*/
+
+# config files
+.vscode/*
+
