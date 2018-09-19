@@ -29,4 +29,5 @@ awsmobilejs/\#current-backend-info
 
 # config files
 .vscode/*
+.vscode/.react/*
 
