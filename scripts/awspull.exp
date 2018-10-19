@@ -1,9 +1,0 @@
-#!/usr/bin/expect
-
-spawn awsmobile pull
-
-expect "sync corresponding contents in backend/ with #current-backend-info/"
-send "\r"
-
-expect eof
-exit

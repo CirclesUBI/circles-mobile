@@ -1,9 +1,5 @@
 import React from 'react'
 import { Font, AppLoading } from 'expo'
-// import Amplify from 'aws-amplify'
-// import awsExports from 'circles-mobile/aws-exports'
-// import { withAuthenticator } from 'aws-amplify-react-native'
-// Amplify.configure(awsExports)
 import { Provider } from 'react-redux'
 
 import { createStackNavigator, createBottomTabNavigator } from 'react-navigation'
