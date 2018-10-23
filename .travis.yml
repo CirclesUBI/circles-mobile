@@ -6,13 +6,10 @@ language: node_js
 node_js:
   - 8.11.1
 install:
-  - sudo apt install expect
-  - npm install -g awsmobile-cli
   - npm install
   - mkdir src
 before_script:
   - npm i -g exp
   - exp login -u circlesubi -p $EXP_PASSWORD
 script:
-  - npm run aws-init-ci
   - exp publish
