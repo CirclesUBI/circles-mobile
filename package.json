@@ -26,6 +26,7 @@
     "lodash": "^4.17.10",
     "react": "16.3.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-30.0.0.tar.gz",
+    "react-native-aws-cognito-js": "0.0.7",
     "react-native-camera": "^1.1.4",
     "react-native-check-box": "^2.1.0",
     "react-native-contacts": "^2.2.2",

@@ -62,6 +62,16 @@ class App extends React.Component {
     })
     this.setState({loading: false})
   }
+
+  // componentDidMount () {
+  //   console.log('component did mount')
+  //   // 1) Create User Pool
+  //   this.userPool = new CognitoUserPool({
+  //     UserPoolId: 'us-east-1_jcaaanek3',
+  //     ClientId: '1bo5b9n2kmhu12s6ofb6b6qhkq'
+  //   })
+  // }
+
   render () {
     // <Provider store={store}>
     return this.state.loading
