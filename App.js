@@ -77,6 +77,14 @@ Amplify.configure({
 
     // OPTIONAL - Manually set the authentication flow type. Default is 'USER_SRP_AUTH'
     authenticationFlowType: 'USER_PASSWORD_AUTH'
+  },
+  API: {
+    endpoints: [
+      {
+        name: 'circles',
+        endpoint: 'http://circles-api-alb-522636929.eu-central-1.elb.amazonaws.com:8080'
+      }
+    ]
   }
 })
 
