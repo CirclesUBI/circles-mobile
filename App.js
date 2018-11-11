@@ -46,6 +46,40 @@ import Tabs from 'circles-mobile/lib/components/Tabs'
 import { MenuProvider } from 'react-native-popup-menu'
 import store from 'circles-mobile/lib/store'
 
+import Amplify from 'aws-amplify'
+Amplify.Logger.LOG_LEVEL = 'DEBUG'
+
+Amplify.configure({
+  Auth: {
+
+    // REQUIRED - Amazon Cognito Region
+    region: 'eu-central-1',
+
+    // OPTIONAL - Amazon Cognito User Pool ID
+    userPoolId: 'eu-central-1_iE0irHiCh',
+
+    userPoolWebClientId: '29tih5pqjv0ejbecp6lr58tdp2',
+
+    // OPTIONAL - Enforce user authentication prior to accessing AWS resources or not
+    // mandatorySignIn: false,
+
+    // // OPTIONAL - Configuration for cookie storage
+    // cookieStorage: {
+    //   // REQUIRED - Cookie domain (only required if cookieStorage is provided)
+    //   domain: '.joincircles.net',
+    //   // OPTIONAL - Cookie path
+    //   path: '/',
+    //   // OPTIONAL - Cookie expiration in days
+    //   expires: 365,
+    //   // OPTIONAL - Cookie secure flag
+    //   secure: true
+    // },
+
+    // OPTIONAL - Manually set the authentication flow type. Default is 'USER_SRP_AUTH'
+    authenticationFlowType: 'USER_PASSWORD_AUTH'
+  }
+})
+
 class App extends React.Component {
   constructor () {
     super()
