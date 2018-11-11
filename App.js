@@ -49,16 +49,18 @@ import store from 'circles-mobile/lib/store'
 import Amplify from 'aws-amplify'
 // Amplify.Logger.LOG_LEVEL = 'DEBUG'
 
+import { AWS_REGION, USER_POOL_ID, USER_POOL_CLIENT_ID, AUTH_FLOW_TYPE, API_TEST_ENDPOINT } from 'react-native-dotenv'
+
 Amplify.configure({
   Auth: {
 
     // REQUIRED - Amazon Cognito Region
-    region: 'eu-central-1',
+    region: AWS_REGION,
 
     // OPTIONAL - Amazon Cognito User Pool ID
-    userPoolId: 'eu-central-1_rv2E00jts',
+    userPoolId: USER_POOL_ID,
 
-    userPoolWebClientId: 'vge305k71c52llf5ja6rh04pf',
+    userPoolWebClientId: USER_POOL_CLIENT_ID,
 
     // OPTIONAL - Enforce user authentication prior to accessing AWS resources or not
     // mandatorySignIn: false,
@@ -76,13 +78,13 @@ Amplify.configure({
     // },
 
     // OPTIONAL - Manually set the authentication flow type. Default is 'USER_SRP_AUTH'
-    authenticationFlowType: 'USER_PASSWORD_AUTH'
+    authenticationFlowType: AUTH_FLOW_TYPE
   },
   API: {
     endpoints: [
       {
         name: 'circles',
-        endpoint: 'http://circles-api-alb-522636929.eu-central-1.elb.amazonaws.com:8080'
+        endpoint: API_TEST_ENDPOINT
       }
     ]
   }

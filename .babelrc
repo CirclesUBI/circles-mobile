@@ -1,5 +1,5 @@
 {
-  "presets": ["babel-preset-expo"],
+  "presets": ["babel-preset-expo", "react-native-dotenv"],
   "env": {
     "development": {
       "plugins": [["import", { "libraryName": "antd-mobile-rn"}], "transform-react-jsx-source"]
