@@ -47,7 +47,7 @@ import { MenuProvider } from 'react-native-popup-menu'
 import store from 'circles-mobile/lib/store'
 
 import Amplify from 'aws-amplify'
-Amplify.Logger.LOG_LEVEL = 'DEBUG'
+// Amplify.Logger.LOG_LEVEL = 'DEBUG'
 
 Amplify.configure({
   Auth: {
@@ -56,9 +56,9 @@ Amplify.configure({
     region: 'eu-central-1',
 
     // OPTIONAL - Amazon Cognito User Pool ID
-    userPoolId: 'eu-central-1_iE0irHiCh',
+    userPoolId: 'eu-central-1_rv2E00jts',
 
-    userPoolWebClientId: '29tih5pqjv0ejbecp6lr58tdp2',
+    userPoolWebClientId: 'vge305k71c52llf5ja6rh04pf',
 
     // OPTIONAL - Enforce user authentication prior to accessing AWS resources or not
     // mandatorySignIn: false,
