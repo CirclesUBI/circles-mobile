@@ -2,8 +2,6 @@ import React from 'react'
 import { Font, AppLoading } from 'expo'
 import { Provider } from 'react-redux'
 
-import { AsyncStorage } from 'react-native'
-
 import { MenuProvider } from 'react-native-popup-menu'
 import store from 'circles-mobile/lib/store'
 import { StartNavigator } from 'circles-mobile/lib/navigators/RootNavigation'
@@ -69,19 +67,9 @@ class App extends React.Component {
     this.setState({loading: false})
   }
 
-  async componentDidMount () {
-    try {
-      const user = await AsyncStorage.getItem(USER_KEY)
-      console.log('user: ', user)
-      if (user) {
-        console.log(user)
-      } else {
-        console.log('no user')
-      }
-    } catch (err) {
-      console.log('error: ', err)
-    }
-  }
+  // async componentDidMount () {
+
+  // }
 
   render () {
     // <Provider store={store}>

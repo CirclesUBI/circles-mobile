@@ -2,7 +2,10 @@
   "presets": ["babel-preset-expo", "module:react-native-dotenv"],
   "env": {
     "development": {
-      "plugins": [["import", { "libraryName": "antd-mobile-rn"}], "@babel/transform-react-jsx-source"]
+      "plugins": [
+          ["import", { "libraryName": "antd-mobile", "libraryDirectory": "lib"}, "antd-mobile"],
+          ["@babel/transform-react-jsx-source"]
+      ]
     }
   }
 }
