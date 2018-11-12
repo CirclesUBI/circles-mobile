@@ -2,54 +2,16 @@ import React from 'react'
 import { Font, AppLoading } from 'expo'
 import { Provider } from 'react-redux'
 
-import { createStackNavigator, createBottomTabNavigator } from 'react-navigation'
+import { AsyncStorage } from 'react-native'
 
-import SplashScreen from 'circles-mobile/lib/components/SplashScreen'
-import TermsConditionsScreen from 'circles-mobile/lib/components/Onboarding/OnboardingTerms'
-import AvatarScreen from 'circles-mobile/lib/components/Onboarding/OnboardingAvatar'
-import PhoneScreen from 'circles-mobile/lib/components/Onboarding/OnboardingPhone'
-import VerifyPhoneScreen from 'circles-mobile/lib/components/Onboarding/OnboardingVerifyPhone'
-import TestnetScreen from 'circles-mobile/lib/components/Onboarding/OnboardingTestnetWarning'
-import CompleteScreen from 'circles-mobile/lib/components/Onboarding/OnboardingComplete'
-
-import ConnectScreen from 'circles-mobile/lib/components/ConnectScreen' // Add Container
-import WalletScreen from 'circles-mobile/lib/components/WalletScreen'
-// import TransactionScreen from 'circles-mobile/lib/components/TransactionScreen'
-// import ConnectContainer from 'circles-mobile/lib/containers/ConnectContainer'
-
-import HomeDrawerNavigator from 'circles-mobile/lib/navigators/HomeNavigator'
-import ValidatePhone from 'circles-mobile/lib/components/Validate/ValidatePhone'
-import ValidateSuccess from 'circles-mobile/lib/components/Validate/ValidateSuccess'
-
-import addWallet from 'circles-mobile/lib/components/AddOrgWallet/AddWallet'
-import addOffer from 'circles-mobile/lib/components/AddOrgWallet/AddOffer'
-import addAdmin from 'circles-mobile/lib/components/AddOrgWallet/AddAdmin'
-
-import PayAmount from 'circles-mobile/lib/components/Pay/PayAmount'
-import PayConfirm from 'circles-mobile/lib/components/Pay/PayConfirm'
-
-import RequestAmount from 'circles-mobile/lib/components/Request/RequestAmount'
-import RequestQR from 'circles-mobile/lib/components/Request/RequestQR'
-import RequestConfirm from 'circles-mobile/lib/components/Request/RequestConfirm'
-
-import OrgAddInventory from 'circles-mobile/lib/components/OrgWallet/OrgAddInventory'
-import OrgWalletScreen from 'circles-mobile/lib/components/OrgWallet/OrgWalletScreen'
-import OrgWalletSettings from 'circles-mobile/lib/components/OrgWallet/OrgWalletSettingsScreen'
-
-import OrgHomeDrawerNavigator from 'circles-mobile/lib/navigators/OrgHomeNavigator'
-import Contacts from 'circles-mobile/lib/components/Contacts'
-
-import SearchScreen from 'circles-mobile/lib/containers/SearchContainer'
-import Scanner from 'circles-mobile/lib/components/Scanner/Scanner'
-
-import Tabs from 'circles-mobile/lib/components/Tabs'
 import { MenuProvider } from 'react-native-popup-menu'
 import store from 'circles-mobile/lib/store'
+import { StartNavigator } from 'circles-mobile/lib/navigators/RootNavigation'
 
 import Amplify from 'aws-amplify'
 // Amplify.Logger.LOG_LEVEL = 'DEBUG'
 
-import { AWS_REGION, USER_POOL_ID, USER_POOL_CLIENT_ID, AUTH_FLOW_TYPE, API_TEST_ENDPOINT } from 'react-native-dotenv'
+import { AWS_REGION, USER_POOL_ID, USER_POOL_CLIENT_ID, AUTH_FLOW_TYPE, API_TEST_ENDPOINT, USER_KEY } from 'react-native-dotenv'
 
 Amplify.configure({
   Auth: {
@@ -63,19 +25,19 @@ Amplify.configure({
     userPoolWebClientId: USER_POOL_CLIENT_ID,
 
     // OPTIONAL - Enforce user authentication prior to accessing AWS resources or not
-    // mandatorySignIn: false,
+    mandatorySignIn: true,
 
-    // // OPTIONAL - Configuration for cookie storage
-    // cookieStorage: {
-    //   // REQUIRED - Cookie domain (only required if cookieStorage is provided)
-    //   domain: '.joincircles.net',
-    //   // OPTIONAL - Cookie path
-    //   path: '/',
-    //   // OPTIONAL - Cookie expiration in days
-    //   expires: 365,
-    //   // OPTIONAL - Cookie secure flag
-    //   secure: true
-    // },
+    // OPTIONAL - Configuration for cookie storage
+    cookieStorage: {
+      // REQUIRED - Cookie domain (only required if cookieStorage is provided)
+      domain: '.joincircles.net',
+      // OPTIONAL - Cookie path
+      path: '/',
+      // OPTIONAL - Cookie expiration in days
+      expires: 365,
+      // OPTIONAL - Cookie secure flag
+      secure: true
+    },
 
     // OPTIONAL - Manually set the authentication flow type. Default is 'USER_SRP_AUTH'
     authenticationFlowType: AUTH_FLOW_TYPE
@@ -107,14 +69,19 @@ class App extends React.Component {
     this.setState({loading: false})
   }
 
-  // componentDidMount () {
-  //   console.log('component did mount')
-  //   // 1) Create User Pool
-  //   this.userPool = new CognitoUserPool({
-  //     UserPoolId: 'us-east-1_jcaaanek3',
-  //     ClientId: '1bo5b9n2kmhu12s6ofb6b6qhkq'
-  //   })
-  // }
+  async componentDidMount () {
+    try {
+      const user = await AsyncStorage.getItem(USER_KEY)
+      console.log('user: ', user)
+      if (user) {
+        console.log(user)
+      } else {
+        console.log('no user')
+      }
+    } catch (err) {
+      console.log('error: ', err)
+    }
+  }
 
   render () {
     // <Provider store={store}>
@@ -128,164 +95,4 @@ class App extends React.Component {
   }
 }
 
-const ValidateNavigator = createStackNavigator({
-  ValidatePhone: {
-    screen: ValidatePhone
-  },
-  ValidateSuccess: {
-    screen: ValidateSuccess
-  }
-}, {
-  headerMode: 'none'
-})
-
-const HomeNavigator = createStackNavigator({
-  HomeScreen: {
-    screen: HomeDrawerNavigator
-  },
-  WalletView: {
-    screen: WalletScreen
-  },
-  OrgWalletView: {
-    screen: OrgWalletScreen
-  },
-  Validate: {
-    screen: ValidateNavigator
-  }}, {
-  headerMode: 'none'
-})
-
-const OrgHomeNavigator = createStackNavigator({
-  OrgHome: {
-    screen: OrgHomeDrawerNavigator
-  },
-  OrgWalletView: {
-    screen: OrgWalletScreen
-  }}, {
-  headerMode: 'none'
-})
-
-const IntroNavigator = createStackNavigator({
-  Splash: {
-    screen: SplashScreen
-  },
-  Terms: {
-    screen: TermsConditionsScreen
-  },
-  Avatar: {
-    screen: AvatarScreen
-  },
-  Phone: {
-    screen: PhoneScreen
-  },
-  VerifyPhone: {
-    screen: VerifyPhoneScreen
-  },
-  Testnet: {
-    screen: TestnetScreen
-  },
-  Complete: {
-    screen: CompleteScreen
-  },
-  Connect: {
-    screen: ConnectScreen
-  }
-}, {
-  headerMode: 'none'
-})
-
-const TabNavigator = createBottomTabNavigator({
-  Home: HomeNavigator,
-  OrgHomeView: OrgHomeNavigator,
-  Search: SearchScreen
-}, {
-  headerMode: 'none',
-  tabBarComponent: Tabs
-})
-
-const OrgWalletNavigator = createStackNavigator({
-  'addOrgWallet.AddWallet': {
-    screen: addWallet
-  },
-  'addOrgWallet.AddOffer': {
-    screen: addOffer
-  },
-  'addOrgWallet.AddAdmin': {
-    screen: addAdmin
-  }}, {
-  headerMode: 'none'
-})
-
-const RequestNavigator = createStackNavigator({
-  'RequestAmount': {
-    screen: RequestAmount
-  },
-  'RequestQR': {
-    screen: RequestQR
-  },
-  'RequestContacts': {
-    screen: Contacts
-  },
-  'RequestConfirm': {
-    screen: RequestConfirm
-  }}, {
-  headerMode: 'none'
-})
-
-const PayNavigator = createStackNavigator({
-  'PayAmount': {
-    screen: PayAmount
-  },
-  'PayContacts': {
-    screen: Contacts
-  },
-  'PayConfirm': {
-    screen: PayConfirm
-  }}, {
-  headerMode: 'none'
-})
-
-const MainNavigator = createStackNavigator({
-  Intro: {
-    screen: IntroNavigator
-  },
-  Tabs: {
-    screen: TabNavigator
-  },
-  'addOrgWallet': {
-    screen: OrgWalletNavigator
-  },
-  'OrgWalletSettings': {
-    screen: OrgWalletSettings
-  },
-  OrgInventory: {
-    screen: OrgAddInventory
-  },
-  'Pay': {
-    screen: PayNavigator
-  },
-  'Request': {
-    screen: RequestNavigator
-  },
-  'Contacts': {
-    screen: Contacts
-  },
-  'Scanner': {
-    screen: Scanner
-  }}, {
-  headerMode: 'none'
-})
-
-const StartNavigator = createStackNavigator({
-  Main: {
-    screen: MainNavigator
-  },
-  'Scanner': {
-    screen: Scanner
-  }}, {
-  mode: 'modal',
-  headerMode: 'none'
-})
-
-// export default withAuthenticator(App)
 export default App
