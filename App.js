@@ -9,7 +9,7 @@ import { StartNavigator } from 'circles-mobile/lib/navigators/RootNavigation'
 import Amplify from 'aws-amplify'
 // Amplify.Logger.LOG_LEVEL = 'DEBUG'
 
-import { AWS_REGION, USER_POOL_ID, USER_POOL_CLIENT_ID, AUTH_FLOW_TYPE, API_TEST_ENDPOINT, USER_KEY } from 'react-native-dotenv'
+import { AWS_REGION, USER_POOL_ID, USER_POOL_CLIENT_ID, API_TEST_ENDPOINT, USER_KEY } from 'react-native-dotenv'
 
 Amplify.configure({
   Auth: {
@@ -23,22 +23,22 @@ Amplify.configure({
     userPoolWebClientId: USER_POOL_CLIENT_ID,
 
     // OPTIONAL - Enforce user authentication prior to accessing AWS resources or not
-    mandatorySignIn: true,
+    mandatorySignIn: true
 
-    // OPTIONAL - Configuration for cookie storage
-    cookieStorage: {
-      // REQUIRED - Cookie domain (only required if cookieStorage is provided)
-      domain: '.joincircles.net',
-      // OPTIONAL - Cookie path
-      path: '/',
-      // OPTIONAL - Cookie expiration in days
-      expires: 365,
-      // OPTIONAL - Cookie secure flag
-      secure: true
-    },
+    // // OPTIONAL - Configuration for cookie storage
+    // cookieStorage: {
+    //   // REQUIRED - Cookie domain (only required if cookieStorage is provided)
+    //   domain: '.joincircles.net',
+    //   // OPTIONAL - Cookie path
+    //   path: '/',
+    //   // OPTIONAL - Cookie expiration in days
+    //   expires: 365,
+    //   // OPTIONAL - Cookie secure flag
+    //   secure: true
+    // }
 
     // OPTIONAL - Manually set the authentication flow type. Default is 'USER_SRP_AUTH'
-    authenticationFlowType: AUTH_FLOW_TYPE
+    // authenticationFlowType: AUTH_FLOW_TYPE
   },
   API: {
     endpoints: [
@@ -66,10 +66,6 @@ class App extends React.Component {
     })
     this.setState({loading: false})
   }
-
-  // async componentDidMount () {
-
-  // }
 
   render () {
     // <Provider store={store}>
