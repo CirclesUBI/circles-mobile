@@ -36,6 +36,7 @@
     "react-native-camera": "^1.1.4",
     "react-native-check-box": "^2.1.0",
     "react-native-contacts": "^2.2.2",
+    "react-native-maps": "^0.22.1",
     "react-native-permissions": "^1.1.1",
     "react-native-popup-menu": "^0.13.2",
     "react-native-snap-carousel": "^3.7.2",
