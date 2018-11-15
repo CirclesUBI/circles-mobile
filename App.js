@@ -9,18 +9,18 @@ import { StartNavigator } from 'circles-mobile/lib/navigators/RootNavigation'
 import Amplify from 'aws-amplify'
 // Amplify.Logger.LOG_LEVEL = 'DEBUG'
 
-import { AWS_REGION, USER_POOL_ID, USER_POOL_CLIENT_ID, API_TEST_ENDPOINT, USER_KEY } from 'react-native-dotenv'
+// import { AWS_REGION, USER_POOL_ID, USER_POOL_CLIENT_ID, API_TEST_ENDPOINT } from 'react-native-dotenv'
 
 Amplify.configure({
   Auth: {
 
     // REQUIRED - Amazon Cognito Region
-    region: AWS_REGION,
+    region: process.env.AWS_REGION,
 
     // OPTIONAL - Amazon Cognito User Pool ID
-    userPoolId: USER_POOL_ID,
+    userPoolId: process.env.USER_POOL_ID,
 
-    userPoolWebClientId: USER_POOL_CLIENT_ID,
+    userPoolWebClientId: process.env.USER_POOL_CLIENT_ID,
 
     // OPTIONAL - Enforce user authentication prior to accessing AWS resources or not
     mandatorySignIn: true
@@ -44,7 +44,7 @@ Amplify.configure({
     endpoints: [
       {
         name: 'circles',
-        endpoint: API_TEST_ENDPOINT
+        endpoint: process.env.API_TEST_ENDPOINT
       }
     ]
   }
