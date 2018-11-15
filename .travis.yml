@@ -9,6 +9,7 @@ install:
   - npm install
   - mkdir src
 before_script:
+  - echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
   - npm i -g expo-cli
   - expo login -u circlesubi -p $EXP_PASSWORD
 script:
