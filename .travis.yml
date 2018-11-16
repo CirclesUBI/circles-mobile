@@ -10,6 +10,7 @@ install:
   - mkdir src
 before_script:
   - echo Creating environment config file
+  - npm i -g create-env
   - create-env --env-file .env --env-prefix TEST_
   # - touch .env
   # - |
