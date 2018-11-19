@@ -7,6 +7,9 @@
     "ios": {
       "bundleIdentifier": "com.circlesorg.circles"
     },
+    "android": {
+      "package": "com.circlesorg.circles"
+    },
     "slug": "circles-mobile"
   }
 }

@@ -1,0 +1,19 @@
+{
+	"ProjectName": "circles-mobile",
+	"ProjectPath": "/Users/shokishoki/development/circles-mobile",
+	"InitializationTime": "2018-08-01-17-36-46",
+	"LastConfigurationTime": "2018-08-01-17-33-48",
+	"LastNPMInstallTime": "",
+	"FrontendLastBuildTime": "",
+	"LastPublishTime": "",
+	"BackendLastSyncTime": "2018-08-01-17-38-03",
+	"BackendLastBuildTime": "",
+	"BackendLastPushTime": "",
+	"BackendProjectID": "770910f7-fd56-4dde-8c4a-a2eb555047c7",
+	"BackendProjectName": "circles-mobile",
+	"BackendProjectConsoleUrl": "https://console.aws.amazon.com/mobilehub/home#/770910f7-fd56-4dde-8c4a-a2eb555047c7/build",
+	"BackendProjectCreationTime": "2018-06-26T16:18:49.590Z",
+	"BackendProjectLastUpdatedTime": "2018-06-28T15:37:20.312Z",
+	"Framework": "react-native",
+	"BackendLastSyncToDevTime": "2018-08-01-17-38-07"
+}

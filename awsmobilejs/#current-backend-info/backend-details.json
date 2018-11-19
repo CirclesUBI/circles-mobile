@@ -1,0 +1,198 @@
+{
+	"name": "circles-mobile",
+	"projectId": "770910f7-fd56-4dde-8c4a-a2eb555047c7",
+	"region": "eu-central-1",
+	"state": "NORMAL",
+	"createdDate": "2018-06-26T16:18:49.590Z",
+	"lastUpdatedDate": "2018-06-28T15:37:20.312Z",
+	"consoleUrl": "https://console.aws.amazon.com/mobilehub/home#/770910f7-fd56-4dde-8c4a-a2eb555047c7/build",
+	"resources": [
+		{
+			"type": "AWS::S3::Bucket",
+			"name": "circlesmobile-userfiles-mobilehub-667418163",
+			"arn": null,
+			"feature": "user-data",
+			"attributes": {
+				"lastUpdateRequestID": "e9246d4b-66ce-4eae-9e25-57195bf7b082",
+				"region": "eu-central-1",
+				"s3-bucket-console-url": "https://s3.console.aws.amazon.com/s3/buckets/circlesmobile-userfiles-mobilehub-667418163"
+			}
+		},
+		{
+			"type": "AWS::IAM::Policy",
+			"name": "circlesmobile_userfiles_MOBILEHUB_667418163",
+			"arn": null,
+			"feature": "user-data",
+			"attributes": {
+				"authType": "authenticated",
+				"lastUpdateRequestID": "e9246d4b-66ce-4eae-9e25-57195bf7b082",
+				"role": "circlesmobile_auth_MOBILEHUB_667418163"
+			}
+		},
+		{
+			"type": "AWS::IAM::Policy",
+			"name": "circlesmobile_userfiles_MOBILEHUB_667418163",
+			"arn": null,
+			"feature": "user-data",
+			"attributes": {
+				"authType": "unauthenticated",
+				"lastUpdateRequestID": "e9246d4b-66ce-4eae-9e25-57195bf7b082",
+				"role": "circlesmobile_unauth_MOBILEHUB_667418163"
+			}
+		},
+		{
+			"type": "AWS::Cognito::IdentityPool",
+			"name": "circlesmobile_MOBILEHUB_667418163",
+			"arn": "eu-central-1:459201c8-1960-480b-9bad-7b5deeaf8dd6",
+			"feature": "user-signin",
+			"attributes": {
+				"lastUpdateRequestID": "75509972-d802-4bfa-ac69-926a31e0ecd8",
+				"poolid": "eu-central-1:459201c8-1960-480b-9bad-7b5deeaf8dd6",
+				"roleARNs": "arn:aws:iam::183869895864:role/circlesmobile_auth_MOBILEHUB_667418163,arn:aws:iam::183869895864:role/circlesmobile_unauth_MOBILEHUB_667418163"
+			}
+		},
+		{
+			"type": "AWS::IAM::Role",
+			"name": "circlesmobile_smsverification_MOBILEHUB_667418163",
+			"arn": "arn:aws:iam::183869895864:role/service-role/circlesmobile_smsverification_MOBILEHUB_667418163",
+			"feature": "user-signin",
+			"attributes": {
+				"lastUpdateRequestID": "75509972-d802-4bfa-ac69-926a31e0ecd8",
+				"user-pools-role-key": "user-pools-execution-role"
+			}
+		},
+		{
+			"type": "AWS::Cognito::UserPool",
+			"name": "circlesmobile_userpool_MOBILEHUB_667418163",
+			"arn": "eu-central-1_9trhIbHPD",
+			"feature": "user-signin",
+			"attributes": {
+				"alias-attributes": "[\"email\",\"phone_number\"]",
+				"lastUpdateRequestID": "75509972-d802-4bfa-ac69-926a31e0ecd8",
+				"mfa-configuration": "ON",
+				"password-policy": "{\"minimumLength\":8,\"requireUppercase\":true,\"requireLowercase\":true,\"requireNumbers\":true,\"requireSymbols\":true}",
+				"region": "eu-central-1",
+				"user-pools-client-id": "2pov8c0vlkbd31r3bhg0hoek0u",
+				"user-pools-client-secret": "4m3p6ckvmi54f1uogb27ars5v47qjhsqg9qrd7incbchetao7mv",
+				"user-pools-id": "eu-central-1_9trhIbHPD",
+				"user-pools-web-client-id": "1f0h42ltnol2idc928q1fcd41h"
+			}
+		},
+		{
+			"type": "AWS::IAM::Role",
+			"name": "circlesmobile_auth_MOBILEHUB_667418163",
+			"arn": "arn:aws:iam::183869895864:role/circlesmobile_auth_MOBILEHUB_667418163",
+			"feature": "user-signin",
+			"attributes": {
+				"authType": "authenticated",
+				"lastUpdateRequestID": "75509972-d802-4bfa-ac69-926a31e0ecd8"
+			}
+		},
+		{
+			"type": "AWS::IAM::Role",
+			"name": "circlesmobile_unauth_MOBILEHUB_667418163",
+			"arn": "arn:aws:iam::183869895864:role/circlesmobile_unauth_MOBILEHUB_667418163",
+			"feature": "user-signin",
+			"attributes": {
+				"authType": "unauthenticated",
+				"lastUpdateRequestID": "3023dad2-53e1-4ab2-ba2d-54542922aed1"
+			}
+		},
+		{
+			"type": "AWS::Pinpoint::AnalyticsApplication",
+			"name": "circlesmobile_MobileHub",
+			"arn": "9e0ca1c673014be4bd683f251f4c609a",
+			"feature": "analytics",
+			"attributes": {
+				"lastUpdateRequestID": "d172b212-d792-4ac8-acb8-7a661e08ae74"
+			}
+		},
+		{
+			"type": "AWS::IAM::Policy",
+			"name": "circlesmobile_mobileanalytics_MOBILEHUB_667418163",
+			"arn": null,
+			"feature": "analytics",
+			"attributes": {
+				"authType": "authenticated",
+				"lastUpdateRequestID": "75509972-d802-4bfa-ac69-926a31e0ecd8",
+				"role": "circlesmobile_auth_MOBILEHUB_667418163"
+			}
+		},
+		{
+			"type": "AWS::IAM::Policy",
+			"name": "circlesmobile_mobileanalytics_MOBILEHUB_667418163",
+			"arn": null,
+			"feature": "analytics",
+			"attributes": {
+				"authType": "unauthenticated",
+				"lastUpdateRequestID": "75509972-d802-4bfa-ac69-926a31e0ecd8",
+				"role": "circlesmobile_unauth_MOBILEHUB_667418163"
+			}
+		},
+		{
+			"type": "AWS::S3::Bucket",
+			"name": "circlesmobile-hosting-mobilehub-667418163",
+			"arn": null,
+			"feature": "hosting",
+			"attributes": {
+				"lastUpdateRequestID": "d172b212-d792-4ac8-acb8-7a661e08ae74",
+				"region": "eu-central-1",
+				"s3-bucket-console-url": "https://s3.console.aws.amazon.com/s3/buckets/circlesmobile-hosting-mobilehub-667418163",
+				"s3-bucket-website-url": "https://s3.amazonaws.com/circlesmobile-hosting-mobilehub-667418163"
+			}
+		},
+		{
+			"type": "AWS::CloudFront::Distribution",
+			"name": "d25vz0adwcr05o.cloudfront.net",
+			"arn": null,
+			"feature": "hosting",
+			"attributes": {
+				"id": "E1CY72PS8GQCFO",
+				"lastUpdateRequestID": "d172b212-d792-4ac8-acb8-7a661e08ae74"
+			}
+		},
+		{
+			"type": "AWS::IAM::Policy",
+			"name": "circlesmobile_hosting_MOBILEHUB_667418163",
+			"arn": null,
+			"feature": "hosting",
+			"attributes": {
+				"authType": "authenticated",
+				"lastUpdateRequestID": "75509972-d802-4bfa-ac69-926a31e0ecd8",
+				"role": "circlesmobile_auth_MOBILEHUB_667418163"
+			}
+		},
+		{
+			"type": "AWS::IAM::Policy",
+			"name": "circlesmobile_hosting_MOBILEHUB_667418163",
+			"arn": null,
+			"feature": "hosting",
+			"attributes": {
+				"authType": "unauthenticated",
+				"lastUpdateRequestID": "75509972-d802-4bfa-ac69-926a31e0ecd8",
+				"role": "circlesmobile_unauth_MOBILEHUB_667418163"
+			}
+		},
+		{
+			"type": "AWS::S3::Bucket",
+			"name": "circlesmobile-deployments-mobilehub-667418163",
+			"arn": null,
+			"feature": "common",
+			"attributes": {
+				"region": "eu-central-1",
+				"s3-bucket-console-url": "https://s3.console.aws.amazon.com/s3/buckets/circlesmobile-deployments-mobilehub-667418163"
+			}
+		},
+		{
+			"type": "AWS::CloudFormation::Stack",
+			"name": "Development",
+			"arn": null,
+			"feature": "cloud-api",
+			"attributes": {
+				"primary": "true",
+				"region": "eu-central-1",
+				"stateSummary": "NOT_YET_DEPLOYED"
+			}
+		}
+	]
+}
