@@ -9,7 +9,7 @@ import { StartNavigator } from 'circles-mobile/lib/navigators/RootNavigation'
 import Amplify from 'aws-amplify'
 // Amplify.Logger.LOG_LEVEL = 'DEBUG'
 
-import { AWS_REGION, USER_POOL_ID, USER_POOL_CLIENT_ID, API_TEST_ENDPOINT } from 'react-native-dotenv'
+import { AWS_REGION, USER_POOL_ID, USER_POOL_CLIENT_ID, API_TEST_ENDPOINT, S3_BUCKET } from 'react-native-dotenv'
 
 Amplify.configure({
   Auth: {
@@ -47,6 +47,10 @@ Amplify.configure({
         endpoint: API_TEST_ENDPOINT
       }
     ]
+  },
+  Storage: {
+    bucket: S3_BUCKET,
+    region: AWS_REGION
   }
 })
 
