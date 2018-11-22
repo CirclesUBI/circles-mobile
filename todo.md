@@ -4,7 +4,5 @@
 [ ] Navigation, how to put hompage at start of navigation stack?
 [ ] Extra login screen? How do deal with passwords?
 [ ] Why isn't ant design css working?
-[ ] File placement? Monad services in RN
-[ ] How to deal with dotenv files on CI?
-
- 
+[ ] File placement? Singleton services in RN
+[x] How to deal with dotenv files on CI? 
