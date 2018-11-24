@@ -11,6 +11,9 @@ import Amplify from 'aws-amplify'
 
 import { AWS_REGION, USER_POOL_ID, USER_POOL_CLIENT_ID, API_TEST_ENDPOINT, S3_BUCKET, IDENTITY_POOL_ID } from 'react-native-dotenv'
 
+global.self = global
+global.Buffer = global.Buffer || require('buffer').Buffer
+
 Amplify.configure({
   Auth: {
     // REQUIRED only for Federated Authentication - Amazon Cognito Identity Pool ID
