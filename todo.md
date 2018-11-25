@@ -12,3 +12,5 @@ refactor validateUser -> verifyUser to future proof against future usage of vali
 location of VERIFY_USER? onboarding or user actions?
 
 need a flag for having finished onboarding, is address a good candidate?
+
+MFA questions: any use in adding TOTP? SMS verif for phones
