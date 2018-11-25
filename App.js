@@ -5,6 +5,7 @@ import { Provider } from 'react-redux'
 import { MenuProvider } from 'react-native-popup-menu'
 import store from 'circles-mobile/lib/store'
 import { StartNavigator } from 'circles-mobile/lib/navigators/RootNavigation'
+import NavigationService from 'circles-mobile/lib/navigators/NavigationService'
 
 import Amplify from 'aws-amplify'
 // Amplify.Logger.LOG_LEVEL = 'DEBUG'
@@ -73,7 +74,7 @@ class App extends React.Component {
       ? <AppLoading />
       : (<Provider store={store}>
         <MenuProvider>
-          <StartNavigator />
+          <StartNavigator ref={navigatorRef => NavigationService.setTopLevelNavigator(navigatorRef)} />
         </MenuProvider>
       </Provider>)
   }
