@@ -9,7 +9,19 @@ install:
   - npm install
   - mkdir src
 before_script:
-  - npm i -g exp
-  - exp login -u circlesubi -p $EXP_PASSWORD
+  - echo Creating environment config file
+  - npm i -g create-env
+  - create-env --env-file .env --env-prefix TEST_
+  # - touch .env
+  # - |
+  #   tee .env > /dev/null <<-EOF \
+  #   -- AWS_REGION=$AWS_REGION \
+  #   -- USER_POOL_ID=$USER_POOL_ID \
+  #   -- USER_POOL_CLIENT_ID=$USER_POOL_CLIENT_ID \
+  #   -- API_TEST_ENDPOINT=$API_TEST_ENDPOINT \
+  #   -- EOF
+  - echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
+  - npm i -g expo-cli
+  - expo login -u circlesubi -p $EXP_PASSWORD
 script:
-  - exp publish
+  - expo publish
