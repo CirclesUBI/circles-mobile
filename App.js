@@ -7,6 +7,8 @@ import store from 'circles-mobile/lib/store'
 import { StartNavigator } from 'circles-mobile/lib/navigators/RootNavigation'
 import NavigationService from 'circles-mobile/lib/navigators/NavigationService'
 
+import LoadingSpinner from 'circles-mobile/lib/components/LoadingSpinner'
+
 import Amplify from 'aws-amplify'
 // Amplify.Logger.LOG_LEVEL = 'DEBUG'
 
@@ -91,6 +93,7 @@ class App extends React.Component {
       ? <AppLoading />
       : (<Provider store={store}>
         <MenuProvider>
+          <LoadingSpinner />
           <StartNavigator ref={navigatorRef => NavigationService.setTopLevelNavigator(navigatorRef)} />
         </MenuProvider>
       </Provider>)
