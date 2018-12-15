@@ -12,7 +12,7 @@ import LoadingSpinner from 'circles-mobile/lib/components/LoadingSpinner'
 import Amplify from 'aws-amplify'
 // Amplify.Logger.LOG_LEVEL = 'DEBUG'
 
-import { AWS_REGION, USER_POOL_ID, USER_POOL_CLIENT_ID, API_TEST_ENDPOINT, S3_BUCKET, IDENTITY_POOL_ID } from 'react-native-dotenv'
+import { AWS_REGION, USER_POOL_ID, USER_POOL_CLIENT_ID, API_USER_ENDPOINT, S3_BUCKET, IDENTITY_POOL_ID } from 'react-native-dotenv'
 
 global.self = global
 global.Buffer = global.Buffer || require('buffer').Buffer
@@ -59,8 +59,8 @@ Amplify.configure({
   API: {
     endpoints: [
       {
-        name: 'circles',
-        endpoint: API_TEST_ENDPOINT
+        name: 'user',
+        endpoint: API_USER_ENDPOINT
       }
     ]
   },

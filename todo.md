@@ -6,11 +6,5 @@
 [ ] Why isn't ant design css working?
 [ ] File placement? Singleton services in RN
 [x] How to deal with dotenv files on CI? 
+[ ] Redo incorrrect code login flow
 
-refactor validateUser -> verifyUser to future proof against future usage of validation terminology for our validator system
-
-location of VERIFY_USER? onboarding or user actions?
-
-need a flag for having finished onboarding, is address a good candidate?
-
-MFA questions: any use in adding TOTP? SMS verif for phones
