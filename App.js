@@ -10,13 +10,15 @@ import NavigationService from 'circles-mobile/lib/navigators/NavigationService'
 import LoadingSpinner from 'circles-mobile/lib/components/LoadingSpinner'
 
 import Amplify from 'aws-amplify'
-// Amplify.Logger.LOG_LEVEL = 'DEBUG'
 
 import { AWS_REGION, USER_POOL_ID, USER_POOL_CLIENT_ID, API_USER_ENDPOINT, S3_BUCKET, IDENTITY_POOL_ID } from 'react-native-dotenv'
+
+const logger = new Amplify.Logger('App')
 
 global.self = global
 global.Buffer = global.Buffer || require('buffer').Buffer
 
+Amplify.Logger.LOG_LEVEL = 'INFO'
 Amplify.configure({
   Auth: {
     // REQUIRED only for Federated Authentication - Amazon Cognito Identity Pool ID
@@ -37,24 +39,6 @@ Amplify.configure({
 
     // OPTIONAL - Enforce user authentication prior to accessing AWS resources or not
     mandatorySignIn: false
-
-    // // OPTIONAL - Configuration for cookie storage
-    // cookieStorage: {
-    // // REQUIRED - Cookie domain (only required if cookieStorage is provided)
-    //     domain: '.yourdomain.com',
-    // // OPTIONAL - Cookie path
-    //     path: '/',
-    // // OPTIONAL - Cookie expiration in days
-    //     expires: 365,
-    // // OPTIONAL - Cookie secure flag
-    //     secure: true
-    // },
-
-    // OPTIONAL - customized storage object
-    // storage: new MyStorage(),
-
-    // OPTIONAL - Manually set the authentication flow type. Default is 'USER_SRP_AUTH'
-    // authenticationFlowType: 'USER_PASSWORD_AUTH'
   },
   API: {
     endpoints: [
@@ -76,6 +60,7 @@ class App extends React.Component {
     this.state = {
       loading: true
     }
+    logger.info('Initializing ...')
   }
   async componentWillMount () {
     await Font.loadAsync({
@@ -85,10 +70,10 @@ class App extends React.Component {
       'now-alt-bold': require('circles-mobile/assets/fonts/NowAlt-Bold.otf')
     })
     this.setState({loading: false})
+    logger.info('Mounted')
   }
 
   render () {
-    // <Provider store={store}>
     return this.state.loading
       ? <AppLoading />
       : (<Provider store={store}>
