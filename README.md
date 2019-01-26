@@ -1,4 +1,4 @@
-# Circles Mobile [![Build Status](https://travis-ci.org/CirclesUBI/circles-mobile.svg?branch=master)](https://travis-ci.org/CirclesUBI/circles-mobile) [![Chat Server](https://chat.joincircles.net/api/v1/shield.svg?type=online&name=circles%20chat)](https://chat.joincircles.net) [![Backers](https://opencollective.com/circles/supporters/badge.svg)](https://opencollective.com/circles)
+# Circles Mobile [![Build Status](https://travis-ci.org/CirclesUBI/circles-mobile.svg?branch=master)](https://travis-ci.org/CirclesUBI/circles-mobile) [![Chat Server](https://chat.joincircles.net/api/v1/shield.svg?type=online&name=circles%20chat)](https://chat.joincircles.net) [![Backers](https://opencollective.com/circles/supporters/badge.svg)](https://opencollective.com/circles) [![Follow Circles](https://img.shields.io/twitter/follow/circlesubi.svg?label=follow+circles)](https://twitter.com/CirclesUBI)
 
 Circles is a blockchain-based Universal Basic Income implementation.
 
