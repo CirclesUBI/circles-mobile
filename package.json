@@ -3,6 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "main": "node_modules/expo/AppEntry.js",
+  "preinstall": "nvm use -i 10.15.0 || echo nvm not found: check node version && pause",
   "scripts": {
     "start": "expo start",
     "cleanstart": "watchman watch-del E:/dev/circles/circles-mobile && expo r -c",
