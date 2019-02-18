@@ -9,9 +9,7 @@ install:
   - echo Installing packages ...
   - npm install
   - echo Installing and compiling contracts ...
-  - mkdir contracts
   - cd contracts
-  - git clone https://github.com/CirclesUBI/circles-contracts.git .
   - npm install
   - npx truffle compile
   - cd ..
