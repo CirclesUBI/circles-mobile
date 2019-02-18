@@ -10,6 +10,8 @@ install:
   - npm install
   - echo Installing and compiling contracts ...
   - cd contracts
+  - git checkout master 
+  - git pull
   - npm install
   - npx truffle compile
   - cd ..
