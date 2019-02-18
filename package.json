@@ -27,7 +27,6 @@
   "dependencies": {
     "@expo/vector-icons": "^6.3.1",
     "add": "^2.0.6",
-    "amplitude": "^3.5.0",
     "antd-mobile-rn": "^2.3.1",
     "aws-amplify": "^1.1.9",
     "aws-amplify-react-native": "^2.0.8",
