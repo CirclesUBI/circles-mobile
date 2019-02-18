@@ -1,4 +1,4 @@
 [submodule "contracts"]
 	path = contracts
-	url = git@github.com:CirclesUBI/circles-contracts.git
+	url = https://github.com/CirclesUBI/circles-contracts.git
   branch = master
