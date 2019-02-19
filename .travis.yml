@@ -6,7 +6,15 @@ language: node_js
 node_js:
   - 8.11.1
 install:
+  - echo Installing packages ...
   - npm install
+  - echo Installing and compiling contracts ...
+  - cd contracts
+  - git checkout master 
+  - git pull
+  - npm install
+  - npx truffle compile
+  - cd ..
   - mkdir src
 before_script:
   - echo Creating environment config file
