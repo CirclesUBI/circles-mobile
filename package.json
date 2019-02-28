@@ -20,7 +20,7 @@
     "babel-core": "7.0.0-bridge.0",
     "babel-plugin-import": "^1.8.0",
     "expo-cli": "^2.11.2",
-    "jest-expo": "~27.0.0",
+    "jest-expo": "^32.0.0",
     "react-native-dotenv": "^0.2.0",
     "react-test-renderer": "16.3.1",
     "schedule": "^0.4.0"
