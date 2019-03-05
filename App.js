@@ -43,9 +43,9 @@ Amplify.configure({
   API: {
     endpoints: [
       {
-        name: 'user',
+        name: 'users',
         endpoint: API_USER_ENDPOINT
-      }
+      }      
     ]
   },
   Storage: {
