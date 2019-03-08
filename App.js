@@ -11,7 +11,7 @@ import LoadingSpinner from 'circles-mobile/lib/components/LoadingSpinner'
 
 import Amplify from 'aws-amplify'
 
-import { AWS_REGION, USER_POOL_ID, USER_POOL_CLIENT_ID, API_USER_ENDPOINT, S3_BUCKET, IDENTITY_POOL_ID } from 'react-native-dotenv'
+import { AWS_REGION, USER_POOL_ID, USER_POOL_CLIENT_ID, API_USER_ENDPOINT, API_RELAYER_ENDPOINT, S3_BUCKET, IDENTITY_POOL_ID } from 'react-native-dotenv'
 
 const logger = new Amplify.Logger('App')
 
@@ -44,7 +44,14 @@ Amplify.configure({
     endpoints: [
       {
         name: 'users',
-        endpoint: "https://api.joincircles.net/v1.1.2/users"
+        endpoint: 'http://localhost:8080/v1.1.2/users'
+        // endpoint: API_USER_ENDPOINT
+        // endpoint: "https://api.joincircles.net/v1.1.2/users"
+      },
+      {
+        name: 'relayer',
+        endpoint: 'http://localhost:8080/v1.1.2/relayer'
+        // endpoint: API_RELAYER_ENDPOINT
       }
     ]
   },
