@@ -52,6 +52,11 @@ Amplify.configure({
         name: 'relayer',
         endpoint: 'http://localhost:8080/v1.1.2/relayer'
         // endpoint: API_RELAYER_ENDPOINT
+      },
+      {
+        name: 'orgs',
+        endpoint: 'http://localhost:8080/v1.1.2/orgs'
+        // endpoint: API_RELAYER_ENDPOINT
       }
     ]
   },
