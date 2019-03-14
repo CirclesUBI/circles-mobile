@@ -19,7 +19,8 @@ install:
 before_script:
   - echo Creating environment config file
   - npm i -g create-env
-  - create-env --env-file .env --env-prefix TEST_
+  - export TEST_TRAVIS_BUILD_NUMBER=$TRAVIS_BUILD_NUMBER
+  - create-env --env-file .env --env-prefix TEST_  
   # - touch .env
   # - |
   #   tee .env > /dev/null <<-EOF \
