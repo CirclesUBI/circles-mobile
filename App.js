@@ -77,7 +77,7 @@ class App extends React.Component {
       'now-alt-medium': require('circles-mobile/assets/fonts/NowAlt-Medium.otf'),
       'now-alt-bold': require('circles-mobile/assets/fonts/NowAlt-Bold.otf')
     })
-    this.setState({loading: false})
+    this.setState({ loading: false })
     logger.info('Mounted')
   }
 
@@ -87,7 +87,11 @@ class App extends React.Component {
       : (<Provider store={store}>
         <MenuProvider>
           <LoadingSpinner />
-          <StartNavigator ref={navigatorRef => NavigationService.setTopLevelNavigator(navigatorRef)} />
+          <StartNavigator
+            // persistenceKey={'NavigationState'}
+            ref={navigatorRef => NavigationService.setTopLevelNavigator(navigatorRef)}
+            // renderLoadingExperimental={() => <LoadingSpinner />}
+          />
         </MenuProvider>
       </Provider>)
   }
