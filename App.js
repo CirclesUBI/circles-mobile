@@ -44,7 +44,7 @@ Amplify.configure({
     endpoints: [
       {
         name: 'users',
-        endpoint: "https://api.joincircles.net/v1.1.2/users"
+        endpoint: API_USER_ENDPOINT
       }
     ]
   },
