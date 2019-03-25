@@ -15,7 +15,11 @@ npm start
 
 # start ios simulator
 npm run ios
+
+# start android simulator
+npm run android
 ```
+
 
 ### Node Version
 
