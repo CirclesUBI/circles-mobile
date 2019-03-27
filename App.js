@@ -88,7 +88,7 @@ class App extends React.Component {
         <MenuProvider>
           <LoadingSpinner />
           <StartNavigator
-            persistenceKey={'NavigationState'}
+            // persistenceKey={'NavigationState'}
             ref={navigatorRef => NavigationService.setTopLevelNavigator(navigatorRef)}
             // renderLoadingExperimental={() => <LoadingSpinner />}
           />
