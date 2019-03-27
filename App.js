@@ -53,10 +53,6 @@ Amplify.configure({
       {
         name: 'orgs',
         endpoint: API_ORG_ENDPOINT
-      },
-      {
-        name: 'test',
-        endpoint: 'http://192.168.178.27:8080/'
       }
     ]
   },
