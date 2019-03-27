@@ -20,6 +20,16 @@ npm run ios
 npm run android
 ```
 
+### Android 
+Update `.\android\app\src\main\java\host\exp\exponent\generated\DetachBuildConstants.java` with your expo packager address (Which is displayed when you run `expo start`):
+
+`public static final String DEVELOPMENT_URL = "<expo packager address>"`
+
+Update `.\android\local.properties` with the location of your sdk on disk, mine is:
+
+`sdk.dir=e\:\\Users\\username\\AppData\\Local\\Android\\Sdk`
+
+Also, I had a build error with a missing file `shell-app-manifest.json`, so I just copied the file in the same folder `kernel-manifest.json` and renamed it. Not sure what this might mean.
 
 ### Node Version
 
