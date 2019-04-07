@@ -45,6 +45,7 @@
     "react-native-camera": "^1.8.0",
     "react-native-check-box": "^2.1.0",
     "react-native-contacts": "^2.2.2",
+    "react-native-device-info": "^1.4.2",
     "react-native-maps": "^0.22.1",
     "react-native-mime-types": "^2.2.1",
     "react-native-permissions": "^1.1.1",
