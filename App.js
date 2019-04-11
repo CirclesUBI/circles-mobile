@@ -13,6 +13,17 @@ import Amplify from 'aws-amplify'
 
 import { AWS_REGION, USER_POOL_ID, USER_POOL_CLIENT_ID, API_USER_ENDPOINT, API_RELAYER_ENDPOINT, API_ORG_ENDPOINT, S3_BUCKET, IDENTITY_POOL_ID } from 'react-native-dotenv'
 
+import I18n from 'redux-i18n'
+
+const translations = {
+  "en": {
+    "welcome": "Welcome to"
+  },
+  "de": {
+    "welcome": "Wilkommen auf"
+  }
+}
+
 const logger = new Amplify.Logger('App')
 
 global.self = global
@@ -85,14 +96,16 @@ class App extends React.Component {
     return this.state.loading
       ? <AppLoading />
       : (<Provider store={store}>
-        <MenuProvider>
-          <LoadingSpinner />
-          <StartNavigator
-            // persistenceKey={'NavigationState'}
-            ref={navigatorRef => NavigationService.setTopLevelNavigator(navigatorRef)}
-            // renderLoadingExperimental={() => <LoadingSpinner />}
-          />
-        </MenuProvider>
+        <I18n translations={translations} initialLang="de">
+          <MenuProvider>
+            <LoadingSpinner />
+            <StartNavigator
+              // persistenceKey={'NavigationState'}
+              ref={navigatorRef => NavigationService.setTopLevelNavigator(navigatorRef)}
+              // renderLoadingExperimental={() => <LoadingSpinner />}
+            />
+          </MenuProvider>
+        </I18n>
       </Provider>)
   }
 }
