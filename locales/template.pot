@@ -1,0 +1,4 @@
+#: lib/components/Onboarding/splash/OnboardingIntro.js
+msgid "welcome to"
+msgstr ""
+

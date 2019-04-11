@@ -10,7 +10,9 @@
     "eject": "expo eject",
     "android": "expo android",
     "ios": "expo ios",
-    "test": "jest"
+    "test": "jest",
+    "i18n:extract": "i18n_extract --source=lib --pattern=translate",
+    "i18n:import": "i18n_import --translations=i18n"
   },
   "jest": {
     "preset": "jest-expo"

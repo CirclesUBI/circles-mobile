@@ -15,14 +15,7 @@ import { AWS_REGION, USER_POOL_ID, USER_POOL_CLIENT_ID, API_USER_ENDPOINT, API_R
 
 import I18n from 'redux-i18n'
 
-const translations = {
-  "en": {
-    "welcome": "Welcome to"
-  },
-  "de": {
-    "welcome": "Wilkommen auf"
-  }
-}
+import {translations} from 'circles-mobile/i18n/translations'
 
 const logger = new Amplify.Logger('App')
 
