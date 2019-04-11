@@ -23,7 +23,7 @@ npm run ganache
 
 # deploy contracts
 npx truffle compile
-npx truffle migrate
+npx truffle migrate --reset --compile-all
 
 # use truffle console
 npx truffle console
