@@ -13,8 +13,6 @@ import Amplify from 'aws-amplify'
 
 import { AWS_REGION, USER_POOL_ID, USER_POOL_CLIENT_ID, API_USER_ENDPOINT, API_RELAYER_ENDPOINT, API_ORG_ENDPOINT, S3_BUCKET, IDENTITY_POOL_ID } from 'react-native-dotenv'
 
-import DeviceInfo from 'react-native-device-info'
-
 const logger = new Amplify.Logger('App')
 
 global.self = global
@@ -73,16 +71,6 @@ class App extends React.Component {
     logger.info('Initializing ...')
   }
   async componentWillMount () {
-
-    let applicationName = DeviceInfo.getApplicationName()
-    console.log('applicationName', applicationName)
-
-    let deviceId = DeviceInfo.getDeviceId()
-    console.log('deviceId', deviceId)
-
-    let uniqueID = DeviceInfo.getUniqueID()
-    console.log('uniqueID', uniqueID)
-
     await Font.loadAsync({
       'ostrich-sans-heavy': require('circles-mobile/assets/fonts/OstrichSans-Heavy.otf'),
       'now-alt-regular': require('circles-mobile/assets/fonts/NowAlt-Regular.otf'),
