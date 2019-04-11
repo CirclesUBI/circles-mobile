@@ -96,7 +96,7 @@ class App extends React.Component {
     return this.state.loading
       ? <AppLoading />
       : (<Provider store={store}>
-        <I18n translations={translations} initialLang="de">
+        <I18n translations={translations} initialLang="en">
           <MenuProvider>
             <LoadingSpinner />
             <StartNavigator
