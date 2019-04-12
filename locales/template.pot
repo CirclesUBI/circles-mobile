@@ -40,6 +40,15 @@ msgid "CONTACTS"
 msgstr ""
 
 #: lib/components/AddOrgWallet/AddAdmin.js
+#: lib/components/AddOrgWallet/AddWallet.js
+msgid "Organization Name"
+msgstr ""
+
+#: lib/components/AddOrgWallet/AddAdmin.js
+msgid "Search Contacts"
+msgstr ""
+
+#: lib/components/AddOrgWallet/AddAdmin.js
 msgid "Skip this step"
 msgstr ""
 
@@ -58,6 +67,20 @@ msgid "Please enter information about what you are offering in exchange for Circ
 msgstr ""
 
 #: lib/components/AddOrgWallet/AddOffer.js
+msgid "Item Name"
+msgstr ""
+
+#: lib/components/AddOrgWallet/AddOffer.js
+msgid "Category"
+msgstr ""
+
+#: lib/components/AddOrgWallet/AddOffer.js
+#: lib/components/Pay/PayConfirm.js
+#: lib/components/Request/RequestConfirm.js
+msgid "Description"
+msgstr ""
+
+#: lib/components/AddOrgWallet/AddOffer.js
 msgid "Upload an Image"
 msgstr ""
 
@@ -71,6 +94,10 @@ msgstr ""
 
 #: lib/components/AddOrgWallet/AddWallet.js
 msgid "This secondary wallet will not receive a basic income and is only visible to you or administrators that you add."
+msgstr ""
+
+#: lib/components/AddOrgWallet/AddWallet.js
+msgid "Enter wallet name"
 msgstr ""
 
 #: lib/components/Buttons/actionButtons.js
@@ -184,16 +211,39 @@ msgid "Email"
 msgstr ""
 
 #: lib/components/Onboarding/OnboardingLogin.js
+#: lib/components/Recovery/ForgotPasswordScreen.js
+msgid "USERNAME / MOBILE NUMBER"
+msgstr ""
+
+#: lib/components/Onboarding/OnboardingLogin.js
+msgid "Enter your mobile number"
+msgstr ""
+
+#: lib/components/Onboarding/OnboardingLogin.js
+#: lib/components/Validate/ValidatePhone.js
+msgid "Mobile Number"
+msgstr ""
+
+#: lib/components/Onboarding/OnboardingLogin.js
+msgid "PASSWORD"
+msgstr ""
+
+#: lib/components/Onboarding/OnboardingLogin.js
+msgid "Enter your password"
+msgstr ""
+
+#: lib/components/Onboarding/OnboardingLogin.js
+#: lib/components/Onboarding/OnboardingPassword.js
+#: lib/components/Recovery/ForgotPasswordUpdate.js
+msgid "Password"
+msgstr ""
+
+#: lib/components/Onboarding/OnboardingLogin.js
 msgid "Forgot Password?"
 msgstr ""
 
 #: lib/components/Onboarding/OnboardingName.js
 msgid "Name"
-msgstr ""
-
-#: lib/components/Onboarding/OnboardingPassword.js
-#: lib/components/Recovery/ForgotPasswordUpdate.js
-msgid "Password"
 msgstr ""
 
 #: lib/components/Onboarding/OnboardingPassword.js
@@ -391,11 +441,6 @@ msgstr ""
 
 #: lib/components/Pay/PayConfirm.js
 #: lib/components/Request/RequestConfirm.js
-msgid "Description"
-msgstr ""
-
-#: lib/components/Pay/PayConfirm.js
-#: lib/components/Request/RequestConfirm.js
 msgid "Enter Description..."
 msgstr ""
 
@@ -407,12 +452,24 @@ msgstr ""
 msgid "PAY"
 msgstr ""
 
+#: lib/components/Recovery/ForgotPasswordScreen.js
+msgid "Enter username or mobile #"
+msgstr ""
+
+#: lib/components/Recovery/ForgotPasswordScreen.js
+msgid "Username / Mobile Number"
+msgstr ""
+
 #: lib/components/Recovery/ForgotPasswordSeedPhrase.js
 msgid "ENTER SEED PHRASE"
 msgstr ""
 
 #: lib/components/Recovery/ForgotPasswordSeedPhrase.js
 msgid "Enter your 12 word seed phrase to unlock your wallet."
+msgstr ""
+
+#: lib/components/Recovery/ForgotPasswordSeedPhrase.js
+msgid "Seed Phrase"
 msgstr ""
 
 #: lib/components/Recovery/ForgotPasswordVerify.js
@@ -504,6 +561,10 @@ msgstr ""
 
 #: lib/components/Validate/ValidatePhone.js
 msgid "Contact the validator to get your code."
+msgstr ""
+
+#: lib/components/Validate/ValidatePhone.js
+msgid "Enter Code"
 msgstr ""
 
 #: lib/components/Validate/ValidatePhone.js
