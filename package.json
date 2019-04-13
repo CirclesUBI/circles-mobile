@@ -50,6 +50,7 @@
     "react-native-contacts": "^2.2.2",
     "react-native-maps": "^0.22.1",
     "react-native-mime-types": "^2.2.1",
+    "react-native-modal-dropdown": "^0.6.2",
     "react-native-permissions": "^1.1.1",
     "react-native-popup-menu": "^0.13.2",
     "react-native-snap-carousel": "^3.7.2",
