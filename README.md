@@ -4,23 +4,37 @@ Circles is a blockchain-based Universal Basic Income implementation.
 
 [Website](http://www.joincircles.net) // [Whitepaper](https://github.com/CirclesUBI/docs/blob/master/Circles.md) // [Chat](https://chat.joincircles.net)
 
-## Development
+## Setup
 
 ```sh
+# set up submodules
+git clone
+git submodule update --init
+
 # install
 npm install
 
-# start dev server
-npm start
+# install contracts
+cd contracts
+npm install
 
-# start ios simulator
-npm run ios
+# set up blockchain
+npm run ganache
 
-# start android simulator
-npm run android
+# deploy contracts
+npx truffle compile
+npx truffle migrate --reset --compile-all
+
+# use truffle console
+npx truffle console
+> let hf = await HubFactory.deployed()
+> let s = await hf.spawn(1736111111111111, 0, 18, 'CRC', 3600, 100)
 ```
 
-### Android 
+### Android / iOS
+See the relevant section here: https://docs.expo.io/versions/latest/expokit/expokit/
+
+### Extra Android Steps
 Update `.\android\app\src\main\java\host\exp\exponent\generated\DetachBuildConstants.java` with your expo packager address (Which is displayed when you run `expo start`):
 
 `public static final String DEVELOPMENT_URL = "<expo packager address>"`
@@ -30,6 +44,18 @@ Update `.\android\local.properties` with the location of your sdk on disk, mine 
 `sdk.dir=e\:\\Users\\username\\AppData\\Local\\Android\\Sdk`
 
 Also, I had a build error with a missing file `shell-app-manifest.json`, so I just copied the file in the same folder `kernel-manifest.json` and renamed it. Not sure what this might mean.
+
+## Development
+```sh
+
+# Build the Android Studio / XCode project.
+
+# start expo packager
+expo start
+# Press 'a' or 'i' (?) to open in Android / iOS emulator
+
+# Hotreloading should work when saving files in the `lib` folder.
+```
 
 ### Node Version
 
