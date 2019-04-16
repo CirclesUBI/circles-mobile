@@ -57,6 +57,36 @@ expo start
 # Hotreloading should work when saving files in the `lib` folder.
 ```
 
+### Environment Variables
+Get in touch with @ana0 or @edzillion to request these env vars.
+
+```sh
+# Cognito
+USER_POOL_ID=
+USER_POOL_CLIENT_ID=
+IDENTITY_POOL_ID=
+
+# Api Endpoints
+API_USER_ENDPOINT=
+API_ORG_ENDPOINT=
+API_RELAYER_ENDPOINT=
+
+# Blockchain
+HUB_ADDRESS=
+RELAY_ADDRESS=
+RPC_URL=
+
+# AWS Credentials
+AWS_REGION=
+AWS_ACCESS_KEY_ID=
+AWS_SECRET_ACCESS_KEY=
+
+# Other 
+TRAVIS_BUILD_NUMBER=
+EXPO_DEBUG=
+S3_BUCKET=
+```
+
 ### Node Version
 
 We use the `.nvmrc` file to manage the version of node. You can use
