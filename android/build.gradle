@@ -12,6 +12,14 @@ buildscript {
   }
 }
 
+ext {
+  // dependency versions
+  googlePlayServicesVersion = "+" // default: "+"
+  compileSdkVersion = 27 // default: 23
+  buildToolsVersion = "27.0.3" // default: "25.0.2"
+  targetSdkVersion = 27 // default: 22
+}
+
 allprojects {
   repositories {
     // For non-detach
@@ -62,6 +70,17 @@ allprojects {
 
     // Want this last so that we never end up with a stale cache
     mavenLocal()
+  }
+}
+
+subprojects {
+  project.configurations.all {
+    resolutionStrategy.eachDependency { details ->
+      if (details.requested.group == 'com.android.support'
+          && !details.requested.name.contains('multidex')) {
+        details.useVersion "27.1.1"
+      }
+    }
   }
 }
 
