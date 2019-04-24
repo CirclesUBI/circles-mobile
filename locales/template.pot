@@ -1,0 +1,589 @@
+#: lib/components/AddOrgWallet/AddAdmin.js
+msgid "Invite as Admin"
+msgstr ""
+
+#: lib/components/AddOrgWallet/AddAdmin.js
+#: lib/components/AddOrgWallet/AddOffer.js
+#: lib/components/OrgWallet/OrgWalletSettingsScreen.js
+#: lib/components/Scanner/CameraAuthDenied.js
+msgid "Back"
+msgstr ""
+
+#: lib/components/AddOrgWallet/AddAdmin.js
+#: lib/components/AddOrgWallet/AddOffer.js
+#: lib/components/AddOrgWallet/AddWallet.js
+msgid "Step 1"
+msgstr ""
+
+#: lib/components/AddOrgWallet/AddAdmin.js
+#: lib/components/AddOrgWallet/AddOffer.js
+#: lib/components/AddOrgWallet/AddWallet.js
+msgid "Step 2"
+msgstr ""
+
+#: lib/components/AddOrgWallet/AddAdmin.js
+#: lib/components/AddOrgWallet/AddOffer.js
+#: lib/components/AddOrgWallet/AddWallet.js
+msgid "Step 3"
+msgstr ""
+
+#: lib/components/AddOrgWallet/AddAdmin.js
+msgid "Add Administrators"
+msgstr ""
+
+#: lib/components/AddOrgWallet/AddAdmin.js
+msgid "Adding administrators allows them to request and make payments, and see this organizational wallet's transaction history."
+msgstr ""
+
+#: lib/components/AddOrgWallet/AddAdmin.js
+msgid "CONTACTS"
+msgstr ""
+
+#: lib/components/AddOrgWallet/AddAdmin.js
+#: lib/components/AddOrgWallet/AddWallet.js
+msgid "Organization Name"
+msgstr ""
+
+#: lib/components/AddOrgWallet/AddAdmin.js
+msgid "Search Contacts"
+msgstr ""
+
+#: lib/components/AddOrgWallet/AddAdmin.js
+msgid "Skip this step"
+msgstr ""
+
+#: lib/components/AddOrgWallet/AddAdmin.js
+#: lib/components/AddOrgWallet/AddOffer.js
+#: lib/components/AddOrgWallet/AddWallet.js
+msgid "Next"
+msgstr ""
+
+#: lib/components/AddOrgWallet/AddOffer.js
+msgid "Trading goods and services"
+msgstr ""
+
+#: lib/components/AddOrgWallet/AddOffer.js
+msgid "Please enter information about what you are offering in exchange for Circles. This information will be displayed in the app when people search for organizations."
+msgstr ""
+
+#: lib/components/AddOrgWallet/AddOffer.js
+msgid "Item Name"
+msgstr ""
+
+#: lib/components/AddOrgWallet/AddOffer.js
+msgid "Category"
+msgstr ""
+
+#: lib/components/AddOrgWallet/AddOffer.js
+#: lib/components/Pay/PayConfirm.js
+#: lib/components/Request/RequestConfirm.js
+msgid "Description"
+msgstr ""
+
+#: lib/components/AddOrgWallet/AddOffer.js
+msgid "Upload an Image"
+msgstr ""
+
+#: lib/components/AddOrgWallet/AddWallet.js
+msgid "Step 4"
+msgstr ""
+
+#: lib/components/AddOrgWallet/AddWallet.js
+msgid "Create an organizational wallet*"
+msgstr ""
+
+#: lib/components/AddOrgWallet/AddWallet.js
+msgid "This secondary wallet will not receive a basic income and is only visible to you or administrators that you add."
+msgstr ""
+
+#: lib/components/AddOrgWallet/AddWallet.js
+msgid "Enter wallet name"
+msgstr ""
+
+#: lib/components/Buttons/actionButtons.js
+msgid "ADD CONTACTS"
+msgstr ""
+
+#: lib/components/Buttons/actionButtons.js
+msgid "GET VALIDATED"
+msgstr ""
+
+#: lib/components/ConnectScreen.js
+msgid "CONNECT WITH UPORT"
+msgstr ""
+
+#: lib/components/ConnectScreen.js
+msgid "CONNECT WITH FACEBOOK"
+msgstr ""
+
+#: lib/components/ConnectScreen.js
+msgid "CONNECT WITH GOOGLE"
+msgstr ""
+
+#: lib/components/Contacts.js
+msgid "To"
+msgstr ""
+
+#: lib/components/Contacts.js
+msgid "Contact Name"
+msgstr ""
+
+#: lib/components/Contacts.js
+msgid "Add Name or SMS"
+msgstr ""
+
+#: lib/components/Contacts.js
+msgid "I'm inviting you to join me on the circles platform"
+msgstr ""
+
+#: lib/components/HomeScreen.js
+#: lib/components/OrgHomeScreen.js
+msgid "Add Org Wallet"
+msgstr ""
+
+#: lib/components/HomeScreen.js
+#: lib/components/OrgHomeScreen.js
+msgid "View Wallet"
+msgstr ""
+
+#: lib/components/HomeScreen.js
+msgid "Nearby"
+msgstr ""
+
+#: lib/components/HomeScreen.js
+msgid "Recent"
+msgstr ""
+
+#: lib/components/Onboarding/OnboardingAvatar.js
+msgid "Upload Photo"
+msgstr ""
+
+#: lib/components/Onboarding/OnboardingAvatar.js
+msgid "Tap to upload"
+msgstr ""
+
+#: lib/components/Onboarding/OnboardingConfirmPassword.js
+#: lib/components/Recovery/ForgotPasswordConfirm.js
+msgid "Confirm Password"
+msgstr ""
+
+#: lib/components/Onboarding/OnboardingConfirmPassword.js
+#: lib/components/Onboarding/OnboardingEmail.js
+#: lib/components/Onboarding/OnboardingPassword.js
+#: lib/components/Onboarding/OnboardingPhone.js
+#: lib/components/Onboarding/OnboardingUsername.js
+#: lib/components/Recovery/ForgotPasswordConfirm.js
+#: lib/components/Recovery/ForgotPasswordSeedPhrase.js
+msgid "This field is required"
+msgstr ""
+
+#: lib/components/Onboarding/OnboardingConfirmSeedPhrase.js
+msgid "CONFIRM YOUR 12 WORD SEED PHRASE"
+msgstr ""
+
+#: lib/components/Onboarding/OnboardingConfirmSeedPhrase.js
+msgid "Select the seed words in the order that you received them. This is the only way to recover your account - save this somewhere where only you can find it."
+msgstr ""
+
+#: lib/components/Onboarding/OnboardingConsent.js
+msgid "Research consent form you know and trust into the Circles system in order to exchange money with them!"
+msgstr ""
+
+#: lib/components/Onboarding/OnboardingConsent.js
+msgid "Privacy policy know and trust into the Circles system in order to exchange money with them!"
+msgstr ""
+
+#: lib/components/Onboarding/OnboardingConsent.js
+#: lib/components/Onboarding/splash/OnboardingIntro.js
+msgid "Invite friends you know and trust into the Circles system in order to exchange money with them!"
+msgstr ""
+
+#: lib/components/Onboarding/OnboardingConsent.js
+msgid "SOME THINGS FOR REVIEW"
+msgstr ""
+
+#: lib/components/Onboarding/OnboardingConsent.js
+msgid "I HAVE READ AND AGREE"
+msgstr ""
+
+#: lib/components/Onboarding/OnboardingEmail.js
+msgid "Email"
+msgstr ""
+
+#: lib/components/Onboarding/OnboardingLogin.js
+#: lib/components/Recovery/ForgotPasswordScreen.js
+msgid "USERNAME / MOBILE NUMBER"
+msgstr ""
+
+#: lib/components/Onboarding/OnboardingLogin.js
+msgid "Enter your mobile number"
+msgstr ""
+
+#: lib/components/Onboarding/OnboardingLogin.js
+#: lib/components/Validate/ValidatePhone.js
+msgid "Mobile Number"
+msgstr ""
+
+#: lib/components/Onboarding/OnboardingLogin.js
+msgid "PASSWORD"
+msgstr ""
+
+#: lib/components/Onboarding/OnboardingLogin.js
+msgid "Enter your password"
+msgstr ""
+
+#: lib/components/Onboarding/OnboardingLogin.js
+#: lib/components/Onboarding/OnboardingPassword.js
+#: lib/components/Recovery/ForgotPasswordUpdate.js
+msgid "Password"
+msgstr ""
+
+#: lib/components/Onboarding/OnboardingLogin.js
+msgid "Forgot Password?"
+msgstr ""
+
+#: lib/components/Onboarding/OnboardingName.js
+msgid "Name"
+msgstr ""
+
+#: lib/components/Onboarding/OnboardingPassword.js
+#: lib/components/Recovery/ForgotPasswordUpdate.js
+msgid "Password is sufficiently strong"
+msgstr ""
+
+#: lib/components/Onboarding/OnboardingPassword.js
+#: lib/components/Recovery/ForgotPasswordUpdate.js
+msgid "Password must contain at least:"
+msgstr ""
+
+#: lib/components/Onboarding/OnboardingPassword.js
+#: lib/components/Recovery/ForgotPasswordUpdate.js
+msgid "1 uppercase letter"
+msgstr ""
+
+#: lib/components/Onboarding/OnboardingPassword.js
+#: lib/components/Recovery/ForgotPasswordUpdate.js
+msgid "1 lowercase letter"
+msgstr ""
+
+#: lib/components/Onboarding/OnboardingPassword.js
+#: lib/components/Recovery/ForgotPasswordUpdate.js
+msgid "1 number"
+msgstr ""
+
+#: lib/components/Onboarding/OnboardingPassword.js
+#: lib/components/Recovery/ForgotPasswordUpdate.js
+msgid "1 special character"
+msgstr ""
+
+#: lib/components/Onboarding/OnboardingPassword.js
+#: lib/components/Recovery/ForgotPasswordUpdate.js
+msgid "At least 8 characters"
+msgstr ""
+
+#: lib/components/Onboarding/OnboardingPhone.js
+msgid "Phone Number"
+msgstr ""
+
+#: lib/components/Onboarding/OnboardingPhone.js
+msgid "We will be sending this number a SMS to confirm your account"
+msgstr ""
+
+#: lib/components/Onboarding/OnboardingSeedPhrase.js
+msgid "SAVE YOUR 12 WORD SEED PHRASE"
+msgstr ""
+
+#: lib/components/Onboarding/OnboardingSeedPhrase.js
+msgid "This is the only way to recover your account -- save this somewhere where only you can find it."
+msgstr ""
+
+#: lib/components/Onboarding/OnboardingTerms.js
+#: lib/components/Onboarding/OnboardingTestnetWarning.js
+msgid "CONTINUE"
+msgstr ""
+
+#: lib/components/Onboarding/OnboardingTestnetWarning.js
+msgid "We're On Testnet"
+msgstr ""
+
+#: lib/components/Onboarding/OnboardingTestnetWarning.js
+msgid "We are currently in beta of our project. This means that we may have to reset accounts and the status of the network."
+msgstr ""
+
+#: lib/components/Onboarding/OnboardingTestnetWarning.js
+msgid "You may be required to create a new Circles account when we move to mainnet."
+msgstr ""
+
+#: lib/components/Onboarding/OnboardingUsername.js
+msgid "Username"
+msgstr ""
+
+#: lib/components/Onboarding/OnboardingVerifyPhone.js
+msgid "ENTER SMS CODE"
+msgstr ""
+
+#: lib/components/Onboarding/OnboardingVerifyPhone.js
+msgid "We have sent a SMS code to"
+msgstr ""
+
+#: lib/components/Onboarding/OnboardingVerifyPhone.js
+#: lib/components/Recovery/ForgotPasswordVerify.js
+msgid "Verification Code"
+msgstr ""
+
+#: lib/components/Onboarding/OnboardingVerifyPhone.js
+#: lib/components/Recovery/ForgotPasswordVerify.js
+msgid "Enter 6-digit Code"
+msgstr ""
+
+#: lib/components/Onboarding/OnboardingVerifyPhone.js
+msgid "ENTER CODE"
+msgstr ""
+
+#: lib/components/Onboarding/OnboardingVerifyPhone.js
+msgid "Didn't receive a code?"
+msgstr ""
+
+#: lib/components/Onboarding/shared/OnboardingNextButton.js
+#: lib/components/shared/Onboarding/NextButton.js
+msgid "NEXT"
+msgstr ""
+
+#: lib/components/Onboarding/shared/OnboardingSkipButton.js
+#: lib/components/shared/SuggestionActionButtons.js
+msgid "Skip"
+msgstr ""
+
+#: lib/components/Onboarding/splash/OnboardingButtons.js
+msgid "LOGIN"
+msgstr ""
+
+#: lib/components/Onboarding/splash/OnboardingButtons.js
+msgid "SIGN UP"
+msgstr ""
+
+#: lib/components/Onboarding/splash/OnboardingButtons.js
+msgid "GUEST"
+msgstr ""
+
+#: lib/components/Onboarding/splash/OnboardingIntro.js
+msgid "Circles is a universal basic income based on a network of trust."
+msgstr ""
+
+#: lib/components/Onboarding/splash/OnboardingIntro.js
+msgid "Search for local vendors in your area that accept Circles UBI."
+msgstr ""
+
+#: lib/components/Onboarding/splash/OnboardingIntro.js
+msgid "Connect with people you know in the peer-to-peer marketplace, where you can offer and receive things for your Circles."
+msgstr ""
+
+#: lib/components/Onboarding/splash/OnboardingIntro.js
+msgid "welcome to"
+msgstr ""
+
+#: lib/components/Onboarding/splash/OnboardingIntro.js
+msgid "Swipe to learn more"
+msgstr ""
+
+#: lib/components/OrgHomeScreen.js
+msgid "SHORTCUTS"
+msgstr ""
+
+#: lib/components/OrgHomeScreen.js
+msgid "Trading in Person?"
+msgstr ""
+
+#: lib/components/OrgHomeScreen.js
+msgid "You have no inventory shortcuts!"
+msgstr ""
+
+#: lib/components/OrgHomeScreen.js
+msgid "Tap to create a tag for things you exchange for Circles regularly."
+msgstr ""
+
+#: lib/components/OrgHomeScreen.js
+msgid "Trading online?"
+msgstr ""
+
+#: lib/components/OrgHomeScreen.js
+msgid "Add Your Circles Address Online"
+msgstr ""
+
+#: lib/components/OrgHomeScreen.js
+msgid "Tap to copy your Circles address and add it to eBay, Etsy, Instagram, or anywhere online!"
+msgstr ""
+
+#: lib/components/OrgWallet/OrgAddInventory.js
+msgid "< Back"
+msgstr ""
+
+#: lib/components/OrgWallet/OrgAddInventory.js
+msgid "OrgInventory"
+msgstr ""
+
+#: lib/components/OrgWallet/OrgWalletSettingsScreen.js
+msgid "Edit"
+msgstr ""
+
+#: lib/components/OrgWallet/OrgWalletSettingsScreen.js
+msgid "Settings"
+msgstr ""
+
+#: lib/components/Pay/PayAmount.js
+#: lib/components/Request/RequestAmount.js
+msgid "Request Amount"
+msgstr ""
+
+#: lib/components/Pay/PayAmount.js
+msgid "SELECT CONTACT"
+msgstr ""
+
+#: lib/components/Pay/PayConfirm.js
+#: lib/components/Request/RequestConfirm.js
+msgid "Enter Description..."
+msgstr ""
+
+#: lib/components/Pay/PayConfirm.js
+msgid "Are you sure you want to pay {to} {amount} CCS?"
+msgstr ""
+
+#: lib/components/Pay/PayConfirm.js
+msgid "PAY"
+msgstr ""
+
+#: lib/components/Recovery/ForgotPasswordScreen.js
+msgid "Enter username or mobile #"
+msgstr ""
+
+#: lib/components/Recovery/ForgotPasswordScreen.js
+msgid "Username / Mobile Number"
+msgstr ""
+
+#: lib/components/Recovery/ForgotPasswordSeedPhrase.js
+msgid "ENTER SEED PHRASE"
+msgstr ""
+
+#: lib/components/Recovery/ForgotPasswordSeedPhrase.js
+msgid "Enter your 12 word seed phrase to unlock your wallet."
+msgstr ""
+
+#: lib/components/Recovery/ForgotPasswordSeedPhrase.js
+msgid "Seed Phrase"
+msgstr ""
+
+#: lib/components/Recovery/ForgotPasswordVerify.js
+msgid "ENTER {codeType} CODE"
+msgstr ""
+
+#: lib/components/Recovery/ForgotPasswordVerify.js
+msgid "We have sent a {codeType} code to"
+msgstr ""
+
+#: lib/components/Request/RequestAmount.js
+#: lib/components/Request/RequestConfirm.js
+#: lib/components/Request/RequestQR.js
+msgid "Requests"
+msgstr ""
+
+#: lib/components/Request/RequestAmount.js
+#: lib/components/Request/RequestConfirm.js
+msgid "REQUEST"
+msgstr ""
+
+#: lib/components/Request/RequestQR.js
+msgid "Ask them to open their app to scan this QR code, then you're done!"
+msgstr ""
+
+#: lib/components/Request/RequestQR.js
+msgid "You can also request from your Circles contacts >"
+msgstr ""
+
+#: lib/components/Scanner/CameraAuthDenied.js
+msgid "Camera Disabled"
+msgstr ""
+
+#: lib/components/Scanner/CameraAuthDenied.js
+msgid "To scan QR codes, go to your phone's settings to allow camera access"
+msgstr ""
+
+#: lib/components/Scanner/CameraAuthLightbox.js
+msgid "Update"
+msgstr ""
+
+#: lib/components/Scanner/CameraAuthLightbox.js
+msgid "Close"
+msgstr ""
+
+#: lib/components/Scanner/Scanner.js
+msgid "No access to camera"
+msgstr ""
+
+#: lib/components/SearchScreen.js
+msgid "Search"
+msgstr ""
+
+#: lib/components/SearchScreen.js
+msgid "Individuals"
+msgstr ""
+
+#: lib/components/SearchScreen.js
+msgid "Organizations"
+msgstr ""
+
+#: lib/components/SearchScreen.js
+msgid "Search for names phone numbers, vendors, and locations"
+msgstr ""
+
+#: lib/components/shared/SuggestionActionButtons.js
+msgid "Connect with people in your network that you trust to spend your circles"
+msgstr ""
+
+#: lib/components/Tabs/AccountsList.js
+msgid "Select Wallet"
+msgstr ""
+
+#: lib/components/Tabs/index.js
+msgid "Pay"
+msgstr ""
+
+#: lib/components/Tabs/index.js
+msgid "Request"
+msgstr ""
+
+#: lib/components/Validate/ValidatePhone.js
+msgid "The Circles Team"
+msgstr ""
+
+#: lib/components/Validate/ValidatePhone.js
+msgid "Validation is a way to prove your identity, extending your ability to transact with individuals and organizations."
+msgstr ""
+
+#: lib/components/Validate/ValidatePhone.js
+msgid "Contact the validator to get your code."
+msgstr ""
+
+#: lib/components/Validate/ValidatePhone.js
+msgid "Enter Code"
+msgstr ""
+
+#: lib/components/Validate/ValidatePhone.js
+msgid "SUBMIT"
+msgstr ""
+
+#: lib/components/Validate/ValidateSuccess.js
+msgid "Success!"
+msgstr ""
+
+#: lib/components/Validate/ValidateSuccess.js
+msgid "You have validated your identity with the Circles Team"
+msgstr ""
+
+#: lib/components/Validate/ValidateSuccess.js
+msgid "RETURN TO YOUR WALLET"
+msgstr ""
+
+#: lib/components/WalletScreen.js
+msgid "CALCULATE NEXT CIRCLE ISSUANCE"
+msgstr ""
+

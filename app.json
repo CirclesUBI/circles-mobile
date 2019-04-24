@@ -5,9 +5,26 @@
     "icon": "./images/appicon.png",
     "version": "0.1.0",
     "ios": {
-      "bundleIdentifier": "com.circlesorg.circles"
+      "bundleIdentifier": "com.circlesorg.circles",
+      "publishBundlePath": "ios/circles/Supporting/shell-app.bundle",
+      "publishManifestPath": "ios/circles/Supporting/shell-app-manifest.json"
     },
     "slug": "circles-mobile",
-    "description": "FULLY AUTOMATED QUEER LUXURY SPACE ANARCHISM"
+    "description": "FULLY AUTOMATED QUEER LUXURY SPACE ANARCHISM",
+    "isDetached": true,
+    "detach": {
+      "iosExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/ios-v2.9.0-sdk31.0.0-250a3991-b623-4f9c-b07f-0b9ed7e8c4c9.tar.gz",
+      "androidExpoViewUrl": "https://s3.amazonaws.com/exp-exponent-view-code/android-v2.9.2-sdk31.0.0-d1776f37-d524-4fee-872d-6807b0fd83ff.tar.gz"
+    },
+    "scheme": "exp3f70ce72f5d4437ab28a24abccc6c38d",
+    "platforms": [
+      "android",
+      "ios"
+    ],
+    "android": {
+      "package": "com.circles.mobile",
+      "publishBundlePath": "android/app/src/main/assets/shell-app.bundle",
+      "publishManifestPath": "android/app/src/main/assets/shell-app-manifest.json"
+    }
   }
 }

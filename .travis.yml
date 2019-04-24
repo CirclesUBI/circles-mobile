@@ -4,7 +4,7 @@ branches:
 sudo: false
 language: node_js
 node_js:
-  - 8.11.1
+  - 10.15.0
 install:
   - echo Installing packages ...
   - npm install
@@ -19,7 +19,8 @@ install:
 before_script:
   - echo Creating environment config file
   - npm i -g create-env
-  - create-env --env-file .env --env-prefix TEST_
+  - export TEST_TRAVIS_BUILD_NUMBER=$TRAVIS_BUILD_NUMBER
+  - create-env --env-file .env --env-prefix TEST_  
   # - touch .env
   # - |
   #   tee .env > /dev/null <<-EOF \

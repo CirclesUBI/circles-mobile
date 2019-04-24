@@ -11,7 +11,11 @@ import LoadingSpinner from 'circles-mobile/lib/components/LoadingSpinner'
 
 import Amplify from 'aws-amplify'
 
-import { AWS_REGION, USER_POOL_ID, USER_POOL_CLIENT_ID, API_USER_ENDPOINT, S3_BUCKET, IDENTITY_POOL_ID } from 'react-native-dotenv'
+import { AWS_REGION, USER_POOL_ID, USER_POOL_CLIENT_ID, API_USER_ENDPOINT, API_RELAYER_ENDPOINT, API_ORG_ENDPOINT, S3_BUCKET, IDENTITY_POOL_ID } from 'react-native-dotenv'
+
+import I18n from 'redux-i18n'
+
+import {translations} from 'circles-mobile/i18n/translations'
 
 const logger = new Amplify.Logger('App')
 
@@ -45,7 +49,15 @@ Amplify.configure({
       {
         name: 'users',
         endpoint: API_USER_ENDPOINT
-      }      
+      },
+      {
+        name: 'relayer',
+        endpoint: API_RELAYER_ENDPOINT
+      },
+      {
+        name: 'orgs',
+        endpoint: API_ORG_ENDPOINT
+      }
     ]
   },
   Storage: {
@@ -69,7 +81,7 @@ class App extends React.Component {
       'now-alt-medium': require('circles-mobile/assets/fonts/NowAlt-Medium.otf'),
       'now-alt-bold': require('circles-mobile/assets/fonts/NowAlt-Bold.otf')
     })
-    this.setState({loading: false})
+    this.setState({ loading: false })
     logger.info('Mounted')
   }
 
@@ -77,10 +89,16 @@ class App extends React.Component {
     return this.state.loading
       ? <AppLoading />
       : (<Provider store={store}>
-        <MenuProvider>
-          <LoadingSpinner />
-          <StartNavigator ref={navigatorRef => NavigationService.setTopLevelNavigator(navigatorRef)} />
-        </MenuProvider>
+        <I18n translations={translations} initialLang="en">
+          <MenuProvider>
+            <LoadingSpinner />
+            <StartNavigator
+              // persistenceKey={'NavigationState'}
+              ref={navigatorRef => NavigationService.setTopLevelNavigator(navigatorRef)}
+              // renderLoadingExperimental={() => <LoadingSpinner />}
+            />
+          </MenuProvider>
+        </I18n>
       </Provider>)
   }
 }
