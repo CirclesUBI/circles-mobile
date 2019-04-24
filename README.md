@@ -21,7 +21,8 @@ npm install
 # set up blockchain
 npm run ganache
 
-// open a new console window
+# open a new console window
+
 # deploy contracts
 npx truffle compile
 npx truffle migrate --reset --compile-all
