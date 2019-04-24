@@ -97,6 +97,7 @@ apply from: 'expo.gradle'
 
 
 dependencies {
+  implementation project(':react-native-device-info')
   implementation fileTree(dir: 'libs', include: ['*.jar'])
 
   implementation 'com.android.support:multidex:1.0.1'
@@ -116,7 +117,7 @@ dependencies {
   implementation 'de.greenrobot:eventbus:2.4.0'
   implementation 'com.amplitude:android-sdk:2.9.2' // Be careful when upgrading! Upgrading might break experience scoping. Check with Jesse. See Analytics.resetAmplitudeDatabaseHelper
   implementation 'com.squareup.picasso:picasso:2.5.2'
-  implementation 'com.google.android.gms:play-services-gcm:15.0.1'
+  implementation 'com.google.android.gms:play-services-gcm:16.1.0'
   implementation 'com.google.android.gms:play-services-analytics:16.0.1'
   implementation 'com.google.android.gms:play-services-maps:15.0.1'
   implementation 'com.google.android.gms:play-services-auth:15.0.1'
