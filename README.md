@@ -31,7 +31,7 @@ npx truffle migrate --reset --compile-all
 # use truffle console
 npx truffle console
 > let hf = await HubFactory.deployed()
-> let s = await hf.spawn(1736111111111111, 0, 18, 'CRC', 3600, 100)
+> let s = await hf.spawn(1736111111111111, 0, 'CRC', 3600, 100)
 ```
 
 ### Android / iOS
