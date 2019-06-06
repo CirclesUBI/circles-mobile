@@ -9,6 +9,7 @@ Circles is a blockchain-based Universal Basic Income implementation.
 ```sh
 # set up submodules
 git clone
+cd circles-mobile
 git submodule update --init
 
 # install
