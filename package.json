@@ -6,7 +6,7 @@
   "preinstall": "nvm use -i 10.15.0 || echo nvm not found: check node version && pause",
   "scripts": {
     "start": "expo start",
-    "cleanstart": "watchman watch-del E:/dev/circles/circles-mobile && expo r -c",
+    "start:clean": "watchman watch-del . && expo r -c",
     "eject": "expo eject",
     "android": "expo android",
     "ios": "expo ios",
