@@ -32,9 +32,10 @@ npx truffle migrate --reset --compile-all
 npx truffle console
 > let hf = await HubFactory.deployed()
 > let s = await hf.spawn(1736111111111111, 0, 'CRC', 3600, 100)
+> s.logs[0].args.newHub
 ```
-
 #copying blockchain addresses
+The last command will return an address, copy that to the `HUB_ADDRESS` environment variable in the .env file.
 Copy the 'relayer' tx address from the output of the truffle migrate command. It should look like this:
 
 ```
@@ -53,9 +54,7 @@ Copy the 'relayer' tx address from the output of the truffle migrate command. It
    > value sent:          0 ETH
    > total cost:          0.01718346 ETH
 ```
-You'll be copying the contract address. Add this to the circles-api env file if you are using it.
-
-In the console window 's' is now the blockchain tx receipt. You will need to access the logs of s with 's.logs'. Copy the new hub addrees into the .env files of both circles-mobile and circles-api
+You'll be copying the contract address. Add this to the circles-mobile .env file after `HUB_CONTRACT_ADDRESS` *and* the circles-api .env file after `HUB_CONTRACT_ADDRESS` if you are running it locally.
 
 ### Android / iOS
 See the relevant section here: https://docs.expo.io/versions/latest/expokit/expokit/
