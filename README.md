@@ -34,8 +34,10 @@ npx truffle console
 > let s = await hf.spawn(1736111111111111, 0, 'CRC', 3600, 100)
 > s.logs[0].args.newHub
 ```
-#copying blockchain addresses
+# copying blockchain addresses
+
 The last command will return an address, copy that to the `HUB_ADDRESS` environment variable in the .env file.
+
 Copy the 'relayer' tx address from the output of the truffle migrate command. It should look like this:
 
 ```
