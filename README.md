@@ -9,6 +9,7 @@ Circles is a blockchain-based Universal Basic Income implementation.
 ```sh
 # set up submodules
 git clone
+cd circles-mobile
 git submodule update --init
 
 # install
@@ -30,8 +31,32 @@ npx truffle migrate --reset --compile-all
 # use truffle console
 npx truffle console
 > let hf = await HubFactory.deployed()
-> let s = await hf.spawn(1736111111111111, 0, 18, 'CRC', 3600, 100)
+> let s = await hf.spawn(1736111111111111, 0, 'CRC', 3600, 100)
+> s.logs[0].args.newHub
 ```
+### copying blockchain addresses
+
+The `s.logs[0].args.newHub` command will return an address, copy that to the `HUB_ADDRESS` environment variable in the .env file *and* the circles-api .env file after `HUB_CONTRACT_ADDRESS` if you are running the API locally.
+
+Copy the 'relayer' tx address from the output of the truffle migrate command. It should look like this:
+
+```
+3_deploy_relayer.js
+===================
+
+   Replacing 'TxRelay'
+   -------------------
+   > transaction hash:    0x1d49538f25320b107b891b0ef812c31cbd1d7f692195128a0245f098bdeff1f5
+   > Blocks: 0            Seconds: 0
+   > contract address:    0x0a2cfC3B0475ba285Beeb4fe6A5e29B3721dc631
+   > account:             0x571707f398847bEaD4113d334780945E0Bd2c72F
+   > balance:             99.81523022
+   > gas used:            859173
+   > gas price:           20 gwei
+   > value sent:          0 ETH
+   > total cost:          0.01718346 ETH
+```
+You'll be copying the contract address. Add this to the circles-mobile .env file after `RELAY_ADDRESS`.
 
 ### Android / iOS
 See the relevant section here: https://docs.expo.io/versions/latest/expokit/expokit/

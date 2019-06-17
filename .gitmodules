@@ -4,4 +4,4 @@
   branch = master
 [submodule "lib/utilities/metatx-client"]
 	path = lib/utilities/metatx-client
-	url = git@github.com:CirclesUBI/metatx-client
+	url = git@github.com:CirclesUBI/metatx-client.git
