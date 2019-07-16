@@ -22,7 +22,7 @@ const logger = new Amplify.Logger('App')
 global.self = global
 global.Buffer = global.Buffer || require('buffer').Buffer
 
-Amplify.Logger.LOG_LEVEL = 'INFO'
+Amplify.Logger.LOG_LEVEL = process.env.LOG_LEVEL || 'INFO'
 Amplify.configure({
   Auth: {
     // REQUIRED only for Federated Authentication - Amazon Cognito Identity Pool ID
