@@ -103,4 +103,5 @@ class App extends React.Component {
   }
 }
 
+console.log("WHAT THE FUCK")
 export default App
