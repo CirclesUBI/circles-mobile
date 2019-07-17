@@ -21,7 +21,7 @@ android {
 
   defaultConfig {
     applicationId 'com.circles.mobile'
-    targetSdkVersion 26
+    targetSdkVersion 27
     versionCode 1
     versionName '0.1.0'
     ndk {
@@ -96,8 +96,7 @@ configurations.all {
 apply from: 'expo.gradle'
 
 
-dependencies {
-  implementation project(':react-native-device-info')
+dependencies {  
   implementation fileTree(dir: 'libs', include: ['*.jar'])
 
   implementation 'com.android.support:multidex:1.0.1'

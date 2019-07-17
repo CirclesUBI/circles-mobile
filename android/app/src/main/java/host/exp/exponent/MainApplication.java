@@ -8,8 +8,6 @@ import java.util.List;
 
 import expolib_v1.okhttp3.OkHttpClient;
 
-import com.learnium.RNDeviceInfo.RNDeviceInfo;
-
 // Needed for `react-native link`
 // import com.facebook.react.ReactApplication;
 
@@ -25,7 +23,6 @@ public class MainApplication extends ExpoApplication {
     return Arrays.<ReactPackage>asList(
         // Add your own packages here!
         // TODO: add native modules!
-            new RNDeviceInfo()
 
         // Needed for `react-native link`
         // new MainReactPackage()

@@ -11,7 +11,7 @@ import LoadingSpinner from 'circles-mobile/lib/components/LoadingSpinner'
 
 import Amplify from 'aws-amplify'
 
-import { AWS_REGION, COGNITO_POOL_ID, COGNITO_CLIENT_ID_MOBILE, API_ENDPOINT, S3_BUCKET, IDENTITY_POOL_ID } from 'react-native-dotenv'
+import { LOG_LEVEL, AWS_REGION, COGNITO_POOL_ID, COGNITO_CLIENT_ID_MOBILE, API_ENDPOINT, S3_BUCKET, IDENTITY_POOL_ID } from 'react-native-dotenv'
 
 import I18n from 'redux-i18n'
 
@@ -22,7 +22,7 @@ const logger = new Amplify.Logger('App')
 global.self = global
 global.Buffer = global.Buffer || require('buffer').Buffer
 
-Amplify.Logger.LOG_LEVEL = 'INFO'
+Amplify.Logger.LOG_LEVEL = LOG_LEVEL || 'INFO'
 Amplify.configure({
   Auth: {
     // REQUIRED only for Federated Authentication - Amazon Cognito Identity Pool ID
