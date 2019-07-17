@@ -88,29 +88,29 @@ expo start
 Get in touch with @ana0 or @edzillion to request these env vars.
 
 ```sh
-# Cognito
-COGNITO_POOL_ID=
-COGNITO_CLIENT_ID_MOBILE=
-IDENTITY_POOL_ID=
-
-# Api Endpoints
-API_USER_ENDPOINT=
-API_ORG_ENDPOINT=
-API_RELAYER_ENDPOINT=
-
-# Blockchain
-HUB_ADDRESS=
-RELAY_ADDRESS=
-RPC_URL=
-
 # AWS Credentials
 AWS_REGION=
 AWS_ACCESS_KEY_ID=
 AWS_SECRET_ACCESS_KEY=
 
-# Other 
-TRAVIS_BUILD_NUMBER=
+# Cognito
+COGNITO_POOL_ID=
+COGNITO_CLIENT_ID_MOBILE=
+IDENTITY_POOL_ID=
+
+# API
+API_ENDPOINT=
+
+# Blockchain
+RPC_URL=
+HUB_ADDRESS=
+RELAY_ADDRESS=
+
+# Debugging
 EXPO_DEBUG=
+LOG_LEVEL=
+
+# Other
 S3_BUCKET=
 ```
 
