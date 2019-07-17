@@ -11,7 +11,7 @@ import LoadingSpinner from 'circles-mobile/lib/components/LoadingSpinner'
 
 import Amplify from 'aws-amplify'
 
-import { AWS_REGION, USER_POOL_ID, USER_POOL_CLIENT_ID, API_USER_ENDPOINT, API_RELAYER_ENDPOINT, API_ORG_ENDPOINT, S3_BUCKET, IDENTITY_POOL_ID } from 'react-native-dotenv'
+import { AWS_REGION, COGNITO_POOL_ID, COGNITO_CLIENT_ID_MOBILE, API_ENDPOINT, S3_BUCKET, IDENTITY_POOL_ID } from 'react-native-dotenv'
 
 import I18n from 'redux-i18n'
 
@@ -36,10 +36,10 @@ Amplify.configure({
     // identityPoolRegion: 'XX-XXXX-X',
 
     // OPTIONAL - Amazon Cognito User Pool ID
-    userPoolId: USER_POOL_ID,
+    userPoolId: COGNITO_POOL_ID,
 
     // OPTIONAL - Amazon Cognito Web Client ID (26-char alphanumeric string)
-    userPoolWebClientId: USER_POOL_CLIENT_ID,
+    userPoolWebClientId: COGNITO_CLIENT_ID_MOBILE,
 
     // OPTIONAL - Enforce user authentication prior to accessing AWS resources or not
     mandatorySignIn: false
@@ -48,15 +48,15 @@ Amplify.configure({
     endpoints: [
       {
         name: 'users',
-        endpoint: API_USER_ENDPOINT
+        endpoint: `${API_ENDPOINT}users`
       },
       {
         name: 'relayer',
-        endpoint: API_RELAYER_ENDPOINT
+        endpoint: `${API_ENDPOINT}relayer`
       },
       {
         name: 'orgs',
-        endpoint: API_ORG_ENDPOINT
+        endpoint: `${API_ENDPOINT}orgs`
       }
     ]
   },
@@ -75,12 +75,12 @@ class App extends React.Component {
     logger.info('Initializing ...')
   }
   async componentWillMount () {
-    await Font.loadAsync({
-      'ostrich-sans-heavy': require('circles-mobile/assets/fonts/OstrichSans-Heavy.otf'),
-      'now-alt-regular': require('circles-mobile/assets/fonts/NowAlt-Regular.otf'),
-      'now-alt-medium': require('circles-mobile/assets/fonts/NowAlt-Medium.otf'),
-      'now-alt-bold': require('circles-mobile/assets/fonts/NowAlt-Bold.otf')
-    })
+    // await Font.loadAsync({
+    //   'ostrich-sans-heavy': require('circles-mobile/assets/fonts/OstrichSans-Heavy.otf'),
+    //   'now-alt-regular': require('circles-mobile/assets/fonts/NowAlt-Regular.otf'),
+    //   'now-alt-medium': require('circles-mobile/assets/fonts/NowAlt-Medium.otf'),
+    //   'now-alt-bold': require('circles-mobile/assets/fonts/NowAlt-Bold.otf')
+    // })
     this.setState({ loading: false })
     logger.info('Mounted')
   }

@@ -89,8 +89,8 @@ Get in touch with @ana0 or @edzillion to request these env vars.
 
 ```sh
 # Cognito
-USER_POOL_ID=
-USER_POOL_CLIENT_ID=
+COGNITO_POOL_ID=
+COGNITO_CLIENT_ID_MOBILE=
 IDENTITY_POOL_ID=
 
 # Api Endpoints

@@ -25,8 +25,8 @@ before_script:
   # - |
   #   tee .env > /dev/null <<-EOF \
   #   -- AWS_REGION=$AWS_REGION \
-  #   -- USER_POOL_ID=$USER_POOL_ID \
-  #   -- USER_POOL_CLIENT_ID=$USER_POOL_CLIENT_ID \
+  #   -- COGNITO_POOL_ID=$COGNITO_POOL_ID \
+  #   -- COGNITO_CLIENT_ID_MOBILE=$COGNITO_CLIENT_ID_MOBILE \
   #   -- API_TEST_ENDPOINT=$API_TEST_ENDPOINT \
   #   -- EOF
   - echo fs.inotify.max_user_watches=524288 | sudo tee -a /etc/sysctl.conf && sudo sysctl -p
